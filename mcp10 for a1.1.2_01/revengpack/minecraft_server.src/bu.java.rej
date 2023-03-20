@@ -1,0 +1,17 @@
+***************
+*** 84,90 ****
+          if(i == 3)
+              f5 -= c(b.z);
+          f4 += c(b.A);
+-         a(f3, f4, f5);
+          float f7 = -0.00625F;
+          v.c(f3 - f - f7, f4 - f1 - f7, f5 - f2 - f7, f3 + f + f7, f4 + f1 + f7, f5 + f2 + f7);
+      }
+--- 84,90 ----
+          if(i == 3)
+              f5 -= c(b.z);
+          f4 += c(b.A);
++         a((double)f3, (double)f4, (double)f5);
+          float f7 = -0.00625F;
+          v.c(f3 - f - f7, f4 - f1 - f7, f5 - f2 - f7, f3 + f + f7, f4 + f1 + f7, f5 + f2 + f7);
+      }

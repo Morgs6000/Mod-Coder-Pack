@@ -1,0 +1,20 @@
+// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.kpdus.com/jad.html
+// Decompiler options: fullnames deadcode fieldsfirst safe 
+// Source File Name:   SourceFile
+
+import java.util.Random;
+
+public class ce extends ly
+{
+
+    public ce(int i, int j)
+    {
+        super(i, j, gb.d);
+    }
+
+    public int a(int i, java.util.Random random)
+    {
+        return ly.x.bc;
+    }
+}

@@ -1,0 +1,44 @@
+***************
+*** 525,531 ****
+          ar = (new gc(50, 80)).c(0.0F).a(0.9375F).a(f);
+          as = (il)(il)(new il(51, 31)).c(0.0F).a(1.0F).a(f);
+          at = (new ca(52, 65)).c(5F).a(j);
+-         au = ((ff) (new do(53, y)));
+          av = (new b(54)).c(2.5F).a(f);
+          aw = (new dh(55, 84)).c(0.0F).a(e);
+          ax = (new g(56, 50)).c(3F).b(5F).a(i);
+--- 525,531 ----
+          ar = (new gc(50, 80)).c(0.0F).a(0.9375F).a(f);
+          as = (il)(il)(new il(51, 31)).c(0.0F).a(1.0F).a(f);
+          at = (new ca(52, 65)).c(5F).a(j);
++         au = ((ff) (new dofix(53, y)));
+          av = (new b(54)).c(2.5F).a(f);
+          aw = (new dh(55, 84)).c(0.0F).a(e);
+          ax = (new g(56, 50)).c(3F).b(5F).a(i);
+***************
+*** 535,546 ****
+          aB = (new fz(60)).c(0.6F).a(g);
+          aC = (new dv(61, false)).c(3.5F).a(i);
+          aD = (new dv(62, true)).c(3.5F).a(i).a(0.875F);
+-         aE = (new fa(63, ig, true)).c(1.0F).a(f);
+          aF = (new ie(64, iq.c)).c(3F).a(f);
+          aG = (new cm(65, 83)).c(0.4F).a(f);
+          aH = (new av(66, 128)).c(0.7F).a(j);
+-         aI = ((ff) (new do(67, x)));
+-         aJ = (new fa(68, ig, false)).c(1.0F).a(f);
+          aK = (new hs(69, 96)).c(0.5F).a(f);
+          aL = (new ax(70, u.bb, cr.b)).c(0.5F).a(i);
+          aM = (new ie(71, iq.e)).c(5F).a(j);
+--- 535,546 ----
+          aB = (new fz(60)).c(0.6F).a(g);
+          aC = (new dv(61, false)).c(3.5F).a(i);
+          aD = (new dv(62, true)).c(3.5F).a(i).a(0.875F);
++         aE = (new fa(63, ig.class, true)).c(1.0F).a(f);
+          aF = (new ie(64, iq.c)).c(3F).a(f);
+          aG = (new cm(65, 83)).c(0.4F).a(f);
+          aH = (new av(66, 128)).c(0.7F).a(j);
++         aI = ((ff) (new dofix(67, x)));
++         aJ = (new fa(68, ig.class, false)).c(1.0F).a(f);
+          aK = (new hs(69, 96)).c(0.5F).a(f);
+          aL = (new ax(70, u.bb, cr.b)).c(0.5F).a(i);
+          aM = (new ie(71, iq.e)).c(5F).a(j);

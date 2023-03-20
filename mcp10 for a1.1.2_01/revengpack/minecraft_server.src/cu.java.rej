@@ -1,0 +1,21 @@
+***************
+*** 15,23 ****
+  
+      cu(dc dc1, java.lang.String s, net.minecraft.server.MinecraftServer minecraftserver)
+      {
+          b = dc1;
+          a = minecraftserver;
+-         super(s);
+      }
+  
+      public void run()
+--- 15,23 ----
+  
+      cu(dc dc1, java.lang.String s, net.minecraft.server.MinecraftServer minecraftserver)
+      {
++         super(s);
+          b = dc1;
+          a = minecraftserver;
+      }
+  
+      public void run()

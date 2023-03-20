@@ -1,0 +1,31 @@
+***************
+*** 25,38 ****
+          a = i;
+      }
+  
+-     public void a(java.io.DataInputStream datainputstream)
+      {
+          a = datainputstream.readInt();
+          b = datainputstream.readUTF();
+          c = datainputstream.readUTF();
+      }
+  
+-     public void a(java.io.DataOutputStream dataoutputstream)
+      {
+          dataoutputstream.writeInt(a);
+          dataoutputstream.writeUTF(b);
+--- 25,38 ----
+          a = i;
+      }
+  
++     public void a(java.io.DataInputStream datainputstream) throws IOException
+      {
+          a = datainputstream.readInt();
+          b = datainputstream.readUTF();
+          c = datainputstream.readUTF();
+      }
+  
++     public void a(java.io.DataOutputStream dataoutputstream) throws IOException
+      {
+          dataoutputstream.writeInt(a);
+          dataoutputstream.writeUTF(b);

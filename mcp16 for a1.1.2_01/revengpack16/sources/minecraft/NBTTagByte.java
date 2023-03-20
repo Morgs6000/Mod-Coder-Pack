@@ -1,0 +1,40 @@
+// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.kpdus.com/jad.html
+// Decompiler options: packimports(3) braces deadcode 
+
+import java.io.*;
+
+public class NBTTagByte extends NBTBase
+{
+
+    public NBTTagByte()
+    {
+    }
+
+    public NBTTagByte(byte byte0)
+    {
+        byteValue = byte0;
+    }
+
+    void func_735_a(DataOutput dataoutput) throws IOException
+    {
+        dataoutput.writeByte(byteValue);
+    }
+
+    void func_736_a(DataInput datainput) throws IOException
+    {
+        byteValue = datainput.readByte();
+    }
+
+    public byte func_733_a()
+    {
+        return 1;
+    }
+
+    public String toString()
+    {
+        return (new StringBuilder()).append("").append(byteValue).toString();
+    }
+
+    public byte byteValue;
+}

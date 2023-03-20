@@ -1,0 +1,48 @@
+***************
+*** 4,39 ****
+  // Source File Name:   SourceFile
+  
+  
+- public final class cr extends java.lang.Enum
+  {
+- 
+-     public static final cr a;
+-     public static final cr b;
+-     public static final cr c;
+-     private static final cr d[];
+- 
+-     public static cr[] values()
+-     {
+-         return (cr[])((cr []) (d)).clone();
+-     }
+- 
+-     public static cr valueOf(java.lang.String s)
+-     {
+-         return (cr)java.lang.Enum.valueOf(cr, s);
+-     }
+- 
+-     private cr(java.lang.String s, int i)
+-     {
+-         super(s, i);
+-     }
+- 
+-     static 
+-     {
+-         a = new cr("everything", 0);
+-         b = new cr("mobs", 1);
+-         c = new cr("players", 2);
+-         d = (new cr[] {
+-             a, b, c
+-         });
+-     }
+  }
+--- 4,12 ----
+  // Source File Name:   SourceFile
+  
+  
++ public enum cr
+  {
++ 	a, // everything
++ 	b, // mobs
++ 	c; // players
+  }

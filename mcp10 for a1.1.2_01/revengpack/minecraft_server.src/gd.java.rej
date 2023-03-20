@@ -1,0 +1,19 @@
+***************
+*** 19,26 ****
+  
+      public gd(av av1, dy dy1, int i, int j, int k)
+      {
+-         a = av1;
+          super();
+          g = ((java.util.List) (new ArrayList()));
+          b = dy1;
+          c = i;
+--- 19,26 ----
+  
+      public gd(av av1, dy dy1, int i, int j, int k)
+      {
+          super();
++         a = av1;
+          g = ((java.util.List) (new ArrayList()));
+          b = dy1;
+          c = i;

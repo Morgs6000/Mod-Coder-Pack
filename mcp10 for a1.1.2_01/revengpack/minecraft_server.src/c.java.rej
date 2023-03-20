@@ -1,0 +1,34 @@
+***************
+*** 36,42 ****
+          h = gp1 != null ? gp1.c : 0;
+      }
+  
+-     public void a(java.io.DataInputStream datainputstream)
+      {
+          a = datainputstream.readInt();
+          b = datainputstream.readUTF();
+--- 36,42 ----
+          h = gp1 != null ? gp1.c : 0;
+      }
+  
++     public void a(java.io.DataInputStream datainputstream) throws IOException
+      {
+          a = datainputstream.readInt();
+          b = datainputstream.readUTF();
+***************
+*** 48,54 ****
+          h = ((int) (datainputstream.readShort()));
+      }
+  
+-     public void a(java.io.DataOutputStream dataoutputstream)
+      {
+          dataoutputstream.writeInt(a);
+          dataoutputstream.writeUTF(b);
+--- 48,54 ----
+          h = ((int) (datainputstream.readShort()));
+      }
+  
++     public void a(java.io.DataOutputStream dataoutputstream) throws IOException
+      {
+          dataoutputstream.writeInt(a);
+          dataoutputstream.writeUTF(b);

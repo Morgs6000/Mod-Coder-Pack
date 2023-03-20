@@ -1,0 +1,17 @@
+***************
+*** 101,107 ****
+  
+      private aw c(hq hq1, int j, int k, int l)
+      {
+-         aw aw1 = aw.b(0.0D, 0.0D, 0.0D);
+          int i1 = b(hq1, j, k, l);
+          for(int j1 = 0; j1 < 4; j1++)
+          {
+--- 101,107 ----
+  
+      private aw c(hq hq1, int j, int k, int l)
+      {
++         aw aw1 = ((aw)null).b(0.0D, 0.0D, 0.0D);
+          int i1 = b(hq1, j, k, l);
+          for(int j1 = 0; j1 < 4; j1++)
+          {

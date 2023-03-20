@@ -1,0 +1,1136 @@
+-=#=- 
+sources\minecraft\a.java
+sources\minecraft\aa.java
+sources\minecraft\ab.java
+sources\minecraft\ac.java
+sources\minecraft\ad.java
+sources\minecraft\ae.java
+sources\minecraft\af.java
+sources\minecraft\ag.java
+sources\minecraft\ah.java
+sources\minecraft\ai.java
+sources\minecraft\aj.java
+sources\minecraft\ak.java
+sources\minecraft\al.java
+sources\minecraft\am.java
+sources\minecraft\an.java
+sources\minecraft\ao.java
+sources\minecraft\ap.java
+sources\minecraft\aq.java
+sources\minecraft\ar.java
+sources\minecraft\as.java
+sources\minecraft\at.java
+sources\minecraft\au.java
+sources\minecraft\av.java
+sources\minecraft\aw.java
+sources\minecraft\ax.java
+sources\minecraft\ay.java
+sources\minecraft\az.java
+sources\minecraft\b.java
+sources\minecraft\ba.java
+sources\minecraft\bb.java
+sources\minecraft\bc.java
+sources\minecraft\bd.java
+sources\minecraft\be.java
+sources\minecraft\bf.java
+sources\minecraft\bg.java
+sources\minecraft\bh.java
+sources\minecraft\bi.java
+sources\minecraft\bj.java
+sources\minecraft\bk.java
+sources\minecraft\bl.java
+sources\minecraft\bm.java
+sources\minecraft\bn.java
+sources\minecraft\bo.java
+sources\minecraft\bp.java
+sources\minecraft\bq.java
+sources\minecraft\br.java
+sources\minecraft\bs.java
+sources\minecraft\bt.java
+sources\minecraft\bu.java
+sources\minecraft\bv.java
+sources\minecraft\bw.java
+sources\minecraft\bx.java
+sources\minecraft\by.java
+sources\minecraft\bz.java
+sources\minecraft\c.java
+sources\minecraft\ca.java
+sources\minecraft\cb.java
+sources\minecraft\cc.java
+sources\minecraft\cd.java
+sources\minecraft\ce.java
+sources\minecraft\cf.java
+sources\minecraft\cg.java
+sources\minecraft\ch.java
+sources\minecraft\ci.java
+sources\minecraft\cj.java
+sources\minecraft\ck.java
+sources\minecraft\cl.java
+sources\minecraft\cm.java
+sources\minecraft\cn.java
+sources\minecraft\co.java
+sources\minecraft\cp.java
+sources\minecraft\cq.java
+sources\minecraft\cr.java
+sources\minecraft\cs.java
+sources\minecraft\ct.java
+sources\minecraft\cu.java
+sources\minecraft\cv.java
+sources\minecraft\cw.java
+sources\minecraft\cx.java
+sources\minecraft\cy.java
+sources\minecraft\cz.java
+sources\minecraft\d.java
+sources\minecraft\da.java
+sources\minecraft\db.java
+sources\minecraft\dc.java
+sources\minecraft\dd.java
+sources\minecraft\de.java
+sources\minecraft\df.java
+sources\minecraft\dg.java
+sources\minecraft\dh.java
+sources\minecraft\di.java
+sources\minecraft\dj.java
+sources\minecraft\dk.java
+sources\minecraft\dl.java
+sources\minecraft\dm.java
+sources\minecraft\dn.java
+sources\minecraft\dofix.java
+sources\minecraft\dp.java
+sources\minecraft\dq.java
+sources\minecraft\dr.java
+sources\minecraft\ds.java
+sources\minecraft\dt.java
+sources\minecraft\du.java
+sources\minecraft\dv.java
+sources\minecraft\dw.java
+sources\minecraft\dx.java
+sources\minecraft\dy.java
+sources\minecraft\dz.java
+sources\minecraft\e.java
+sources\minecraft\ea.java
+sources\minecraft\eb.java
+sources\minecraft\ec.java
+sources\minecraft\ed.java
+sources\minecraft\ee.java
+sources\minecraft\ef.java
+sources\minecraft\eg.java
+sources\minecraft\eh.java
+sources\minecraft\ei.java
+sources\minecraft\ej.java
+sources\minecraft\ek.java
+sources\minecraft\el.java
+sources\minecraft\em.java
+sources\minecraft\en.java
+sources\minecraft\eo.java
+sources\minecraft\ep.java
+sources\minecraft\eq.java
+sources\minecraft\er.java
+sources\minecraft\es.java
+sources\minecraft\et.java
+sources\minecraft\eu.java
+sources\minecraft\ev.java
+sources\minecraft\ew.java
+sources\minecraft\ex.java
+sources\minecraft\ey.java
+sources\minecraft\ez.java
+sources\minecraft\f.java
+sources\minecraft\fa.java
+sources\minecraft\fb.java
+sources\minecraft\fc.java
+sources\minecraft\fd.java
+sources\minecraft\fe.java
+sources\minecraft\ff.java
+sources\minecraft\fg.java
+sources\minecraft\fh.java
+sources\minecraft\fi.java
+sources\minecraft\fj.java
+sources\minecraft\fk.java
+sources\minecraft\fl.java
+sources\minecraft\fm.java
+sources\minecraft\fn.java
+sources\minecraft\fo.java
+sources\minecraft\fp.java
+sources\minecraft\fq.java
+sources\minecraft\fr.java
+sources\minecraft\fs.java
+sources\minecraft\ft.java
+sources\minecraft\fu.java
+sources\minecraft\fv.java
+sources\minecraft\fw.java
+sources\minecraft\fx.java
+sources\minecraft\fy.java
+sources\minecraft\fz.java
+sources\minecraft\g.java
+sources\minecraft\ga.java
+sources\minecraft\gb.java
+sources\minecraft\gc.java
+sources\minecraft\gd.java
+sources\minecraft\ge.java
+sources\minecraft\gf.java
+sources\minecraft\gg.java
+sources\minecraft\gh.java
+sources\minecraft\gi.java
+sources\minecraft\gj.java
+sources\minecraft\gk.java
+sources\minecraft\gl.java
+sources\minecraft\gm.java
+sources\minecraft\gn.java
+sources\minecraft\go.java
+sources\minecraft\gp.java
+sources\minecraft\gq.java
+sources\minecraft\gr.java
+sources\minecraft\gs.java
+sources\minecraft\gt.java
+sources\minecraft\gu.java
+sources\minecraft\gv.java
+sources\minecraft\gw.java
+sources\minecraft\gx.java
+sources\minecraft\gy.java
+sources\minecraft\gz.java
+sources\minecraft\h.java
+sources\minecraft\ha.java
+sources\minecraft\hb.java
+sources\minecraft\hc.java
+sources\minecraft\hd.java
+sources\minecraft\he.java
+sources\minecraft\hf.java
+sources\minecraft\hg.java
+sources\minecraft\hh.java
+sources\minecraft\hi.java
+sources\minecraft\hj.java
+sources\minecraft\hk.java
+sources\minecraft\hl.java
+sources\minecraft\hm.java
+sources\minecraft\hn.java
+sources\minecraft\ho.java
+sources\minecraft\hp.java
+sources\minecraft\hq.java
+sources\minecraft\hr.java
+sources\minecraft\hs.java
+sources\minecraft\ht.java
+sources\minecraft\hu.java
+sources\minecraft\hv.java
+sources\minecraft\hw.java
+sources\minecraft\hx.java
+sources\minecraft\hy.java
+sources\minecraft\hz.java
+sources\minecraft\i.java
+sources\minecraft\ia.java
+sources\minecraft\ib.java
+sources\minecraft\ic.java
+sources\minecraft\id.java
+sources\minecraft\ie.java
+sources\minecraft\iffix.java
+sources\minecraft\ig.java
+sources\minecraft\ih.java
+sources\minecraft\ii.java
+sources\minecraft\ij.java
+sources\minecraft\ik.java
+sources\minecraft\il.java
+sources\minecraft\im.java
+sources\minecraft\in.java
+sources\minecraft\io.java
+sources\minecraft\ip.java
+sources\minecraft\iq.java
+sources\minecraft\ir.java
+sources\minecraft\is.java
+sources\minecraft\it.java
+sources\minecraft\iu.java
+sources\minecraft\iv.java
+sources\minecraft\iw.java
+sources\minecraft\ix.java
+sources\minecraft\iy.java
+sources\minecraft\iz.java
+sources\minecraft\j.java
+sources\minecraft\ja.java
+sources\minecraft\jb.java
+sources\minecraft\jc.java
+sources\minecraft\jd.java
+sources\minecraft\je.java
+sources\minecraft\jf.java
+sources\minecraft\jg.java
+sources\minecraft\jh.java
+sources\minecraft\ji.java
+sources\minecraft\jj.java
+sources\minecraft\jk.java
+sources\minecraft\jl.java
+sources\minecraft\jm.java
+sources\minecraft\jn.java
+sources\minecraft\jo.java
+sources\minecraft\jp.java
+sources\minecraft\jq.java
+sources\minecraft\jr.java
+sources\minecraft\js.java
+sources\minecraft\jt.java
+sources\minecraft\ju.java
+sources\minecraft\jv.java
+sources\minecraft\jw.java
+sources\minecraft\jx.java
+sources\minecraft\jy.java
+sources\minecraft\jz.java
+sources\minecraft\k.java
+sources\minecraft\ka.java
+sources\minecraft\kb.java
+sources\minecraft\kc.java
+sources\minecraft\kd.java
+sources\minecraft\ke.java
+sources\minecraft\kf.java
+sources\minecraft\kg.java
+sources\minecraft\kh.java
+sources\minecraft\ki.java
+sources\minecraft\kj.java
+sources\minecraft\kk.java
+sources\minecraft\kl.java
+sources\minecraft\km.java
+sources\minecraft\kn.java
+sources\minecraft\ko.java
+sources\minecraft\kp.java
+sources\minecraft\kq.java
+sources\minecraft\kr.java
+sources\minecraft\ks.java
+sources\minecraft\kt.java
+sources\minecraft\ku.java
+sources\minecraft\kv.java
+sources\minecraft\kw.java
+sources\minecraft\kx.java
+sources\minecraft\ky.java
+sources\minecraft\kz.java
+sources\minecraft\l.java
+sources\minecraft\la.java
+sources\minecraft\lb.java
+sources\minecraft\lc.java
+sources\minecraft\ld.java
+sources\minecraft\le.java
+sources\minecraft\lf.java
+sources\minecraft\lg.java
+sources\minecraft\lh.java
+sources\minecraft\li.java
+sources\minecraft\lj.java
+sources\minecraft\lk.java
+sources\minecraft\ll.java
+sources\minecraft\lm.java
+sources\minecraft\ln.java
+sources\minecraft\lo.java
+sources\minecraft\lp.java
+sources\minecraft\lq.java
+sources\minecraft\lr.java
+sources\minecraft\ls.java
+sources\minecraft\lt.java
+sources\minecraft\lu.java
+sources\minecraft\lv.java
+sources\minecraft\lw.java
+sources\minecraft\lx.java
+sources\minecraft\ly.java
+sources\minecraft\lz.java
+sources\minecraft\m.java
+sources\minecraft\ma.java
+sources\minecraft\mb.java
+sources\minecraft\mc.java
+sources\minecraft\md.java
+sources\minecraft\me.java
+sources\minecraft\mf.java
+sources\minecraft\mg.java
+sources\minecraft\mh.java
+sources\minecraft\mi.java
+sources\minecraft\mj.java
+sources\minecraft\mk.java
+sources\minecraft\ml.java
+sources\minecraft\mm.java
+sources\minecraft\mn.java
+sources\minecraft\mo.java
+sources\minecraft\mp.java
+sources\minecraft\mq.java
+sources\minecraft\mr.java
+sources\minecraft\ms.java
+sources\minecraft\mt.java
+sources\minecraft\mu.java
+sources\minecraft\mv.java
+sources\minecraft\mw.java
+sources\minecraft\mx.java
+sources\minecraft\my.java
+sources\minecraft\mz.java
+sources\minecraft\n.java
+sources\minecraft\na.java
+sources\minecraft\nb.java
+sources\minecraft\nc.java
+sources\minecraft\nd.java
+sources\minecraft\ne.java
+sources\minecraft\nf.java
+sources\minecraft\ng.java
+sources\minecraft\nh.java
+sources\minecraft\ni.java
+sources\minecraft\nj.java
+sources\minecraft\nk.java
+sources\minecraft\nl.java
+sources\minecraft\nm.java
+sources\minecraft\nn.java
+sources\minecraft\no.java
+sources\minecraft\np.java
+sources\minecraft\nq.java
+sources\minecraft\nr.java
+sources\minecraft\ns.java
+sources\minecraft\nt.java
+sources\minecraft\nu.java
+sources\minecraft\nv.java
+sources\minecraft\nw.java
+sources\minecraft\nx.java
+sources\minecraft\ny.java
+sources\minecraft\nz.java
+sources\minecraft\o.java
+sources\minecraft\oa.java
+sources\minecraft\ob.java
+sources\minecraft\oc.java
+sources\minecraft\od.java
+sources\minecraft\oe.java
+sources\minecraft\of.java
+sources\minecraft\og.java
+sources\minecraft\oh.java
+sources\minecraft\oi.java
+sources\minecraft\oj.java
+sources\minecraft\ok.java
+sources\minecraft\ol.java
+sources\minecraft\p.java
+sources\minecraft\q.java
+sources\minecraft\r.java
+sources\minecraft\s.java
+sources\minecraft\t.java
+sources\minecraft\u.java
+sources\minecraft\v.java
+sources\minecraft\w.java
+sources\minecraft\x.java
+sources\minecraft\y.java
+sources\minecraft\z.java
+      402 arquivo(s) copiado(s).
+O sistema nÆo pode encontrar o caminho especificado.
+Parsing temp\minecraft\net\minecraft\client\Minecraft.class... Generating sources\minecraft_fixed\Minecraft.java
+Method <init>
+Method a
+Method a
+Method a
+Method p
+Method a
+Method b
+Method a
+Method q
+Method a
+Method c
+Method c
+Overlapped try statements detected. Not all exception handlers will be resolved in the method c
+Couldn't fully decompile method c
+Couldn't resolve all exception handlers in method c
+Method run
+Overlapped try statements detected. Not all exception handlers will be resolved in the method run
+Couldn't fully decompile method run
+Couldn't resolve all exception handlers in method run
+Method r
+Method d
+Method e
+Method f
+Method g
+Method a
+Method a
+Method h
+Method a
+Method s
+Method i
+Method t
+Method j
+Method b
+Method a
+Method a
+Method d
+Method a
+Method k
+Method l
+Method m
+Method n
+Method o
+Method a
+Method a
+Method main
+Method <clinit>
+Parsing temp\minecraft\net\minecraft\client\MinecraftApplet.class... Generating sources\minecraft_fixed\MinecraftApplet.java
+Method <init>
+Method init
+Couldn't fully decompile method init
+Method a
+Method start
+Method stop
+Method destroy
+Method b
+Method c
+#classes: 2, #methods: 48, #failures: 3, #fields: 54, elapsed time: 0.050s
+-=#=- 
+No matching files found
+-=#=- 
+patching file `aa.java'
+patching file `au.java'
+patching file `ay.java'
+patching file `bf.java'
+patching file `bh.java'
+patching file `bi.java'
+patching file `cj.java'
+patching file `cx.java'
+patching file `de.java'
+patching file `e.java'
+patching file `ea.java'
+patching file `ee.java'
+patching file `fk.java'
+patching file `fl.java'
+patching file `fm.java'
+patching file `fp.java'
+patching file `fq.java'
+patching file `fr.java'
+patching file `g.java'
+patching file `gc.java'
+patching file `gr.java'
+patching file `gy.java'
+patching file `h.java'
+patching file `hq.java'
+patching file `hx.java'
+patching file `ia.java'
+patching file `ib.java'
+patching file `id.java'
+patching file `ie.java'
+patching file `ih.java'
+patching file `il.java'
+patching file `iq.java'
+patching file `iv.java'
+patching file `jh.java'
+patching file `jq.java'
+patching file `la.java'
+patching file `lo.java'
+patching file `lu.java'
+patching file `lw.java'
+patching file `Minecraft.java'
+patching file `MinecraftApplet.java'
+patching file `mn.java'
+patching file `mo.java'
+patching file `nc.java'
+patching file `nj.java'
+patching file `nv.java'
+-=#=- 
+can't find file to patch at input line 4
+Perhaps you should have used the -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff -U 3 minecraft_server.src\ae.java patches\ae.java
+|--- minecraft_server.src\ae.java	Tue Oct 19 01:22:09 2010
+|+++ patches\ae.java	Wed Oct 20 20:39:36 2010
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 16
+Perhaps you should have used the -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff -U 3 minecraft_server.src\bm.java patches\bm.java
+|--- minecraft_server.src\bm.java	Tue Oct 19 01:22:09 2010
+|+++ patches\bm.java	Wed Oct 20 20:39:36 2010
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 37
+Perhaps you should have used the -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff -U 3 minecraft_server.src\bp.java patches\bp.java
+|--- minecraft_server.src\bp.java	Tue Oct 19 01:22:09 2010
+|+++ patches\bp.java	Wed Oct 20 20:39:36 2010
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 58
+Perhaps you should have used the -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff -U 3 minecraft_server.src\cu.java patches\cu.java
+|--- minecraft_server.src\cu.java	Tue Oct 19 01:22:09 2010
+|+++ patches\cu.java	Wed Oct 20 20:39:36 2010
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 80
+Perhaps you should have used the -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff -U 3 minecraft_server.src\dc.java patches\dc.java
+|--- minecraft_server.src\dc.java	Tue Oct 19 01:22:09 2010
+|+++ patches\dc.java	Wed Oct 20 20:39:36 2010
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 92
+Perhaps you should have used the -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff -U 3 minecraft_server.src\ea.java patches\ea.java
+|--- minecraft_server.src\ea.java	Tue Oct 19 01:22:08 2010
+|+++ patches\ea.java	Wed Oct 20 20:39:36 2010
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+can't find file to patch at input line 120
+Perhaps you should have used the -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff -U 3 minecraft_server.src\eb.java patches\eb.java
+|--- minecraft_server.src\eb.java	Tue Oct 19 01:22:08 2010
+|+++ patches\eb.java	Wed Oct 20 20:39:36 2010
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 142
+Perhaps you should have used the -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff -U 3 minecraft_server.src\ew.java patches\ew.java
+|--- minecraft_server.src\ew.java	Tue Oct 19 01:22:09 2010
+|+++ patches\ew.java	Wed Oct 20 20:39:36 2010
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+can't find file to patch at input line 170
+Perhaps you should have used the -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff -U 3 minecraft_server.src\fo.java patches\fo.java
+|--- minecraft_server.src\fo.java	Tue Oct 19 01:22:08 2010
+|+++ patches\fo.java	Wed Oct 20 20:39:36 2010
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+3 out of 3 hunks ignored
+can't find file to patch at input line 211
+Perhaps you should have used the -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff -U 3 minecraft_server.src\ft.java patches\ft.java
+|--- minecraft_server.src\ft.java	Tue Oct 19 01:22:08 2010
+|+++ patches\ft.java	Wed Oct 20 20:39:36 2010
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+can't find file to patch at input line 240
+Perhaps you should have used the -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff -U 3 minecraft_server.src\fw.java patches\fw.java
+|--- minecraft_server.src\fw.java	Tue Oct 19 01:22:08 2010
+|+++ patches\fw.java	Wed Oct 20 20:39:36 2010
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 264
+Perhaps you should have used the -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff -U 3 minecraft_server.src\h.java patches\h.java
+|--- minecraft_server.src\h.java	Tue Oct 19 01:22:08 2010
+|+++ patches\h.java	Wed Oct 20 20:39:36 2010
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 287
+Perhaps you should have used the -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff -U 3 minecraft_server.src\hg.java patches\hg.java
+|--- minecraft_server.src\hg.java	Tue Oct 19 01:22:08 2010
+|+++ patches\hg.java	Wed Oct 20 20:39:36 2010
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+3 out of 3 hunks ignored
+can't find file to patch at input line 320
+Perhaps you should have used the -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff -U 3 minecraft_server.src\id.java patches\id.java
+|--- minecraft_server.src\id.java	Tue Oct 19 01:22:09 2010
+|+++ patches\id.java	Wed Oct 20 20:39:36 2010
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+5 out of 5 hunks ignored
+can't find file to patch at input line 382
+Perhaps you should have used the -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff -U 3 minecraft_server.src\MinecraftServer.java patches\MinecraftServer.java
+|--- minecraft_server.src\MinecraftServer.java	Wed Oct 20 21:02:31 2010
+|+++ patches\MinecraftServer.java	Wed Oct 20 20:39:36 2010
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+7 out of 7 hunks ignored
+can't find file to patch at input line 520
+Perhaps you should have used the -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff -U 3 minecraft_server.src\t.java patches\t.java
+|--- minecraft_server.src\t.java	Tue Oct 19 01:22:09 2010
+|+++ patches\t.java	Wed Oct 20 20:39:36 2010
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 541
+Perhaps you should have used the -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff -U 3 minecraft_server.src\v.java patches\v.java
+|--- minecraft_server.src\v.java	Tue Oct 19 01:22:09 2010
+|+++ patches\v.java	Wed Oct 20 20:39:36 2010
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 553
+Perhaps you should have used the -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff -U 3 minecraft_server.src\bn.java patches\bn.java
+|--- minecraft_server.src\bn.java	Wed Oct 20 22:31:21 2010
+|+++ patches\bn.java	Wed Oct 20 22:27:28 2010
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+-=#=- 
+a.java
+aa.java
+ab.java
+ac.java
+ad.java
+ae.java
+af.java
+ag.java
+ah.java
+ai.java
+aj.java
+ak.java
+al.java
+am.java
+an.java
+ao.java
+ap.java
+aq.java
+ar.java
+as.java
+at.java
+au.java
+av.java
+aw.java
+ax.java
+ay.java
+az.java
+b.java
+ba.java
+bb.java
+bc.java
+bd.java
+be.java
+bf.java
+bg.java
+bh.java
+bi.java
+bj.java
+bk.java
+bl.java
+bm.java
+bn.java
+bo.java
+bp.java
+bq.java
+br.java
+bs.java
+bt.java
+bu.java
+bv.java
+bw.java
+bx.java
+by.java
+bz.java
+c.java
+ca.java
+cb.java
+cc.java
+cd.java
+ce.java
+cf.java
+cg.java
+ch.java
+ci.java
+cj.java
+ck.java
+cl.java
+cm.java
+cn.java
+co.java
+cp.java
+cq.java
+cr.java
+cs.java
+ct.java
+cu.java
+cv.java
+cw.java
+cx.java
+cy.java
+cz.java
+d.java
+da.java
+db.java
+dc.java
+dd.java
+de.java
+df.java
+dg.java
+dh.java
+di.java
+dj.java
+dk.java
+dl.java
+dm.java
+dn.java
+dofix.java
+dp.java
+dq.java
+dr.java
+ds.java
+dt.java
+du.java
+dv.java
+dw.java
+dx.java
+dy.java
+dz.java
+e.java
+ea.java
+eb.java
+ec.java
+ed.java
+ee.java
+ef.java
+eg.java
+eh.java
+ei.java
+ej.java
+ek.java
+el.java
+em.java
+en.java
+eo.java
+ep.java
+eq.java
+er.java
+es.java
+et.java
+eu.java
+ev.java
+ew.java
+ex.java
+ey.java
+ez.java
+f.java
+fa.java
+fb.java
+fc.java
+fd.java
+fe.java
+ff.java
+fg.java
+fh.java
+fi.java
+fj.java
+fk.java
+fl.java
+fm.java
+fn.java
+fo.java
+fp.java
+fq.java
+fr.java
+fs.java
+ft.java
+fu.java
+fv.java
+fw.java
+fx.java
+fy.java
+fz.java
+g.java
+ga.java
+gb.java
+gc.java
+gd.java
+ge.java
+gf.java
+gg.java
+gh.java
+gi.java
+gj.java
+gk.java
+gl.java
+gm.java
+gn.java
+go.java
+gp.java
+gq.java
+gr.java
+gs.java
+gt.java
+gu.java
+gv.java
+gw.java
+gx.java
+gy.java
+gz.java
+h.java
+ha.java
+hb.java
+hc.java
+hd.java
+he.java
+hf.java
+hg.java
+hh.java
+hi.java
+hj.java
+hk.java
+hl.java
+hm.java
+hn.java
+ho.java
+hp.java
+hq.java
+hr.java
+hs.java
+ht.java
+hu.java
+hv.java
+hw.java
+hx.java
+hy.java
+hz.java
+i.java
+ia.java
+ib.java
+ic.java
+id.java
+ie.java
+iffix.java
+ig.java
+ih.java
+ii.java
+ij.java
+ik.java
+il.java
+im.java
+in.java
+io.java
+ip.java
+iq.java
+ir.java
+is.java
+it.java
+iu.java
+iv.java
+iw.java
+ix.java
+iy.java
+iz.java
+j.java
+ja.java
+jb.java
+jc.java
+jd.java
+je.java
+jf.java
+jg.java
+jh.java
+ji.java
+jj.java
+jk.java
+jl.java
+jm.java
+jn.java
+jo.java
+jp.java
+jq.java
+jr.java
+js.java
+jt.java
+ju.java
+jv.java
+jw.java
+jx.java
+jy.java
+jz.java
+k.java
+ka.java
+kb.java
+kc.java
+kd.java
+ke.java
+kf.java
+kg.java
+kh.java
+ki.java
+kj.java
+kk.java
+kl.java
+km.java
+kn.java
+ko.java
+kp.java
+kq.java
+kr.java
+ks.java
+kt.java
+ku.java
+kv.java
+kw.java
+kx.java
+ky.java
+kz.java
+l.java
+la.java
+lb.java
+lc.java
+ld.java
+le.java
+lf.java
+lg.java
+lh.java
+li.java
+lj.java
+lk.java
+ll.java
+lm.java
+ln.java
+lo.java
+lp.java
+lq.java
+lr.java
+ls.java
+lt.java
+lu.java
+lv.java
+lw.java
+lx.java
+ly.java
+lz.java
+m.java
+ma.java
+mb.java
+mc.java
+md.java
+me.java
+mf.java
+mg.java
+mh.java
+mi.java
+Minecraft.java
+MinecraftApplet.java
+mj.java
+mk.java
+ml.java
+mm.java
+mn.java
+mo.java
+mp.java
+mq.java
+mr.java
+ms.java
+mt.java
+mu.java
+mv.java
+mw.java
+mx.java
+my.java
+mz.java
+n.java
+na.java
+nb.java
+nc.java
+nd.java
+ne.java
+nf.java
+ng.java
+nh.java
+ni.java
+nj.java
+nk.java
+nl.java
+nm.java
+nn.java
+no.java
+np.java
+nq.java
+nr.java
+ns.java
+nt.java
+nu.java
+nv.java
+nw.java
+nx.java
+ny.java
+nz.java
+o.java
+oa.java
+ob.java
+oc.java
+od.java
+oe.java
+of.java
+og.java
+oh.java
+oi.java
+oj.java
+ok.java
+ol.java
+p.java
+q.java
+r.java
+s.java
+t.java
+u.java
+v.java
+w.java
+x.java
+y.java
+z.java
+-=#=- 
+-=#=- 

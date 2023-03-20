@@ -1,0 +1,37 @@
+// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.kpdus.com/jad.html
+// Decompiler options: fullnames deadcode fieldsfirst safe 
+// Source File Name:   SourceFile
+
+import org.lwjgl.opengl.GL11;
+
+public class dj extends ak
+{
+
+    private bc d;
+
+    public dj()
+    {
+        d = new bc();
+        b = 0.5F;
+    }
+
+    public void a(ff ff1, double d1, double d2, double d3, 
+            float f, float f1)
+    {
+        org.lwjgl.opengl.GL11.glPushMatrix();
+        org.lwjgl.opengl.GL11.glTranslatef((float)d1, (float)d2, (float)d3);
+        a("/terrain.png");
+        ly ly1 = ly.n[ff1.a];
+        cn cn = ff1.i();
+        org.lwjgl.opengl.GL11.glDisable(2896);
+        d.a(ly1, cn, eo.b(ff1.ak), eo.b(ff1.al), eo.b(ff1.am));
+        org.lwjgl.opengl.GL11.glEnable(2896);
+        org.lwjgl.opengl.GL11.glPopMatrix();
+    }
+
+    public void a(kh kh, double d1, double d2, double d3, float f, float f1)
+    {
+        a((ff)kh, d1, d2, d3, f, f1);
+    }
+}

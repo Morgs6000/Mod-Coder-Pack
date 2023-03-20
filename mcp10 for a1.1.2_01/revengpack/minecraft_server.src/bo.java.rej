@@ -1,0 +1,27 @@
+***************
+*** 21,32 ****
+          a = byte0;
+      }
+  
+-     void a(java.io.DataOutput dataoutput)
+      {
+          dataoutput.writeByte(((int) (a)));
+      }
+  
+-     void a(java.io.DataInput datainput)
+      {
+          a = datainput.readByte();
+      }
+--- 21,32 ----
+          a = byte0;
+      }
+  
++     void a(java.io.DataOutput dataoutput) throws IOException
+      {
+          dataoutput.writeByte(((int) (a)));
+      }
+  
++     void a(java.io.DataInput datainput) throws IOException
+      {
+          a = datainput.readByte();
+      }

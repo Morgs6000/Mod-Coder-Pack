@@ -1,0 +1,27 @@
+***************
+*** 21,32 ****
+          a = s;
+      }
+  
+-     public void a(java.io.DataInputStream datainputstream)
+      {
+          a = datainputstream.readUTF();
+      }
+  
+-     public void a(java.io.DataOutputStream dataoutputstream)
+      {
+          dataoutputstream.writeUTF(a);
+      }
+--- 21,32 ----
+          a = s;
+      }
+  
++     public void a(java.io.DataInputStream datainputstream) throws IOException
+      {
+          a = datainputstream.readUTF();
+      }
+  
++     public void a(java.io.DataOutputStream dataoutputstream) throws IOException
+      {
+          dataoutputstream.writeUTF(a);
+      }

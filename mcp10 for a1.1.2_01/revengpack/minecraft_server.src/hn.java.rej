@@ -1,0 +1,56 @@
+***************
+*** 11,18 ****
+  
+      hn(bb bb1, java.lang.String s)
+      {
+-         a = bb1;
+          super(s);
+      }
+  
+      public void run()
+--- 11,18 ----
+  
+      hn(bb bb1, java.lang.String s)
+      {
+          super(s);
++         a = bb1;
+      }
+  
+      public void run()
+***************
+*** 21,38 ****
+          {
+              bb.b++;
+          }
+          for(; bb.a(a) && !bb.b(a); bb.c(a));
+-         synchronized(bb.a)
+          {
+-             bb.b--;
+-         }
+-         break MISSING_BLOCK_LABEL_115;
+-         java.lang.Exception exception2;
+-         exception2;
+          synchronized(bb.a)
+          {
+              bb.b--;
+          }
+-         throw exception2;
+      }
+  }
+--- 21,36 ----
+          {
+              bb.b++;
+          }
++ 	    try
++         {
+          for(; bb.a(a) && !bb.b(a); bb.c(a));
++ 	    }
++ 	    finally
+          {
+          synchronized(bb.a)
+          {
+              bb.b--;
+          }
++ 	    }
+      }
+  }

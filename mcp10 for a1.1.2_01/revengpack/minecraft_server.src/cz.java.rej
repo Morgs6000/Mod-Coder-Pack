@@ -1,0 +1,82 @@
+***************
+*** 40,58 ****
+          f = j1;
+          abyte0 = dy1.c(i, j, k, l, i1, j1);
+          deflater = new Deflater(1);
+          deflater.setInput(abyte0);
+          deflater.finish();
+          g = new byte[(l * i1 * j1 * 5) / 2];
+          h = deflater.deflate(g);
+          deflater.end();
+-         break MISSING_BLOCK_LABEL_129;
+-         java.lang.Exception exception;
+-         exception;
+-         deflater.end();
+-         throw exception;
+      }
+  
+-     public void a(java.io.DataInputStream datainputstream)
+      {
+          java.util.zip.Inflater inflater;
+          a = datainputstream.readInt();
+--- 40,59 ----
+          f = j1;
+          abyte0 = dy1.c(i, j, k, l, i1, j1);
+          deflater = new Deflater(1);
++         try
++         {
+          deflater.setInput(abyte0);
+          deflater.finish();
+          g = new byte[(l * i1 * j1 * 5) / 2];
+          h = deflater.deflate(g);
++         }
++         finally
++         {
+          deflater.end();
++         }
+      }
+  
++     public void a(java.io.DataInputStream datainputstream) throws IOException
+      {
+          java.util.zip.Inflater inflater;
+          a = datainputstream.readInt();
+***************
+*** 71,89 ****
+          {
+              inflater.inflate(g);
+          }
+-         catch(java.util.zip.DataFormatException dataformatexception)
+          {
+              throw new IOException("Bad compressed data format");
+          }
+          inflater.end();
+-         break MISSING_BLOCK_LABEL_147;
+-         java.lang.Exception exception;
+-         exception;
+-         inflater.end();
+-         throw exception;
+      }
+  
+-     public void a(java.io.DataOutputStream dataoutputstream)
+      {
+          dataoutputstream.writeInt(a);
+          dataoutputstream.writeShort(b);
+--- 72,89 ----
+          {
+              inflater.inflate(g);
+          }
++         catch (DataFormatException localDataFormatException)
+          {
+              throw new IOException("Bad compressed data format");
+          }
++         finally
++         {
+          inflater.end();
++ 
++         }
+      }
+  
++     public void a(java.io.DataOutputStream dataoutputstream) throws IOException
+      {
+          dataoutputstream.writeInt(a);
+          dataoutputstream.writeShort(b);

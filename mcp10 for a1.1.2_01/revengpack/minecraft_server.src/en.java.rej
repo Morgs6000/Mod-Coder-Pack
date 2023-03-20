@@ -1,0 +1,31 @@
+***************
+*** 27,40 ****
+              i = 1;
+      }
+  
+-     public void a(java.io.DataInputStream datainputstream)
+      {
+          a = ((int) (datainputstream.readShort()));
+          b = ((int) (datainputstream.readByte()));
+          c = ((int) (datainputstream.readShort()));
+      }
+  
+-     public void a(java.io.DataOutputStream dataoutputstream)
+      {
+          dataoutputstream.writeShort(a);
+          dataoutputstream.writeByte(b);
+--- 27,40 ----
+              i = 1;
+      }
+  
++     public void a(java.io.DataInputStream datainputstream) throws IOException
+      {
+          a = ((int) (datainputstream.readShort()));
+          b = ((int) (datainputstream.readByte()));
+          c = ((int) (datainputstream.readShort()));
+      }
+  
++     public void a(java.io.DataOutputStream dataoutputstream) throws IOException
+      {
+          dataoutputstream.writeShort(a);
+          dataoutputstream.writeByte(b);

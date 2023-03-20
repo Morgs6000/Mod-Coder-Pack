@@ -1,0 +1,216 @@
+15:33:54 - == MCP 7.26 (data: 7.26a, client: 1.4.7, server: 1.4.7) ==
+15:33:54 - OS : win32
+15:33:54 - # VERSION INFO
+15:33:54 - python: 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)]
+15:33:54 - platform: Windows-post2008Server-6.2.9200
+15:33:54 - # java: '"java" -version'
+15:33:54 - java version "19.0.2" 2023-01-17
+Java(TM) SE Runtime Environment (build 19.0.2+7-44)
+Java HotSpot(TM) 64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
+15:33:54 - # javac: '"javac" -version'
+15:33:54 - javac 19.0.2
+15:33:54 - # javac runtime: '"javac" -J-version'
+15:33:54 - java version "19.0.2" 2023-01-17
+Java(TM) SE Runtime Environment (build 19.0.2+7-44)
+Java HotSpot(TM) 64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
+15:33:54 - # retroguard: 'runtime\bin\retroguard.jar --version'
+15:33:55 - RetroGuard MCP v3.6.5
+based on RetroGuard v2.3.1 by Retrologic Systems - www.retrologic.com
+15:33:55 - # mcinjector: 'runtime\bin\mcinjector.jar --version'
+15:33:55 - MCInjector v2.8 by Searge, LexManos, Fesh0r
+15:33:55 - # patch: 'runtime\bin\applydiff.exe --version'
+15:33:55 - patch 2.5.4
+15:33:55 - # astyle: 'runtime\bin\astyle.exe --version'
+15:33:55 - Artistic Style Version 2.02.1
+15:33:55 - # jadretro: 'runtime\bin\jadretro.jar'
+15:33:55 - Error: Unable to access jarfile runtime\bin\jadretro.jar
+15:33:55 - # jad: 'runtime\bin\jad.exe'
+15:33:55 - # fernflower: 'runtime\bin\fernflower.jar'
+15:33:55 - Usage: java ConsoleDecompiler ( -<option>=<value>)* (<source>)+ <destination>
+15:33:55 - # found ff, ff patches, srgs, name csvs, doc csvs, param csvs, renumber csv, astyle, astyle config
+15:33:56 - > Creating Retroguard config files
+15:33:56 - client md5: 8e80fb01b321c6b3c7efca397a3eea35
+15:33:56 - !! jars\bin\jinput.jar not found !!
+15:33:56 - !! jars\bin\lwjgl.jar not found !!
+15:33:56 - !! jars\bin\lwjgl_util.jar not found !!
+15:33:56 - !! jars\bin\natives not found !!
+15:33:56 - !! LWJGL check FAILED. Make sure to copy the entire .minecraft/bin folder into jars !!
+15:34:03 - == MCP 7.26 (data: 7.26a, client: 1.4.7, server: 1.4.7) ==
+15:34:03 - OS : win32
+15:34:04 - # VERSION INFO
+15:34:04 - python: 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)]
+15:34:04 - platform: Windows-post2008Server-6.2.9200
+15:34:04 - # java: '"java" -version'
+15:34:04 - java version "19.0.2" 2023-01-17
+Java(TM) SE Runtime Environment (build 19.0.2+7-44)
+Java HotSpot(TM) 64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
+15:34:04 - # javac: '"javac" -version'
+15:34:04 - javac 19.0.2
+15:34:04 - # javac runtime: '"javac" -J-version'
+15:34:04 - java version "19.0.2" 2023-01-17
+Java(TM) SE Runtime Environment (build 19.0.2+7-44)
+Java HotSpot(TM) 64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
+15:34:04 - # retroguard: 'runtime\bin\retroguard.jar --version'
+15:34:05 - RetroGuard MCP v3.6.5
+based on RetroGuard v2.3.1 by Retrologic Systems - www.retrologic.com
+15:34:05 - # mcinjector: 'runtime\bin\mcinjector.jar --version'
+15:34:05 - MCInjector v2.8 by Searge, LexManos, Fesh0r
+15:34:05 - # patch: 'runtime\bin\applydiff.exe --version'
+15:34:05 - patch 2.5.4
+15:34:05 - # astyle: 'runtime\bin\astyle.exe --version'
+15:34:05 - Artistic Style Version 2.02.1
+15:34:05 - # jadretro: 'runtime\bin\jadretro.jar'
+15:34:05 - Error: Unable to access jarfile runtime\bin\jadretro.jar
+15:34:05 - # jad: 'runtime\bin\jad.exe'
+15:34:05 - # fernflower: 'runtime\bin\fernflower.jar'
+15:34:05 - Usage: java ConsoleDecompiler ( -<option>=<value>)* (<source>)+ <destination>
+15:34:05 - # found ff, ff patches, srgs, name csvs, doc csvs, param csvs, renumber csv, astyle, astyle config
+15:34:06 - > Creating Retroguard config files
+15:34:06 - client md5: 8e80fb01b321c6b3c7efca397a3eea35
+15:34:06 - !! jars\bin\jinput.jar not found !!
+15:34:06 - !! jars\bin\lwjgl.jar not found !!
+15:34:06 - !! jars\bin\lwjgl_util.jar not found !!
+15:34:06 - !! jars\bin\natives not found !!
+15:34:06 - !! LWJGL check FAILED. Make sure to copy the entire .minecraft/bin folder into jars !!
+15:39:18 - == MCP 7.26 (data: 7.26a, client: 1.4.7, server: 1.4.7) ==
+15:39:18 - OS : win32
+15:39:18 - # VERSION INFO
+15:39:18 - python: 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)]
+15:39:18 - platform: Windows-post2008Server-6.2.9200
+15:39:18 - # java: '"java" -version'
+15:39:18 - java version "19.0.2" 2023-01-17
+Java(TM) SE Runtime Environment (build 19.0.2+7-44)
+Java HotSpot(TM) 64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
+15:39:18 - # javac: '"javac" -version'
+15:39:18 - javac 19.0.2
+15:39:18 - # javac runtime: '"javac" -J-version'
+15:39:18 - java version "19.0.2" 2023-01-17
+Java(TM) SE Runtime Environment (build 19.0.2+7-44)
+Java HotSpot(TM) 64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
+15:39:18 - # retroguard: 'runtime\bin\retroguard.jar --version'
+15:39:19 - RetroGuard MCP v3.6.5
+based on RetroGuard v2.3.1 by Retrologic Systems - www.retrologic.com
+15:39:19 - # mcinjector: 'runtime\bin\mcinjector.jar --version'
+15:39:19 - MCInjector v2.8 by Searge, LexManos, Fesh0r
+15:39:19 - # patch: 'runtime\bin\applydiff.exe --version'
+15:39:19 - patch 2.5.4
+15:39:19 - # astyle: 'runtime\bin\astyle.exe --version'
+15:39:19 - Artistic Style Version 2.02.1
+15:39:19 - # jadretro: 'runtime\bin\jadretro.jar'
+15:39:19 - Error: Unable to access jarfile runtime\bin\jadretro.jar
+15:39:19 - # jad: 'runtime\bin\jad.exe'
+15:39:19 - # fernflower: 'runtime\bin\fernflower.jar'
+15:39:19 - Usage: java ConsoleDecompiler ( -<option>=<value>)* (<source>)+ <destination>
+15:39:19 - # found ff, ff patches, srgs, name csvs, doc csvs, param csvs, renumber csv, astyle, astyle config
+15:39:20 - > Creating Retroguard config files
+15:39:20 - client md5: 8e80fb01b321c6b3c7efca397a3eea35
+15:39:20 - !! jars\bin\natives not found !!
+15:39:20 - !! LWJGL check FAILED. Make sure to copy the entire .minecraft/bin folder into jars !!
+15:43:10 - == MCP 7.26 (data: 7.26a, client: 1.4.7, server: 1.4.7) ==
+15:43:10 - OS : win32
+15:43:10 - # VERSION INFO
+15:43:10 - python: 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)]
+15:43:10 - platform: Windows-post2008Server-6.2.9200
+15:43:10 - # java: '"java" -version'
+15:43:11 - java version "19.0.2" 2023-01-17
+Java(TM) SE Runtime Environment (build 19.0.2+7-44)
+Java HotSpot(TM) 64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
+15:43:11 - # javac: '"javac" -version'
+15:43:11 - javac 19.0.2
+15:43:11 - # javac runtime: '"javac" -J-version'
+15:43:11 - java version "19.0.2" 2023-01-17
+Java(TM) SE Runtime Environment (build 19.0.2+7-44)
+Java HotSpot(TM) 64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
+15:43:11 - # retroguard: 'runtime\bin\retroguard.jar --version'
+15:43:11 - RetroGuard MCP v3.6.5
+based on RetroGuard v2.3.1 by Retrologic Systems - www.retrologic.com
+15:43:11 - # mcinjector: 'runtime\bin\mcinjector.jar --version'
+15:43:11 - MCInjector v2.8 by Searge, LexManos, Fesh0r
+15:43:11 - # patch: 'runtime\bin\applydiff.exe --version'
+15:43:11 - patch 2.5.4
+15:43:11 - # astyle: 'runtime\bin\astyle.exe --version'
+15:43:11 - Artistic Style Version 2.02.1
+15:43:11 - # jadretro: 'runtime\bin\jadretro.jar'
+15:43:11 - Error: Unable to access jarfile runtime\bin\jadretro.jar
+15:43:11 - # jad: 'runtime\bin\jad.exe'
+15:43:11 - # fernflower: 'runtime\bin\fernflower.jar'
+15:43:12 - Usage: java ConsoleDecompiler ( -<option>=<value>)* (<source>)+ <destination>
+15:43:12 - # found ff, ff patches, srgs, name csvs, doc csvs, param csvs, renumber csv, astyle, astyle config
+15:43:13 - > Creating Retroguard config files
+15:43:13 - client md5: 8e80fb01b321c6b3c7efca397a3eea35
+15:43:13 - !! jars\bin\jinput.jar not found !!
+15:43:13 - !! jars\bin\lwjgl.jar not found !!
+15:43:13 - !! jars\bin\lwjgl_util.jar not found !!
+15:43:13 - !! jars\bin\natives not found !!
+15:43:13 - !! LWJGL check FAILED. Make sure to copy the entire .minecraft/bin folder into jars !!
+15:44:18 - == MCP 7.26 (data: 7.26a, client: 1.4.7, server: 1.4.7) ==
+15:44:18 - OS : win32
+15:44:18 - # VERSION INFO
+15:44:18 - python: 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)]
+15:44:18 - platform: Windows-post2008Server-6.2.9200
+15:44:18 - # java: '"java" -version'
+15:44:19 - java version "19.0.2" 2023-01-17
+Java(TM) SE Runtime Environment (build 19.0.2+7-44)
+Java HotSpot(TM) 64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
+15:44:19 - # javac: '"javac" -version'
+15:44:19 - javac 19.0.2
+15:44:19 - # javac runtime: '"javac" -J-version'
+15:44:19 - java version "19.0.2" 2023-01-17
+Java(TM) SE Runtime Environment (build 19.0.2+7-44)
+Java HotSpot(TM) 64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
+15:44:19 - # retroguard: 'runtime\bin\retroguard.jar --version'
+15:44:19 - RetroGuard MCP v3.6.5
+based on RetroGuard v2.3.1 by Retrologic Systems - www.retrologic.com
+15:44:19 - # mcinjector: 'runtime\bin\mcinjector.jar --version'
+15:44:19 - MCInjector v2.8 by Searge, LexManos, Fesh0r
+15:44:19 - # patch: 'runtime\bin\applydiff.exe --version'
+15:44:20 - patch 2.5.4
+15:44:20 - # astyle: 'runtime\bin\astyle.exe --version'
+15:44:20 - Artistic Style Version 2.02.1
+15:44:20 - # jadretro: 'runtime\bin\jadretro.jar'
+15:44:20 - Error: Unable to access jarfile runtime\bin\jadretro.jar
+15:44:20 - # jad: 'runtime\bin\jad.exe'
+15:44:20 - # fernflower: 'runtime\bin\fernflower.jar'
+15:44:20 - Usage: java ConsoleDecompiler ( -<option>=<value>)* (<source>)+ <destination>
+15:44:20 - # found ff, ff patches, srgs, name csvs, doc csvs, param csvs, renumber csv, astyle, astyle config
+15:44:21 - > Creating Retroguard config files
+15:44:21 - client md5: 8e80fb01b321c6b3c7efca397a3eea35
+15:44:21 - !! jars\bin\natives not found !!
+15:44:21 - !! LWJGL check FAILED. Make sure to copy the entire .minecraft/bin folder into jars !!
+15:44:41 - == MCP 7.26 (data: 7.26a, client: 1.4.7, server: 1.4.7) ==
+15:44:41 - OS : win32
+15:44:41 - !! Can not find client bins !!
+15:45:21 - == MCP 7.26 (data: 7.26a, client: 1.4.7, server: 1.4.7) ==
+15:45:21 - OS : win32
+15:45:22 - # VERSION INFO
+15:45:22 - python: 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)]
+15:45:22 - platform: Windows-post2008Server-6.2.9200
+15:45:22 - # java: '"java" -version'
+15:45:22 - java version "19.0.2" 2023-01-17
+Java(TM) SE Runtime Environment (build 19.0.2+7-44)
+Java HotSpot(TM) 64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
+15:45:22 - # javac: '"javac" -version'
+15:45:22 - javac 19.0.2
+15:45:22 - # javac runtime: '"javac" -J-version'
+15:45:22 - java version "19.0.2" 2023-01-17
+Java(TM) SE Runtime Environment (build 19.0.2+7-44)
+Java HotSpot(TM) 64-Bit Server VM (build 19.0.2+7-44, mixed mode, sharing)
+15:45:22 - # retroguard: 'runtime\bin\retroguard.jar --version'
+15:45:23 - RetroGuard MCP v3.6.5
+based on RetroGuard v2.3.1 by Retrologic Systems - www.retrologic.com
+15:45:23 - # mcinjector: 'runtime\bin\mcinjector.jar --version'
+15:45:23 - MCInjector v2.8 by Searge, LexManos, Fesh0r
+15:45:23 - # patch: 'runtime\bin\applydiff.exe --version'
+15:45:23 - patch 2.5.4
+15:45:23 - # astyle: 'runtime\bin\astyle.exe --version'
+15:45:23 - Artistic Style Version 2.02.1
+15:45:23 - # jadretro: 'runtime\bin\jadretro.jar'
+15:45:23 - Error: Unable to access jarfile runtime\bin\jadretro.jar
+15:45:23 - # jad: 'runtime\bin\jad.exe'
+15:45:23 - # fernflower: 'runtime\bin\fernflower.jar'
+15:45:23 - Usage: java ConsoleDecompiler ( -<option>=<value>)* (<source>)+ <destination>
+15:45:23 - # found ff, ff patches, srgs, name csvs, doc csvs, param csvs, renumber csv, astyle, astyle config
+15:45:24 - > Creating Retroguard config files
+15:45:24 - client md5: 8e80fb01b321c6b3c7efca397a3eea35
+15:45:24 - !! jars\bin\natives not found !!
+15:45:24 - !! LWJGL check FAILED. Make sure to copy the entire .minecraft/bin folder into jars !!

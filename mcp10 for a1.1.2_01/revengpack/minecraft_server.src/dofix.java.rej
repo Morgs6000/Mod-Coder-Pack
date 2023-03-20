@@ -1,0 +1,27 @@
+***************
+*** 6,17 ****
+  import java.util.ArrayList;
+  import java.util.Random;
+  
+- public class do extends ff
+  {
+  
+      private ff a;
+  
+-     protected do(int j, ff ff1)
+      {
+          super(j, ff1.bb, ff1.bn);
+          a = ff1;
+--- 6,17 ----
+  import java.util.ArrayList;
+  import java.util.Random;
+  
++ public class dofix extends ff
+  {
+  
+      private ff a;
+  
++     protected dofix(int j, ff ff1)
+      {
+          super(j, ff1.bb, ff1.bn);
+          a = ff1;

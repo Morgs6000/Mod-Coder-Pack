@@ -1,0 +1,27 @@
+***************
+*** 21,32 ****
+          a = l;
+      }
+  
+-     public void a(java.io.DataInputStream datainputstream)
+      {
+          a = datainputstream.readLong();
+      }
+  
+-     public void a(java.io.DataOutputStream dataoutputstream)
+      {
+          dataoutputstream.writeLong(a);
+      }
+--- 21,32 ----
+          a = l;
+      }
+  
++     public void a(java.io.DataInputStream datainputstream) throws IOException
+      {
+          a = datainputstream.readLong();
+      }
+  
++     public void a(java.io.DataOutputStream dataoutputstream) throws IOException
+      {
+          dataoutputstream.writeLong(a);
+      }

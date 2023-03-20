@@ -1,0 +1,19 @@
+***************
+*** 27,34 ****
+  
+      public ae(hg hg1, int i1, int j1)
+      {
+-         a = hg1;
+          super();
+          b = ((java.util.List) (new ArrayList()));
+          f = new short[10];
+          g = 0;
+--- 27,34 ----
+  
+      public ae(hg hg1, int i1, int j1)
+      {
+          super();
++         a = hg1;
+          b = ((java.util.List) (new ArrayList()));
+          f = new short[10];
+          g = 0;

@@ -1,0 +1,138 @@
+***************
+*** 4,93 ****
+  // Source File Name:   SourceFile
+  
+  
+- public final class gk extends java.lang.Enum
+  {
+  
+-     public static final gk a;
+-     public static final gk b;
+-     public static final gk c;
+-     public static final gk d;
+-     public static final gk e;
+-     public static final gk f;
+-     public static final gk g;
+-     public static final gk h;
+-     public static final gk i;
+-     public static final gk j;
+-     public static final gk k;
+-     public static final gk l;
+-     public static final gk m;
+-     public static final gk n;
+-     public static final gk o;
+-     public static final gk p;
+-     public static final gk q;
+-     public static final gk r;
+-     public static final gk s;
+-     public static final gk t;
+-     public static final gk u;
+-     public static final gk v;
+-     public static final gk w;
+-     public static final gk x;
+      public final java.lang.String y;
+      public final int z;
+      public final int A;
+      public final int B;
+      public final int C;
+-     private static final gk D[];
+  
+-     public static gk[] values()
+      {
+-         return (gk[])((gk []) (D)).clone();
+-     }
+- 
+-     public static gk valueOf(java.lang.String s1)
+-     {
+-         return (gk)java.lang.Enum.valueOf(gk, s1);
+-     }
+- 
+-     private gk(java.lang.String s1, int i1, java.lang.String s2, int j1, int k1, int l1, int i2)
+-     {
+-         super(s1, i1);
+          y = s2;
+          z = j1;
+          A = k1;
+          B = l1;
+          C = i2;
+-     }
+- 
+-     static 
+-     {
+-         a = new gk("Kebab", 0, "Kebab", 16, 16, 0, 0);
+-         b = new gk("Aztec", 1, "Aztec", 16, 16, 16, 0);
+-         c = new gk("Alban", 2, "Alban", 16, 16, 32, 0);
+-         d = new gk("Aztec2", 3, "Aztec2", 16, 16, 48, 0);
+-         e = new gk("Bomb", 4, "Bomb", 16, 16, 64, 0);
+-         f = new gk("Plant", 5, "Plant", 16, 16, 80, 0);
+-         g = new gk("Wasteland", 6, "Wasteland", 16, 16, 96, 0);
+-         h = new gk("Pool", 7, "Pool", 32, 16, 0, 32);
+-         i = new gk("Courbet", 8, "Courbet", 32, 16, 32, 32);
+-         j = new gk("Sea", 9, "Sea", 32, 16, 64, 32);
+-         k = new gk("Sunset", 10, "Sunset", 32, 16, 96, 32);
+-         l = new gk("Creebet", 11, "Creebet", 32, 16, 128, 32);
+-         m = new gk("Wanderer", 12, "Wanderer", 16, 32, 0, 64);
+-         n = new gk("Graham", 13, "Graham", 16, 32, 16, 64);
+-         o = new gk("Match", 14, "Match", 32, 32, 0, 128);
+-         p = new gk("Bust", 15, "Bust", 32, 32, 32, 128);
+-         q = new gk("Stage", 16, "Stage", 32, 32, 64, 128);
+-         r = new gk("Void", 17, "Void", 32, 32, 96, 128);
+-         s = new gk("SkullAndRoses", 18, "SkullAndRoses", 32, 32, 128, 128);
+-         t = new gk("Fighters", 19, "Fighters", 64, 32, 0, 96);
+-         u = new gk("Pointer", 20, "Pointer", 64, 64, 0, 192);
+-         v = new gk("Pigscene", 21, "Pigscene", 64, 64, 64, 192);
+-         w = new gk("Skeleton", 22, "Skeleton", 64, 48, 192, 64);
+-         x = new gk("DonkeyKong", 23, "DonkeyKong", 64, 48, 192, 112);
+-         D = (new gk[] {
+-             a, b, c, d, e, f, g, h, i, j, 
+-             k, l, m, n, o, p, q, r, s, t, 
+-             u, v, w, x
+-         });
+      }
+  }
+--- 4,48 ----
+  // Source File Name:   SourceFile
+  
+  
++ public enum gk
+  {
++     a("Kebab", 16, 16, 0, 0),
++     b("Aztec", 16, 16, 16, 0),
++     c("Alban", 16, 16, 32, 0),
++     d("Aztec2", 16, 16, 48, 0),
++     e("Bomb", 16, 16, 64, 0),
++     f("Plant", 16, 16, 80, 0),
++     g("Wasteland", 16, 16, 96, 0),
++     h("Pool", 32, 16, 0, 32),
++     i("Courbet", 32, 16, 32, 32),
++     j("Sea", 32, 16, 64, 32),
++     k("Sunset", 32, 16, 96, 32),
++     l("Creebet", 32, 16, 128, 32),
++     m("Wanderer", 16, 32, 0, 64),
++     n("Graham", 16, 32, 16, 64),
++     o("Match", 32, 32, 0, 128),
++     p("Bust", 32, 32, 32, 128),
++     q("Stage", 32, 32, 64, 128),
++     r("Void", 32, 32, 96, 128),
++     s("SkullAndRoses", 32, 32, 128, 128),
++     t("Fighters", 64, 32, 0, 96),
++     u("Pointer", 64, 64, 0, 192),
++     v("Pigscene", 64, 64, 64, 192),
++     w("Skeleton", 64, 48, 192, 64),
++     x("DonkeyKong", 64, 48, 192, 112);
+  
+      public final java.lang.String y;
+      public final int z;
+      public final int A;
+      public final int B;
+      public final int C;
+  
++     private gk(java.lang.String s2, int j1, int k1, int l1, int i2)
+      {
+          y = s2;
+          z = j1;
+          A = k1;
+          B = l1;
+          C = i2;
+      }
+  }

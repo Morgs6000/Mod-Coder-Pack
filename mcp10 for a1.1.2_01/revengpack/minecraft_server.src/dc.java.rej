@@ -1,0 +1,21 @@
+***************
+*** 21,29 ****
+      private int f;
+      private java.util.ArrayList g;
+      private java.util.ArrayList h;
+-     public net.minecraft.server.MinecraftServer c;
+  
+-     public dc(net.minecraft.server.MinecraftServer minecraftserver, java.net.InetAddress inetaddress, int i)
+      {
+          b = false;
+          f = 0;
+--- 21,29 ----
+      private int f;
+      private java.util.ArrayList g;
+      private java.util.ArrayList h;
++     public MinecraftServer c;
+  
++     public dc(MinecraftServer minecraftserver, java.net.InetAddress inetaddress, int i) throws IOException
+      {
+          b = false;
+          f = 0;

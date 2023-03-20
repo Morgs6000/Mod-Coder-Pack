@@ -1,0 +1,34 @@
+***************
+*** 31,37 ****
+          e = dy1.b(i, j, k);
+      }
+  
+-     public void a(java.io.DataInputStream datainputstream)
+      {
+          a = datainputstream.readInt();
+          b = datainputstream.read();
+--- 31,37 ----
+          e = dy1.b(i, j, k);
+      }
+  
++     public void a(java.io.DataInputStream datainputstream) throws IOException
+      {
+          a = datainputstream.readInt();
+          b = datainputstream.read();
+***************
+*** 40,46 ****
+          e = datainputstream.read();
+      }
+  
+-     public void a(java.io.DataOutputStream dataoutputstream)
+      {
+          dataoutputstream.writeInt(a);
+          dataoutputstream.write(b);
+--- 40,46 ----
+          e = datainputstream.read();
+      }
+  
++     public void a(java.io.DataOutputStream dataoutputstream) throws IOException
+      {
+          dataoutputstream.writeInt(a);
+          dataoutputstream.write(b);

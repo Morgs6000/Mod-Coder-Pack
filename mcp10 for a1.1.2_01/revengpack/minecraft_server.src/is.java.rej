@@ -1,0 +1,80 @@
+***************
+*** 102,108 ****
+  
+      protected boolean g(dj dj1)
+      {
+-         return h.a(aw.b(l, m + (double)p(), n), aw.b(dj1.l, dj1.m + (double)dj1.p(), dj1.n)) == null;
+      }
+  
+      public boolean c_()
+--- 102,108 ----
+  
+      protected boolean g(dj dj1)
+      {
++         return h.a(((aw)null).b(l, m + (double)p(), n), ((aw)null).b(dj1.l, dj1.m + (double)dj1.p(), dj1.n)) == null;
+      }
+  
+      public boolean c_()
+***************
+*** 645,657 ****
+      {
+          if(f1 == 1.0F)
+          {
+-             return aw.b(l, m, n);
+          } else
+          {
+              double d1 = i + (l - i) * (double)f1;
+              double d2 = j + (m - j) * (double)f1;
+              double d3 = k + (n - k) * (double)f1;
+-             return aw.b(d1, d2, d3);
+          }
+      }
+  
+--- 645,657 ----
+      {
+          if(f1 == 1.0F)
+          {
++             return ((aw)null).b(l, m, n);
+          } else
+          {
+              double d1 = i + (l - i) * (double)f1;
+              double d2 = j + (m - j) * (double)f1;
+              double d3 = k + (n - k) * (double)f1;
++             return ((aw)null).b(d1, d2, d3);
+          }
+      }
+  
+***************
+*** 663,669 ****
+              float f4 = gj.a(-r * 0.01745329F - 3.141593F);
+              float f6 = -gj.b(-s * 0.01745329F);
+              float f8 = gj.a(-s * 0.01745329F);
+-             return aw.b(f4 * f6, f8, f2 * f6);
+          } else
+          {
+              float f3 = u + (s - u) * f1;
+--- 663,669 ----
+              float f4 = gj.a(-r * 0.01745329F - 3.141593F);
+              float f6 = -gj.b(-s * 0.01745329F);
+              float f8 = gj.a(-s * 0.01745329F);
++             return ((aw)null).b(f4 * f6, f8, f2 * f6);
+          } else
+          {
+              float f3 = u + (s - u) * f1;
+***************
+*** 672,678 ****
+              float f9 = gj.a(-f5 * 0.01745329F - 3.141593F);
+              float f10 = -gj.b(-f3 * 0.01745329F);
+              float f11 = gj.a(-f3 * 0.01745329F);
+-             return aw.b(f9 * f10, f11, f7 * f10);
+          }
+      }
+  
+--- 672,678 ----
+              float f9 = gj.a(-f5 * 0.01745329F - 3.141593F);
+              float f10 = -gj.b(-f3 * 0.01745329F);
+              float f11 = gj.a(-f3 * 0.01745329F);
++             return ((aw)null).b(f9 * f10, f11, f7 * f10);
+          }
+      }
+  

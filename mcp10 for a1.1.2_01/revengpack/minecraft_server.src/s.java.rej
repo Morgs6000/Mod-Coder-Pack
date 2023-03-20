@@ -1,0 +1,34 @@
+***************
+*** 21,27 ****
+          a = ((java.util.Map) (new HashMap()));
+      }
+  
+-     void a(java.io.DataOutput dataoutput)
+      {
+          gg gg1;
+          for(java.util.Iterator iterator = a.values().iterator(); iterator.hasNext(); gg.a(gg1, dataoutput))
+--- 21,27 ----
+          a = ((java.util.Map) (new HashMap()));
+      }
+  
++     void a(java.io.DataOutput dataoutput) throws IOException
+      {
+          gg gg1;
+          for(java.util.Iterator iterator = a.values().iterator(); iterator.hasNext(); gg.a(gg1, dataoutput))
+***************
+*** 30,36 ****
+          dataoutput.writeByte(0);
+      }
+  
+-     void a(java.io.DataInput datainput)
+      {
+          a.clear();
+          gg gg1;
+--- 30,36 ----
+          dataoutput.writeByte(0);
+      }
+  
++     void a(java.io.DataInput datainput) throws IOException
+      {
+          a.clear();
+          gg gg1;

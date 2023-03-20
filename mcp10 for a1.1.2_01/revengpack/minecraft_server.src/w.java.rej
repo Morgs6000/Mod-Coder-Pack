@@ -1,0 +1,19 @@
+***************
+*** 13,20 ****
+  
+      w(fo fo1)
+      {
+-         a = fo1;
+          super();
+      }
+  
+      public void focusGained(java.awt.event.FocusEvent focusevent)
+--- 13,20 ----
+  
+      w(fo fo1)
+      {
+          super();
++         a = fo1;
+      }
+  
+      public void focusGained(java.awt.event.FocusEvent focusevent)

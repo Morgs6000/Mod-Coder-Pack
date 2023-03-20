@@ -1,0 +1,19 @@
+***************
+*** 14,21 ****
+  
+      t(net.minecraft.server.MinecraftServer minecraftserver)
+      {
+-         a = minecraftserver;
+          super();
+      }
+  
+      public void windowClosing(java.awt.event.WindowEvent windowevent)
+--- 14,21 ----
+  
+      t(net.minecraft.server.MinecraftServer minecraftserver)
+      {
+          super();
++         a = minecraftserver;
+      }
+  
+      public void windowClosing(java.awt.event.WindowEvent windowevent)

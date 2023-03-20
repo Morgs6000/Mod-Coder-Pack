@@ -1,0 +1,87 @@
+***************
+*** 36,42 ****
+              java.lang.Class class1 = (java.lang.Class)a.get(((java.lang.Object) (s1)));
+              if(class1 != null)
+                  dj1 = (dj)class1.getConstructor(new java.lang.Class[] {
+-                     dy
+                  }).newInstance(new java.lang.Object[] {
+                      dy1
+                  });
+--- 36,42 ----
+              java.lang.Class class1 = (java.lang.Class)a.get(((java.lang.Object) (s1)));
+              if(class1 != null)
+                  dj1 = (dj)class1.getConstructor(new java.lang.Class[] {
++                     dy.class
+                  }).newInstance(new java.lang.Object[] {
+                      dy1
+                  });
+***************
+*** 56,62 ****
+              java.lang.Class class1 = (java.lang.Class)a.get(((java.lang.Object) (s1.h("id"))));
+              if(class1 != null)
+                  dj1 = (dj)class1.getConstructor(new java.lang.Class[] {
+-                     dy
+                  }).newInstance(new java.lang.Object[] {
+                      dy1
+                  });
+--- 56,62 ----
+              java.lang.Class class1 = (java.lang.Class)a.get(((java.lang.Object) (s1.h("id"))));
+              if(class1 != null)
+                  dj1 = (dj)class1.getConstructor(new java.lang.Class[] {
++                     dy.class
+                  }).newInstance(new java.lang.Object[] {
+                      dy1
+                  });
+***************
+*** 84,108 ****
+  
+      static 
+      {
+-         gr.a(di, "Arrow", 10);
+-         gr.a(az, "Snowball", 11);
+-         gr.a(fn, "Item", 1);
+-         gr.a(bu, "Painting", 9);
+-         gr.a(is, "Mob", 48);
+-         gr.a(fg, "Monster", 49);
+-         gr.a(eu, "Creeper", 50);
+-         gr.a(ek, "Skeleton", 51);
+-         gr.a(bk, "Spider", 52);
+-         gr.a(q, "Giant", 53);
+-         gr.a(fm, "Zombie", 54);
+-         gr.a(fh, "Slime", 55);
+-         gr.a(gu, "Pig", 90);
+-         gr.a(cj, "Sheep", 91);
+-         gr.a(ay, "Cow", 91);
+-         gr.a(hi, "Chicken", 91);
+-         gr.a(bx, "PrimedTnt", 20);
+-         gr.a(hc, "FallingSand", 21);
+-         gr.a(ih, "Minecart", 40);
+-         gr.a(es, "Boat", 41);
+      }
+  }
+--- 84,108 ----
+  
+      static 
+      {
++         gr.a(di.class, "Arrow", 10);
++         gr.a(az.class, "Snowball", 11);
++         gr.a(fn.class, "Item", 1);
++         gr.a(bu.class, "Painting", 9);
++         gr.a(is.class, "Mob", 48);
++         gr.a(fg.class, "Monster", 49);
++         gr.a(eu.class, "Creeper", 50);
++         gr.a(ek.class, "Skeleton", 51);
++         gr.a(bk.class, "Spider", 52);
++         gr.a(q.class, "Giant", 53);
++         gr.a(fm.class, "Zombie", 54);
++         gr.a(fh.class, "Slime", 55);
++         gr.a(gu.class, "Pig", 90);
++         gr.a(cj.class, "Sheep", 91);
++         gr.a(ay.class, "Cow", 91);
++         gr.a(hi.class, "Chicken", 91);
++         gr.a(bx.class, "PrimedTnt", 20);
++         gr.a(hc.class, "FallingSand", 21);
++         gr.a(ih.class, "Minecart", 40);
++         gr.a(es.class, "Boat", 41);
+      }
+  }

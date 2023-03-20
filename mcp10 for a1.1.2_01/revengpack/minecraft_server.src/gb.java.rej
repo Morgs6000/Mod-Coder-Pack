@@ -1,0 +1,19 @@
+***************
+*** 16,23 ****
+  
+      gb(co co1)
+      {
+-         a = co1;
+          super();
+      }
+  
+      public java.lang.String format(java.util.logging.LogRecord logrecord)
+--- 16,23 ----
+  
+      gb(co co1)
+      {
+          super();
++         a = co1;
+      }
+  
+      public java.lang.String format(java.util.logging.LogRecord logrecord)

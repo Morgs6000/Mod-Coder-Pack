@@ -1,0 +1,1073 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_17 (Sun Microsystems Inc.)
+
+Name: 2char.png
+
+Name: a.class
+
+Name: aa.class
+
+Name: ab.class
+
+Name: ac.class
+
+Name: ad.class
+
+Name: ae.class
+
+Name: af.class
+
+Name: ag.class
+
+Name: ah.class
+
+Name: ai.class
+
+Name: aj.class
+
+Name: ak.class
+
+Name: al.class
+
+Name: am.class
+
+Name: an.class
+
+Name: ao.class
+
+Name: ap.class
+
+Name: aq.class
+
+Name: ar.class
+
+Name: as.class
+
+Name: at.class
+
+Name: au.class
+
+Name: av.class
+
+Name: aw.class
+
+Name: ax.class
+
+Name: ay.class
+
+Name: az.class
+
+Name: b.class
+
+Name: ba.class
+
+Name: bb.class
+
+Name: bc.class
+
+Name: bd.class
+
+Name: be.class
+
+Name: bf.class
+
+Name: bg.class
+
+Name: bh.class
+
+Name: bi.class
+
+Name: bj.class
+
+Name: bk.class
+
+Name: bl.class
+
+Name: bm.class
+
+Name: bn.class
+
+Name: bo.class
+
+Name: bp.class
+
+Name: bq.class
+
+Name: br.class
+
+Name: bs.class
+
+Name: bt.class
+
+Name: bu.class
+
+Name: bv.class
+
+Name: bw.class
+
+Name: bx.class
+
+Name: by.class
+
+Name: bz.class
+
+Name: c.class
+
+Name: ca.class
+
+Name: cb.class
+
+Name: cc.class
+
+Name: cd.class
+
+Name: ce.class
+
+Name: cf.class
+
+Name: cg.class
+
+Name: ch.class
+
+Name: char.png
+
+Name: ci.class
+
+Name: cj.class
+
+Name: ck.class
+
+Name: cl.class
+
+Name: clouds.png
+
+Name: cm.class
+
+Name: cn.class
+
+Name: co.class
+
+Name: cp.class
+
+Name: cq.class
+
+Name: cr.class
+
+Name: cs.class
+
+Name: ct.class
+
+Name: cu.class
+
+Name: cv.class
+
+Name: cw.class
+
+Name: cx.class
+
+Name: cy.class
+
+Name: cz.class
+
+Name: d.class
+
+Name: da.class
+
+Name: db.class
+
+Name: dc.class
+
+Name: dd.class
+
+Name: de.class
+
+Name: default.gif
+
+Name: default.png
+
+Name: df.class
+
+Name: dg.class
+
+Name: dh.class
+
+Name: di.class
+
+Name: dirt.png
+
+Name: dj.class
+
+Name: dk.class
+
+Name: dl.class
+
+Name: dm.class
+
+Name: dn.class
+
+Name: dofix.class
+
+Name: dp.class
+
+Name: dq.class
+
+Name: dr.class
+
+Name: ds.class
+
+Name: dt.class
+
+Name: du.class
+
+Name: dv.class
+
+Name: dw.class
+
+Name: dx.class
+
+Name: dy.class
+
+Name: dz.class
+
+Name: e.class
+
+Name: ea.class
+
+Name: eb.class
+
+Name: ec.class
+
+Name: ed.class
+
+Name: ee.class
+
+Name: ef.class
+
+Name: eg.class
+
+Name: eh.class
+
+Name: ei.class
+
+Name: ej.class
+
+Name: ek.class
+
+Name: el.class
+
+Name: em.class
+
+Name: en.class
+
+Name: eo.class
+
+Name: ep.class
+
+Name: eq.class
+
+Name: er.class
+
+Name: es.class
+
+Name: et.class
+
+Name: eu.class
+
+Name: ev.class
+
+Name: ew.class
+
+Name: ex.class
+
+Name: ey.class
+
+Name: ez.class
+
+Name: f.class
+
+Name: fa.class
+
+Name: fb.class
+
+Name: fc.class
+
+Name: fd.class
+
+Name: fe.class
+
+Name: ff.class
+
+Name: fg.class
+
+Name: fh.class
+
+Name: fi.class
+
+Name: fj.class
+
+Name: fk.class
+
+Name: fl.class
+
+Name: fluff.png
+
+Name: fm.class
+
+Name: fn.class
+
+Name: fo.class
+
+Name: fp.class
+
+Name: fq.class
+
+Name: fr.class
+
+Name: fs.class
+
+Name: ft.class
+
+Name: fu.class
+
+Name: fv.class
+
+Name: fw.class
+
+Name: fx.class
+
+Name: fy.class
+
+Name: fz.class
+
+Name: g.class
+
+Name: ga.class
+
+Name: gb.class
+
+Name: gc.class
+
+Name: gd.class
+
+Name: ge.class
+
+Name: gf.class
+
+Name: gg.class
+
+Name: gh.class
+
+Name: gi.class
+
+Name: gj.class
+
+Name: gk.class
+
+Name: gl.class
+
+Name: gm.class
+
+Name: gn.class
+
+Name: go.class
+
+Name: gp.class
+
+Name: gq.class
+
+Name: gr.class
+
+Name: grass.png
+
+Name: gs.class
+
+Name: gt.class
+
+Name: gu.class
+
+Name: gv.class
+
+Name: gw.class
+
+Name: gx.class
+
+Name: gy.class
+
+Name: gz.class
+
+Name: h.class
+
+Name: ha.class
+
+Name: hb.class
+
+Name: hc.class
+
+Name: hd.class
+
+Name: he.class
+
+Name: hf.class
+
+Name: hg.class
+
+Name: hh.class
+
+Name: hi.class
+
+Name: hj.class
+
+Name: hk.class
+
+Name: hl.class
+
+Name: hm.class
+
+Name: hn.class
+
+Name: ho.class
+
+Name: hp.class
+
+Name: hq.class
+
+Name: hr.class
+
+Name: hs.class
+
+Name: ht.class
+
+Name: hu.class
+
+Name: hv.class
+
+Name: hw.class
+
+Name: hx.class
+
+Name: hy.class
+
+Name: hz.class
+
+Name: i.class
+
+Name: ia.class
+
+Name: ib.class
+
+Name: ic.class
+
+Name: id.class
+
+Name: ie.class
+
+Name: iffix.class
+
+Name: ig.class
+
+Name: ih.class
+
+Name: ii.class
+
+Name: ij.class
+
+Name: ik.class
+
+Name: il.class
+
+Name: im.class
+
+Name: in.class
+
+Name: io.class
+
+Name: ip.class
+
+Name: iq.class
+
+Name: ir.class
+
+Name: is.class
+
+Name: it.class
+
+Name: iu.class
+
+Name: iv.class
+
+Name: iw.class
+
+Name: ix.class
+
+Name: iy.class
+
+Name: iz.class
+
+Name: j.class
+
+Name: ja.class
+
+Name: jb.class
+
+Name: jc.class
+
+Name: jd.class
+
+Name: je.class
+
+Name: jf.class
+
+Name: jg.class
+
+Name: jh.class
+
+Name: ji.class
+
+Name: jj.class
+
+Name: jk.class
+
+Name: jl.class
+
+Name: jm.class
+
+Name: jn.class
+
+Name: jo.class
+
+Name: jp.class
+
+Name: jq.class
+
+Name: jr.class
+
+Name: js.class
+
+Name: jt.class
+
+Name: ju.class
+
+Name: jv.class
+
+Name: jw.class
+
+Name: jx.class
+
+Name: jy.class
+
+Name: jz.class
+
+Name: k.class
+
+Name: ka.class
+
+Name: kb.class
+
+Name: kc.class
+
+Name: kd.class
+
+Name: ke.class
+
+Name: kf.class
+
+Name: kg.class
+
+Name: kh.class
+
+Name: ki.class
+
+Name: kj.class
+
+Name: kk.class
+
+Name: kl.class
+
+Name: km.class
+
+Name: kn.class
+
+Name: ko.class
+
+Name: kp.class
+
+Name: kq.class
+
+Name: kr.class
+
+Name: ks.class
+
+Name: kt.class
+
+Name: ku.class
+
+Name: kv.class
+
+Name: kw.class
+
+Name: kx.class
+
+Name: ky.class
+
+Name: kz.class
+
+Name: l.class
+
+Name: la.class
+
+Name: lb.class
+
+Name: lc.class
+
+Name: ld.class
+
+Name: le.class
+
+Name: lf.class
+
+Name: lg.class
+
+Name: lh.class
+
+Name: li.class
+
+Name: lj.class
+
+Name: lk.class
+
+Name: ll.class
+
+Name: lm.class
+
+Name: ln.class
+
+Name: lo.class
+
+Name: lp.class
+
+Name: lq.class
+
+Name: lr.class
+
+Name: ls.class
+
+Name: lt.class
+
+Name: lu.class
+
+Name: lv.class
+
+Name: lw.class
+
+Name: lx.class
+
+Name: ly.class
+
+Name: lz.class
+
+Name: m.class
+
+Name: ma.class
+
+Name: mb.class
+
+Name: mc.class
+
+Name: md.class
+
+Name: me.class
+
+Name: mf.class
+
+Name: mg.class
+
+Name: mh.class
+
+Name: mi.class
+
+Name: mj.class
+
+Name: mk.class
+
+Name: ml.class
+
+Name: mm.class
+
+Name: mn.class
+
+Name: mo.class
+
+Name: mp.class
+
+Name: mq.class
+
+Name: mr.class
+
+Name: ms.class
+
+Name: mt.class
+
+Name: mu.class
+
+Name: mv.class
+
+Name: mw.class
+
+Name: mx.class
+
+Name: my.class
+
+Name: mz.class
+
+Name: n.class
+
+Name: na.class
+
+Name: nb.class
+
+Name: nc.class
+
+Name: nd.class
+
+Name: ne.class
+
+Name: nf.class
+
+Name: ng.class
+
+Name: nh.class
+
+Name: ni.class
+
+Name: nj.class
+
+Name: nk.class
+
+Name: nl.class
+
+Name: nm.class
+
+Name: nn.class
+
+Name: no.class
+
+Name: np.class
+
+Name: nq.class
+
+Name: nr.class
+
+Name: ns.class
+
+Name: nt.class
+
+Name: nu.class
+
+Name: null
+
+Name: nv.class
+
+Name: nw.class
+
+Name: nx.class
+
+Name: ny.class
+
+Name: nz.class
+
+Name: o.class
+
+Name: oa.class
+
+Name: ob.class
+
+Name: oc.class
+
+Name: od.class
+
+Name: oe.class
+
+Name: of.class
+
+Name: og.class
+
+Name: oh.class
+
+Name: oi.class
+
+Name: oj.class
+
+Name: ok.class
+
+Name: ol.class
+
+Name: p.class
+
+Name: particles.png
+
+Name: q.class
+
+Name: r.class
+
+Name: rain.png
+
+Name: rock.png
+
+Name: s.class
+
+Name: shadow.png
+
+Name: snow.png
+
+Name: t.class
+
+Name: terrain.png
+
+Name: u.class
+
+Name: v.class
+
+Name: w.class
+
+Name: water.png
+
+Name: waterterrain.png
+
+Name: x.class
+
+Name: y.class
+
+Name: z.class
+
+Name: armor/chain_1.png
+
+Name: armor/chain_2.png
+
+Name: armor/cloth_1.png
+
+Name: armor/cloth_2.png
+
+Name: armor/diamond_1.png
+
+Name: armor/diamond_2.png
+
+Name: armor/gold_1.png
+
+Name: armor/gold_2.png
+
+Name: armor/iron_1.png
+
+Name: armor/iron_2.png
+
+Name: art/kz.png
+
+Name: gui/container.png
+
+Name: gui/crafting.png
+
+Name: gui/furnace.png
+
+Name: gui/gui.png
+
+Name: gui/icons.png
+
+Name: gui/inventory.png
+
+Name: gui/items.png
+
+Name: gui/logo.png
+
+Name: item/arrows.png
+
+Name: item/boat.png
+
+Name: item/cart.png
+
+Name: item/door.png
+
+Name: item/sign.png
+
+Name: misc/gear.png
+
+Name: misc/gearmiddle.png
+
+Name: misc/vignette.png
+
+Name: mob/chicken.png
+
+Name: mob/cow.png
+
+Name: mob/creeper.png
+
+Name: mob/pig.png
+
+Name: mob/saddle.png
+
+Name: mob/sheep.png
+
+Name: mob/sheep_fur.png
+
+Name: mob/skeleton.png
+
+Name: mob/slime.png
+
+Name: mob/spider.png
+
+Name: mob/spider_eyes.png
+
+Name: mob/zombie.png
+
+Name: terrain/moon.png
+
+Name: terrain/sun.png
+
+Name: title/black.png
+
+Name: title/mojang.png
+
+Name: title/splashes.txt
+
+Name: paulscode/sound/Channel.class
+
+Name: paulscode/sound/CommandObject.class
+
+Name: paulscode/sound/CommandThread.class
+
+Name: paulscode/sound/FilenameURL.class
+
+Name: paulscode/sound/ICodec.class
+
+Name: paulscode/sound/Library.class
+
+Name: paulscode/sound/ListenerData.class
+
+Name: paulscode/sound/MidiChannel$1.class
+
+Name: paulscode/sound/MidiChannel$FadeThread.class
+
+Name: paulscode/sound/MidiChannel.class
+
+Name: paulscode/sound/SimpleThread$1.class
+
+Name: paulscode/sound/SimpleThread.class
+
+Name: paulscode/sound/SoundBuffer.class
+
+Name: paulscode/sound/SoundSystem.class
+
+Name: paulscode/sound/SoundSystemConfig$Codec.class
+
+Name: paulscode/sound/SoundSystemConfig.class
+
+Name: paulscode/sound/SoundSystemException.class
+
+Name: paulscode/sound/SoundSystemLogger.class
+
+Name: paulscode/sound/Source.class
+
+Name: paulscode/sound/StreamThread.class
+
+Name: paulscode/sound/Vector3D.class
+
+Name: com/jcraft/jogg/Buffer.class
+
+Name: com/jcraft/jogg/Packet.class
+
+Name: com/jcraft/jogg/Page.class
+
+Name: com/jcraft/jogg/StreamState.class
+
+Name: com/jcraft/jogg/SyncState.class
+
+Name: com/jcraft/jorbis/Block.class
+
+Name: com/jcraft/jorbis/CodeBook$DecodeAux.class
+
+Name: com/jcraft/jorbis/CodeBook.class
+
+Name: com/jcraft/jorbis/Comment.class
+
+Name: com/jcraft/jorbis/Drft.class
+
+Name: com/jcraft/jorbis/DspState.class
+
+Name: com/jcraft/jorbis/Floor0$EchstateFloor0.class
+
+Name: com/jcraft/jorbis/Floor0$InfoFloor0.class
+
+Name: com/jcraft/jorbis/Floor0$LookFloor0.class
+
+Name: com/jcraft/jorbis/Floor0.class
+
+Name: com/jcraft/jorbis/Floor1$EchstateFloor1.class
+
+Name: com/jcraft/jorbis/Floor1$InfoFloor1.class
+
+Name: com/jcraft/jorbis/Floor1$LookFloor1.class
+
+Name: com/jcraft/jorbis/Floor1$Lsfit_acc.class
+
+Name: com/jcraft/jorbis/Floor1.class
+
+Name: com/jcraft/jorbis/FuncFloor.class
+
+Name: com/jcraft/jorbis/FuncMapping.class
+
+Name: com/jcraft/jorbis/FuncResidue.class
+
+Name: com/jcraft/jorbis/FuncTime.class
+
+Name: com/jcraft/jorbis/Info.class
+
+Name: com/jcraft/jorbis/InfoMode.class
+
+Name: com/jcraft/jorbis/Lookup.class
+
+Name: com/jcraft/jorbis/Lpc.class
+
+Name: com/jcraft/jorbis/Lsp.class
+
+Name: com/jcraft/jorbis/Mapping0$InfoMapping0.class
+
+Name: com/jcraft/jorbis/Mapping0$LookMapping0.class
+
+Name: com/jcraft/jorbis/Mapping0.class
+
+Name: com/jcraft/jorbis/Mdct.class
+
+Name: com/jcraft/jorbis/PsyInfo.class
+
+Name: com/jcraft/jorbis/PsyLook.class
+
+Name: com/jcraft/jorbis/Residue0$InfoResidue0.class
+
+Name: com/jcraft/jorbis/Residue0$LookResidue0.class
+
+Name: com/jcraft/jorbis/Residue0.class
+
+Name: com/jcraft/jorbis/Residue1.class
+
+Name: com/jcraft/jorbis/Residue2.class
+
+Name: com/jcraft/jorbis/StaticCodeBook.class
+
+Name: com/jcraft/jorbis/Time0.class
+
+Name: com/jcraft/jorbis/Util.class
+
+Name: net/minecraft/client/Minecraft.class
+
+Name: net/minecraft/client/MinecraftApplet.class
+
+Name: net/minecraft/isom/IsomPreviewApplet.class
+
+Name: paulscode/sound/codecs/CodecJOrbis.class
+
+Name: paulscode/sound/codecs/CodecWav.class
+
+Name: paulscode/sound/libraries/ChannelLWJGLOpenAL.class
+
+Name: paulscode/sound/libraries/LibraryLWJGLOpenAL.class
+
+Name: paulscode/sound/libraries/SourceLWJGLOpenAL.class
+

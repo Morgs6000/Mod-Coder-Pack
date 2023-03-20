@@ -1,0 +1,54 @@
+***************
+*** 53,60 ****
+      {
+          java.io.File file;
+          file = a(i, j);
+-         if(file == null || !file.exists())
+-             break MISSING_BLOCK_LABEL_291;
+          s s1;
+          java.io.FileInputStream fileinputstream = new FileInputStream(file);
+          s1 = aj.a(((java.io.InputStream) (fileinputstream)));
+--- 53,62 ----
+      {
+          java.io.File file;
+          file = a(i, j);
++         if(file != null && file.exists())
++         {
++         try
++         {
+          s s1;
+          java.io.FileInputStream fileinputstream = new FileInputStream(file);
+          s1 = aj.a(((java.io.InputStream) (fileinputstream)));
+***************
+*** 68,75 ****
+              java.lang.System.out.println((new StringBuilder()).append("Chunk file at ").append(i).append(",").append(j).append(" is missing block data, skipping").toString());
+              return null;
+          }
+-         try
+-         {
+              im im1 = eo.a(dy1, s1.j("Level"));
+              if(!im1.a(i, j))
+              {
+--- 70,75 ----
+              java.lang.System.out.println((new StringBuilder()).append("Chunk file at ").append(i).append(",").append(j).append(" is missing block data, skipping").toString());
+              return null;
+          }
+              im im1 = eo.a(dy1, s1.j("Level"));
+              if(!im1.a(i, j))
+              {
+***************
+*** 83,88 ****
+          catch(java.lang.Exception exception)
+          {
+              exception.printStackTrace();
+          }
+          return null;
+      }
+--- 83,89 ----
+          catch(java.lang.Exception exception)
+          {
+              exception.printStackTrace();
++         }
+          }
+          return null;
+      }

@@ -1,0 +1,21 @@
+***************
+*** 17,25 ****
+  
+      v(fo fo1, javax.swing.JTextField jtextfield)
+      {
+          b = fo1;
+          a = jtextfield;
+-         super();
+      }
+  
+      public void actionPerformed(java.awt.event.ActionEvent actionevent)
+--- 17,25 ----
+  
+      v(fo fo1, javax.swing.JTextField jtextfield)
+      {
++         super();
+          b = fo1;
+          a = jtextfield;
+      }
+  
+      public void actionPerformed(java.awt.event.ActionEvent actionevent)

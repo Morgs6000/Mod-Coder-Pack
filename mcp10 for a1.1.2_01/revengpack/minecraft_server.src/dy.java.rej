@@ -1,0 +1,93 @@
+***************
+*** 136,153 ****
+          s = new File(file, s1);
+          s.mkdirs();
+          java.io.DataOutputStream dataoutputstream;
+          java.io.File file1 = new File(s, "session.lock");
+          dataoutputstream = new DataOutputStream(((java.io.OutputStream) (new FileOutputStream(file1))));
+          dataoutputstream.writeLong(F);
+          dataoutputstream.close();
+-         break MISSING_BLOCK_LABEL_350;
+-         java.lang.Exception exception1;
+-         exception1;
+-         dataoutputstream.close();
+-         throw exception1;
+-         java.io.IOException ioexception;
+-         ioexception;
+          throw new RuntimeException("Failed to check session lock, aborting");
+          java.io.File file2 = new File(s, "level.dat");
+          q = !file2.exists();
+          if(file2.exists())
+--- 136,159 ----
+          s = new File(file, s1);
+          s.mkdirs();
+          java.io.DataOutputStream dataoutputstream;
++       
++         try
++         {
+          java.io.File file1 = new File(s, "session.lock");
+          dataoutputstream = new DataOutputStream(((java.io.OutputStream) (new FileOutputStream(file1))));
++ 	        try
++             {
+          dataoutputstream.writeLong(F);
++ 	        }
++             finally
++             {
+          dataoutputstream.close();
++ 	        }
++         }
++         catch (java.io.IOException ioexception)
++         {
+          throw new RuntimeException("Failed to check session lock, aborting");
++         }
+          java.io.File file2 = new File(s, "level.dat");
+          q = !file2.exists();
+          if(file2.exists())
+***************
+*** 1660,1679 ****
+  
+      public void g()
+      {
+          java.io.DataInputStream datainputstream;
+          java.io.File file = new File(s, "session.lock");
+          datainputstream = new DataInputStream(((java.io.InputStream) (new FileInputStream(file))));
+          if(datainputstream.readLong() != F)
+              throw new fd("The save is being accessed from another location, aborting");
+          datainputstream.close();
+-         break MISSING_BLOCK_LABEL_80;
+-         java.lang.Exception exception;
+-         exception;
+-         datainputstream.close();
+-         throw exception;
+-         java.io.IOException ioexception;
+-         ioexception;
+          throw new fd("Failed to check session lock, aborting");
+      }
+  
+      static 
+--- 1666,1690 ----
+  
+      public void g()
+      {
++         try
++         {
+          java.io.DataInputStream datainputstream;
+          java.io.File file = new File(s, "session.lock");
+          datainputstream = new DataInputStream(((java.io.InputStream) (new FileInputStream(file))));
++             try
++             {
+          if(datainputstream.readLong() != F)
+              throw new fd("The save is being accessed from another location, aborting");
++             }
++             finally
++             {
+          datainputstream.close();
++             }
++         }
++         catch (java.io.IOException ioexception)
++         {
+          throw new fd("Failed to check session lock, aborting");
++         }
+      }
+  
+      static 

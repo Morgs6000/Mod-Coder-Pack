@@ -1,0 +1,17 @@
+***************
+*** 59,65 ****
+          return g <= bv1.g ? 0 : 1;
+      }
+  
+-     public volatile int compareTo(java.lang.Object obj)
+      {
+          return a((bv)obj);
+      }
+--- 59,65 ----
+          return g <= bv1.g ? 0 : 1;
+      }
+  
++     public int compareTo(java.lang.Object obj)
+      {
+          return a((bv)obj);
+      }
