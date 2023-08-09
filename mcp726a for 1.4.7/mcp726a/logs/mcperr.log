@@ -20,3 +20,24 @@
 15:44:41 - !! Can not find client bins !!
 15:45:24 - !! jars\bin\natives not found !!
 15:45:24 - !! LWJGL check FAILED. Make sure to copy the entire .minecraft/bin folder into jars !!
+11:26:38 - Java JDK is not installed ! Please install java JDK from http://java.oracle.com
+11:30:12 - !! jars\bin\natives not found !!
+11:30:12 - !! LWJGL check FAILED. Make sure to copy the entire .minecraft/bin folder into jars !!
+11:46:10 - '"javac" -Xlint:-options -deprecation -g -source 1.6 -target 1.6 -classpath "lib;lib\*;jars\bin\minec...' failed : 2
+11:46:10 - 
+11:46:10 - == ERRORS FOUND ==
+11:46:10 - 
+11:46:10 - error: Source option 6 is no longer supported. Use 8 or later.
+11:46:10 - error: Target option 6 is no longer supported. Use 8 or later.
+11:46:10 - ==================
+11:46:10 - 
+11:46:10 - Initial client recompile failed, correct source then run updatemd5
+11:46:11 - '"javac" -Xlint:-options -deprecation -g -source 1.6 -target 1.6 -classpath "lib;lib\*;jars\minecraft...' failed : 2
+11:46:11 - 
+11:46:11 - == ERRORS FOUND ==
+11:46:11 - 
+11:46:11 - error: Source option 6 is no longer supported. Use 8 or later.
+11:46:11 - error: Target option 6 is no longer supported. Use 8 or later.
+11:46:11 - ==================
+11:46:11 - 
+11:46:11 - Initial server recompile failed, correct source then run updatemd5
