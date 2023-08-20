@@ -12,42 +12,60 @@ public abstract class GuiSlot
     /**
      * The width of the GuiScreen. Affects the container rendering, but not the overlays.
      */
+    /**
+     * A largura do GuiScreen. Afeta a renderização do contêiner, mas não as sobreposições.
+     */
     private int width;
 
     /**
      * The height of the GuiScreen. Affects the container rendering, but not the overlays or the scrolling.
      */
+    /**
+     * A altura do GuiScreen. Afeta a renderização do contêiner, mas não as sobreposições ou a rolagem.
+     */
     private int height;
 
     /** The top of the slot container. Affects the overlays and scrolling. */
+    /** A parte superior do contêiner do slot. Afeta as sobreposições e a rolagem. */
     protected int top;
 
     /** The bottom of the slot container. Affects the overlays and scrolling. */
+    /** A parte inferior do contêiner do slot. Afeta as sobreposições e a rolagem. */
     protected int bottom;
     private int right;
     private int left;
 
     /** The height of a slot. */
+    /** A altura de um slot. */
     protected final int slotHeight;
 
     /** button id of the button used to scroll up */
+    /** id do botão usado para rolar para cima */
     private int scrollUpButtonID;
 
     /** the buttonID of the button used to scroll down */
+    /** o buttonID do botão usado para rolar para baixo */
     private int scrollDownButtonID;
 
     /** X axis position of the mouse */
+    /** Posição do eixo X do mouse */
     protected int mouseX;
 
     /** Y axis position of the mouse */
+    /** Posição do eixo X do mouse */
     protected int mouseY;
 
     /** where the mouse was in the window when you first clicked to scroll */
+    /** onde o mouse estava na janela quando você clicou pela primeira vez para rolar */
     private float initialClickY = -2.0F;
 
     /**
      * what to multiply the amount you moved your mouse by(used for slowing down scrolling when over the items and no on
      * scroll bar)
+     */
+    /**
+     * o que multiplicar a quantidade que você moveu seu mouse (usado para desacelerar a rolagem quando sobre os itens e não
+      * Barra de rolagem)
      */
     private float scrollMultiplier;
 
@@ -65,8 +83,7 @@ public abstract class GuiSlot
     private boolean field_77243_s;
     private int field_77242_t;
 
-    public GuiSlot(Minecraft par1Minecraft, int par2, int par3, int par4, int par5, int par6)
-    {
+    public GuiSlot(Minecraft par1Minecraft, int par2, int par3, int par4, int par5, int par6) {
         this.mc = par1Minecraft;
         this.width = par2;
         this.height = par3;
@@ -77,8 +94,7 @@ public abstract class GuiSlot
         this.right = par2;
     }
 
-    public void func_77207_a(int par1, int par2, int par3, int par4)
-    {
+    public void func_77207_a(int par1, int par2, int par3, int par4) {
         this.width = par1;
         this.height = par2;
         this.top = par3;
@@ -87,18 +103,15 @@ public abstract class GuiSlot
         this.right = par1;
     }
 
-    public void setShowSelectionBox(boolean par1)
-    {
+    public void setShowSelectionBox(boolean par1) {
         this.showSelectionBox = par1;
     }
 
-    protected void func_77223_a(boolean par1, int par2)
-    {
+    protected void func_77223_a(boolean par1, int par2) {
         this.field_77243_s = par1;
         this.field_77242_t = par2;
 
-        if (!par1)
-        {
+        if (!par1) {
             this.field_77242_t = 0;
         }
     }
@@ -121,8 +134,7 @@ public abstract class GuiSlot
     /**
      * return the height of the content being scrolled
      */
-    protected int getContentHeight()
-    {
+    protected int getContentHeight() {
         return this.getSize() * this.slotHeight + this.field_77242_t;
     }
 
@@ -136,8 +148,7 @@ public abstract class GuiSlot
 
     protected void func_77215_b(int par1, int par2) {}
 
-    public int func_77210_c(int par1, int par2)
-    {
+    public int func_77210_c(int par1, int par2) {
         int var3 = this.width / 2 - 110;
         int var4 = this.width / 2 + 110;
         int var5 = par2 - this.top - this.field_77242_t + (int)this.amountScrolled - 4;
@@ -148,8 +159,7 @@ public abstract class GuiSlot
     /**
      * Registers the IDs that can be used for the scrollbar's buttons.
      */
-    public void registerScrollButtons(List par1List, int par2, int par3)
-    {
+    public void registerScrollButtons(List par1List, int par2, int par3) {
         this.scrollUpButtonID = par2;
         this.scrollDownButtonID = par3;
     }
@@ -157,44 +167,35 @@ public abstract class GuiSlot
     /**
      * stop the thing from scrolling out of bounds
      */
-    private void bindAmountScrolled()
-    {
+    private void bindAmountScrolled() {
         int var1 = this.func_77209_d();
 
-        if (var1 < 0)
-        {
+        if (var1 < 0) {
             var1 /= 2;
         }
 
-        if (this.amountScrolled < 0.0F)
-        {
+        if (this.amountScrolled < 0.0F) {
             this.amountScrolled = 0.0F;
         }
 
-        if (this.amountScrolled > (float)var1)
-        {
+        if (this.amountScrolled > (float)var1) {
             this.amountScrolled = (float)var1;
         }
     }
 
-    public int func_77209_d()
-    {
+    public int func_77209_d() {
         return this.getContentHeight() - (this.bottom - this.top - 4);
     }
 
-    public void func_77208_b(int par1)
-    {
+    public void func_77208_b(int par1) {
         this.amountScrolled += (float)par1;
         this.bindAmountScrolled();
         this.initialClickY = -2.0F;
     }
 
-    public void actionPerformed(GuiButton par1GuiButton)
-    {
-        if (par1GuiButton.enabled)
-        {
-            if (par1GuiButton.id == this.scrollUpButtonID)
-            {
+    public void actionPerformed(GuiButton par1GuiButton) {
+        if (par1GuiButton.enabled) {
+            if (par1GuiButton.id == this.scrollUpButtonID) {
                 this.amountScrolled -= (float)(this.slotHeight * 2 / 3);
                 this.initialClickY = -2.0F;
                 this.bindAmountScrolled();
@@ -211,8 +212,7 @@ public abstract class GuiSlot
     /**
      * draws the slot to the screen, pass in mouse's current x and y and partial ticks
      */
-    public void drawScreen(int par1, int par2, float par3)
-    {
+    public void drawScreen(int par1, int par2, float par3) {
         this.mouseX = par1;
         this.mouseY = par2;
         this.drawBackground();
