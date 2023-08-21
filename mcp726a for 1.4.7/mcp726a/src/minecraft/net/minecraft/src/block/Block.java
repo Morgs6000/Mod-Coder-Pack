@@ -1,7 +1,31 @@
-package net.minecraft.src;
+package block;
 
 import java.util.List;
 import java.util.Random;
+
+import block.material.Material;
+import creativetab.CreativeTabs;
+import enchantment.EnchantmentHelper;
+import entity.EntityLiving;
+import entity.item.EntityItem;
+import entity.item.EntityXPOrb;
+import entity.player.EntityPlayer;
+import item.Item;
+import item.ItemAnvilBlock;
+import item.ItemBlock;
+import item.ItemCloth;
+import item.ItemColored;
+import item.ItemLeaves;
+import item.ItemLilyPad;
+import item.ItemMultiTextureTile;
+import item.ItemPiston;
+import item.ItemSlab;
+import item.ItemStack;
+import stats.StatList;
+import tileentity.TileEntitySign;
+import world.Explosion;
+import world.IBlockAccess;
+import world.World;
 
 public class Block
 {
@@ -895,6 +919,9 @@ public class Block
 
     /**
      * Called when a block is placed using its ItemBlock. Args: World, X, Y, Z, side, hitX, hitY, hitZ, block metadata
+     */
+    /**
+     * Chamado quando um bloco é colocado usando seu ItemBlock. Args: World, X, Y, Z, side, hitX, hitY, hitZ, block metadata
      */
     public int onBlockPlaced(World par1World, int par2, int par3, int par4, int par5, float par6, float par7, float par8, int par9)
     {

@@ -3,6 +3,9 @@ package net.minecraft.src;
 import java.util.List;
 import java.util.Random;
 
+import world.gen.feature.WorldGenDungeons;
+import world.gen.feature.WorldGenLakes;
+
 public class ChunkProviderGenerate implements IChunkProvider
 {
     /** RNG. */
