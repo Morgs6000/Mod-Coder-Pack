@@ -6,7 +6,7 @@
 #
 # RetroGuard MCP v3.6.5
 #
-# Logfile created on Tue Aug 08 11:38:32 BRT 2023
+# Logfile created on Tue Aug 22 11:56:47 BRT 2023
 #
 # Jar file to be obfuscated:           minecraft.jar
 # Target Jar file for obfuscated code: minecraft_rg.jar
@@ -30,7 +30,7 @@
 #      Your class bey uses '.class' or calls java/lang/Class.forName(Ljava/lang/String;)Ljava/lang/Class;
 #      Your class bey calls the java/lang/Class method getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 #
-# Memory in use after class data structure built: 17590432 bytes
+# Memory in use after class data structure built: 18464696 bytes
 # Total memory available                        : 83886080 bytes
 #
 #

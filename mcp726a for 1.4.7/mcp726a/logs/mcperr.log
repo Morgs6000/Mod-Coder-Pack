@@ -1,43 +1,22 @@
-15:33:56 - !! jars\bin\jinput.jar not found !!
-15:33:56 - !! jars\bin\lwjgl.jar not found !!
-15:33:56 - !! jars\bin\lwjgl_util.jar not found !!
-15:33:56 - !! jars\bin\natives not found !!
-15:33:56 - !! LWJGL check FAILED. Make sure to copy the entire .minecraft/bin folder into jars !!
-15:34:06 - !! jars\bin\jinput.jar not found !!
-15:34:06 - !! jars\bin\lwjgl.jar not found !!
-15:34:06 - !! jars\bin\lwjgl_util.jar not found !!
-15:34:06 - !! jars\bin\natives not found !!
-15:34:06 - !! LWJGL check FAILED. Make sure to copy the entire .minecraft/bin folder into jars !!
-15:39:20 - !! jars\bin\natives not found !!
-15:39:20 - !! LWJGL check FAILED. Make sure to copy the entire .minecraft/bin folder into jars !!
-15:43:13 - !! jars\bin\jinput.jar not found !!
-15:43:13 - !! jars\bin\lwjgl.jar not found !!
-15:43:13 - !! jars\bin\lwjgl_util.jar not found !!
-15:43:13 - !! jars\bin\natives not found !!
-15:43:13 - !! LWJGL check FAILED. Make sure to copy the entire .minecraft/bin folder into jars !!
-15:44:21 - !! jars\bin\natives not found !!
-15:44:21 - !! LWJGL check FAILED. Make sure to copy the entire .minecraft/bin folder into jars !!
-15:44:41 - !! Can not find client bins !!
-15:45:24 - !! jars\bin\natives not found !!
-15:45:24 - !! LWJGL check FAILED. Make sure to copy the entire .minecraft/bin folder into jars !!
-11:26:38 - Java JDK is not installed ! Please install java JDK from http://java.oracle.com
-11:30:12 - !! jars\bin\natives not found !!
-11:30:12 - !! LWJGL check FAILED. Make sure to copy the entire .minecraft/bin folder into jars !!
-11:46:10 - '"javac" -Xlint:-options -deprecation -g -source 1.6 -target 1.6 -classpath "lib;lib\*;jars\bin\minec...' failed : 2
-11:46:10 - 
-11:46:10 - == ERRORS FOUND ==
-11:46:10 - 
-11:46:10 - error: Source option 6 is no longer supported. Use 8 or later.
-11:46:10 - error: Target option 6 is no longer supported. Use 8 or later.
-11:46:10 - ==================
-11:46:10 - 
-11:46:10 - Initial client recompile failed, correct source then run updatemd5
-11:46:11 - '"javac" -Xlint:-options -deprecation -g -source 1.6 -target 1.6 -classpath "lib;lib\*;jars\minecraft...' failed : 2
-11:46:11 - 
-11:46:11 - == ERRORS FOUND ==
-11:46:11 - 
-11:46:11 - error: Source option 6 is no longer supported. Use 8 or later.
-11:46:11 - error: Target option 6 is no longer supported. Use 8 or later.
-11:46:11 - ==================
-11:46:11 - 
-11:46:11 - Initial server recompile failed, correct source then run updatemd5
+11:55:40 - !! Missing client jar file. Aborting !!
+11:55:40 - !! Missing server jar file. Aborting !!
+11:56:11 - !! Missing client jar file. Aborting !!
+11:56:11 - !! Missing server jar file. Aborting !!
+12:11:29 - '"javac" -Xlint:-options -deprecation -g -source 1.6 -target 1.6 -classpath "lib;lib\*;jars\bin\minec...' failed : 2
+12:11:29 - 
+12:11:29 - == ERRORS FOUND ==
+12:11:29 - 
+12:11:29 - error: Source option 6 is no longer supported. Use 8 or later.
+12:11:29 - error: Target option 6 is no longer supported. Use 8 or later.
+12:11:29 - ==================
+12:11:29 - 
+12:11:29 - Initial client recompile failed, correct source then run updatemd5
+12:11:31 - '"javac" -Xlint:-options -deprecation -g -source 1.6 -target 1.6 -classpath "lib;lib\*;jars\minecraft...' failed : 2
+12:11:31 - 
+12:11:31 - == ERRORS FOUND ==
+12:11:31 - 
+12:11:31 - error: Source option 6 is no longer supported. Use 8 or later.
+12:11:31 - error: Target option 6 is no longer supported. Use 8 or later.
+12:11:31 - ==================
+12:11:31 - 
+12:11:31 - Initial server recompile failed, correct source then run updatemd5

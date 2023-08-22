@@ -6,7 +6,7 @@
 #
 # RetroGuard MCP v3.6.5
 #
-# Logfile created on Tue Aug 08 11:43:09 BRT 2023
+# Logfile created on Tue Aug 22 12:04:25 BRT 2023
 #
 # Jar file to be obfuscated:           minecraft_server.jar
 # Target Jar file for obfuscated code: minecraft_server_rg.jar
@@ -20,7 +20,7 @@
 #      Your class apm uses '.class' or calls java/lang/Class.forName(Ljava/lang/String;)Ljava/lang/Class;
 #      Your class apm calls the java/lang/ClassLoader method loadClass(Ljava/lang/String;)Ljava/lang/Class;
 #
-# Memory in use after class data structure built: 12762608 bytes
+# Memory in use after class data structure built: 12763000 bytes
 # Total memory available                        : 71303168 bytes
 #
 #
