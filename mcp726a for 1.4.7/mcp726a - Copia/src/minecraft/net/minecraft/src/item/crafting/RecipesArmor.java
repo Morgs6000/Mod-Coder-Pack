@@ -1,4 +1,4 @@
-package net.minecraft.src;
+package net.minecraft.src.item.crafting;
 
 public class RecipesArmor
 {
