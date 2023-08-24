@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Random;
 
 import net.minecraft.src.StepSound;
-import net.minecraft.src.block.material.Material;
 import net.minecraft.src.creativetab.CreativeTabs;
 
 public class Block {

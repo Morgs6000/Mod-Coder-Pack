@@ -5,15 +5,24 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
+import net.minecraft.src.block.Block;
+import net.minecraft.src.item.Item;
+import net.minecraft.src.item.ItemStack;
+
 public class CraftingManager {
     /** The static instance of this class */
+    /** A instância estática desta classe */
     private static final CraftingManager instance = new CraftingManager();
 
     /** A list of all the recipes added */
+    /** Uma lista de todas as receitas adicionadas */
     private List recipes = new ArrayList();
 
     /**
      * Returns the static instance of this class
+     */
+    /**
+     * Retorna a instância estática desta classe
      */
     public static final CraftingManager getInstance() {
         return instance;
@@ -313,6 +322,9 @@ public class CraftingManager {
 
     /**
      * returns the List<> of all recipes
+     */
+    /**
+     * retorna a Lista<> de todas as receitas
      */
     public List getRecipeList() {
         return this.recipes;

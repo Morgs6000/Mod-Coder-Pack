@@ -1,19 +1,26 @@
-package net.minecraft.src;
+package net.minecraft.src.item.crafting;
+
+import net.minecraft.src.item.ItemStack;
 
 public class ShapedRecipes implements IRecipe {
     /** How many horizontal slots this recipe is wide. */
+    /** Quantas ranhuras horizontais esta receita tem de largura. */
     private int recipeWidth;
 
     /** How many vertical slots this recipe uses. */
+    /** Quantas ranhuras verticais esta receita usa. */
     private int recipeHeight;
 
     /** Is a array of ItemStack that composes the recipe. */
+    /** É um array de ItemStack que compõe a receita. */
     private ItemStack[] recipeItems;
 
     /** Is the ItemStack that you get when craft the recipe. */
+    /** É o ItemStack que você obtém ao criar a receita. */
     private ItemStack recipeOutput;
 
     /** Is the itemID of the output item that you get when craft the recipe. */
+    /** É o itemID do item de saída que você obtém ao criar a receita. */
     public final int recipeOutputItemID;
     private boolean field_92101_f = false;
 
@@ -31,6 +38,9 @@ public class ShapedRecipes implements IRecipe {
 
     /**
      * Used to check if a recipe matches current crafting inventory
+     */
+    /**
+     * Usado para verificar se uma receita corresponde ao inventário de fabricação atual
      */
     public boolean matches(InventoryCrafting par1InventoryCrafting, World par2World) {
         for (int var3 = 0; var3 <= 3 - this.recipeWidth; ++var3) {
@@ -50,6 +60,9 @@ public class ShapedRecipes implements IRecipe {
 
     /**
      * Checks if the region of a crafting inventory is match for the recipe.
+     */
+    /**
+     * Verifica se a região de um inventário de artesanato corresponde à receita.
      */
     private boolean checkMatch(InventoryCrafting par1InventoryCrafting, int par2, int par3, boolean par4) {
         for (int var5 = 0; var5 < 3; ++var5) {
@@ -90,6 +103,9 @@ public class ShapedRecipes implements IRecipe {
     /**
      * Returns an Item that is the result of this recipe
      */
+    /**
+     * Retorna um Item que é resultado desta receita
+     */
     public ItemStack getCraftingResult(InventoryCrafting par1InventoryCrafting) {
         ItemStack var2 = this.getRecipeOutput().copy();
 
@@ -108,6 +124,9 @@ public class ShapedRecipes implements IRecipe {
 
     /**
      * Returns the size of the recipe area
+     */
+    /**
+     * Retorna o tamanho da área da receita
      */
     public int getRecipeSize() {
         return this.recipeWidth * this.recipeHeight;

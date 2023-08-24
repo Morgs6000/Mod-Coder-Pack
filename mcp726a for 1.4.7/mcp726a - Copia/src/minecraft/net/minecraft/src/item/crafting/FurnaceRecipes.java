@@ -3,24 +3,29 @@ package net.minecraft.src.item.crafting;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FurnaceRecipes
-{
+import net.minecraft.src.block.Block;
+import net.minecraft.src.item.Item;
+import net.minecraft.src.item.ItemStack;
+
+public class FurnaceRecipes {
     private static final FurnaceRecipes smeltingBase = new FurnaceRecipes();
 
     /** The list of smelting results. */
+    /** A lista de resultados de fundição. */
     private Map smeltingList = new HashMap();
     private Map experienceList = new HashMap();
 
     /**
      * Used to call methods addSmelting and getSmeltingResult.
      */
-    public static final FurnaceRecipes smelting()
-    {
+    /**
+     * Usado para chamar métodos AddsMelting e GetsMeltingResult.
+     */
+    public static final FurnaceRecipes smelting() {
         return smeltingBase;
     }
 
-    private FurnaceRecipes()
-    {
+    private FurnaceRecipes() {
         this.addSmelting(Block.oreIron.blockID, new ItemStack(Item.ingotIron), 0.7F);
         this.addSmelting(Block.oreGold.blockID, new ItemStack(Item.ingotGold), 1.0F);
         this.addSmelting(Block.oreDiamond.blockID, new ItemStack(Item.diamond), 1.0F);
@@ -43,8 +48,10 @@ public class FurnaceRecipes
     /**
      * Adds a smelting recipe.
      */
-    public void addSmelting(int par1, ItemStack par2ItemStack, float par3)
-    {
+    /**
+     * Adiciona uma receita de fundição.
+     */
+    public void addSmelting(int par1, ItemStack par2ItemStack, float par3) {
         this.smeltingList.put(Integer.valueOf(par1), par2ItemStack);
         this.experienceList.put(Integer.valueOf(par2ItemStack.itemID), Float.valueOf(par3));
     }
@@ -52,18 +59,20 @@ public class FurnaceRecipes
     /**
      * Returns the smelting result of an item.
      */
-    public ItemStack getSmeltingResult(int par1)
-    {
-        return (ItemStack)this.smeltingList.get(Integer.valueOf(par1));
+    /**
+     * Retorna o resultado da fundição de um item.
+     */
+    public ItemStack getSmeltingResult(int par1) {
+        return (ItemStack) this.smeltingList.get(Integer.valueOf(par1));
     }
 
-    public Map getSmeltingList()
-    {
+    public Map getSmeltingList() {
         return this.smeltingList;
     }
 
-    public float getExperience(int par1)
-    {
-        return this.experienceList.containsKey(Integer.valueOf(par1)) ? ((Float)this.experienceList.get(Integer.valueOf(par1))).floatValue() : 0.0F;
+    public float getExperience(int par1) {
+        return this.experienceList.containsKey(Integer.valueOf(par1))
+                ? ((Float) this.experienceList.get(Integer.valueOf(par1))).floatValue()
+                : 0.0F;
     }
 }
