@@ -1,7 +1,6 @@
-package net.minecraft.src;
+package net.minecraft.src.block.material;
 
-public class MapColor
-{
+public class MapColor {
     /**
      * Holds all the 16 colors used on maps, very similar of a pallete system.
      */
@@ -55,8 +54,7 @@ public class MapColor
     /** Holds the index of the color used on map. */
     public final int colorIndex;
 
-    private MapColor(int par1, int par2)
-    {
+    private MapColor(int par1, int par2) {
         this.colorIndex = par1;
         this.colorValue = par2;
         mapColorArray[par1] = this;

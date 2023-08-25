@@ -4,11 +4,26 @@ import java.util.List;
 import java.util.Random;
 
 import net.minecraft.src.StepSound;
+import net.minecraft.src.block.material.Material;
 import net.minecraft.src.creativetab.CreativeTabs;
+import net.minecraft.src.item.Item;
+import net.minecraft.src.item.ItemAnvilBlock;
+import net.minecraft.src.item.ItemBlock;
+import net.minecraft.src.item.ItemCloth;
+import net.minecraft.src.item.ItemColored;
+import net.minecraft.src.item.ItemLeaves;
+import net.minecraft.src.item.ItemLilyPad;
+import net.minecraft.src.item.ItemMultiTextureTile;
+import net.minecraft.src.item.ItemPiston;
+import net.minecraft.src.item.ItemSlab;
+import net.minecraft.src.item.ItemStack;
 
 public class Block {
     /**
      * used as foreach item, if item.tab = current tab, display it on the screen
+     */
+    /**
+     * usado como item foreach, se item.tab = aba atual, exibe-o na tela
      */
     private CreativeTabs displayOnCreativeTab;
     public static final StepSound soundPowderFootstep = new StepSound("stone", 1.0F, 1.0F);
@@ -25,26 +40,36 @@ public class Block {
     public static final StepSound soundAnvilFootstep = new StepSoundAnvil("anvil", 0.3F, 1.0F);
 
     /** List of ly/ff (BlockType) containing the already registered blocks. */
+    /** Lista de ly/ff (BlockType) contendo os blocos já cadastrados. */
     public static final Block[] blocksList = new Block[4096];
 
     /**
      * An array of 4096 booleans corresponding to the result of the isOpaqueCube()
      * method for each block ID
      */
+    /**
+     * Uma matriz de 4.096 booleanos correspondentes ao resultado do método isOpaqueCube() para cada ID de bloco
+     */
     public static final boolean[] opaqueCubeLookup = new boolean[4096];
 
     /** How much light is subtracted for going through this block */
+    /** Quanta luz é subtraída para passar por este bloco */
     public static final int[] lightOpacity = new int[4096];
 
     /** Array of booleans that tells if a block can grass */
+    /** Matriz de booleanos que informa se um bloco pode grama */
     public static final boolean[] canBlockGrass = new boolean[4096];
 
     /** Amount of light emitted */
+    /** Quantidade de luz emitida */
     public static final int[] lightValue = new int[4096];
     public static final boolean[] requiresSelfNotify = new boolean[4096];
 
     /**
      * Flag if block ID should use the brightest neighbor light value as its own
+     */
+    /**
+     * Sinalize se o ID do bloco deve usar o valor de luz do vizinho mais brilhante como seu próprio
      */
     public static boolean[] useNeighborBrightness = new boolean[4096];
     public static final Block stone = (new BlockStone(1, 1)).setHardness(1.5F).setResistance(10.0F)
@@ -70,6 +95,7 @@ public class Block {
             .setLightOpacity(255).setBlockName("lava").disableStats().setRequiresSelfNotify();
 
     /** Stationary lava source block */
+    /** Bloco de fonte de lava estacionário */
     public static final Block lavaStill = (new BlockStationary(11, Material.lava)).setHardness(100.0F)
             .setLightValue(1.0F).setLightOpacity(255).setBlockName("lava").disableStats().setRequiresSelfNotify();
     public static final Block sand = (new BlockSand(12, 18)).setHardness(0.5F).setStepSound(soundSandFootstep)
@@ -238,6 +264,7 @@ public class Block {
             .setStepSound(soundGlassFootstep).setLightValue(1.0F).setBlockName("lightgem");
 
     /** The purple teleport blocks inside the obsidian circle */
+    /** Os blocos de teletransporte roxos dentro do círculo de obsidiana */
     public static final BlockPortal portal = (BlockPortal) (new BlockPortal(90, 14)).setHardness(-1.0F)
             .setStepSound(soundGlassFootstep).setLightValue(0.75F).setBlockName("portal");
     public static final Block pumpkinLantern = (new BlockPumpkin(91, 102, true)).setHardness(1.0F)
@@ -252,6 +279,9 @@ public class Block {
 
     /**
      * April fools secret locked chest, only spawns on new chunks on 1st April.
+     */
+    /**
+     * Baú secreto trancado do Dia da Mentira, só aparece em novos pedaços em 1º de abril.
      */
     public static final Block lockedChest = (new BlockLockedChest(95)).setHardness(0.0F).setLightValue(1.0F)
             .setStepSound(soundWoodFootstep).setBlockName("lockedchest").setTickRandomly(true).setRequiresSelfNotify();
@@ -307,6 +337,7 @@ public class Block {
             .setResistance(6000000.0F).setCreativeTab(CreativeTabs.tabDecorations);
 
     /** The rock found in The End. */
+    /** A rocha encontrada em The End. */
     public static final Block whiteStone = (new Block(121, 175, Material.rock)).setHardness(3.0F).setResistance(15.0F)
             .setStepSound(soundStoneFootstep).setBlockName("whiteStone").setCreativeTab(CreativeTabs.tabBlock);
     public static final Block dragonEgg = (new BlockDragonEgg(122, 167)).setHardness(3.0F).setResistance(15.0F)
@@ -357,25 +388,37 @@ public class Block {
      * graphics settings. Mostly seems to
      * come from terrain.png, and the index is 0-based (grass is 0).
      */
+    /**
+     * O índice da textura a ser exibida para este bloco. Pode variar com base nas configurações gráficas. A maior parte parece vir de terreno.png, e o índice é baseado em 0 (a grama é 0).
+     */
     public int blockIndexInTexture;
 
     /** ID of the block. */
+    /** ID do bloco. */
     public final int blockID;
 
     /** Indicates how many hits it takes to break a block. */
+    /** Indica quantos golpes são necessários para quebrar um bloco. */
     protected float blockHardness;
 
     /** Indicates the blocks resistance to explosions. */
+    /** Indica a resistência do bloco a explosões. */
     protected float blockResistance;
 
     /**
      * set to true when Block's constructor is called through the chain of
      * super()'s. Note: Never used
      */
+    /**
+     * definido como verdadeiro quando o construtor do Block é chamado através da cadeia de super()'s. Obs: Nunca usado
+     */
     protected boolean blockConstructorCalled;
 
     /**
      * If this field is true, the block is counted for statistics (mined or placed)
+     */
+    /**
+     * Se este campo for verdadeiro, o bloco é contado para estatísticas (minerado ou colocado)
      */
     protected boolean enableStats;
 
@@ -385,38 +428,53 @@ public class Block {
      * order to broadly cull a chunk from the random chunk update list for
      * efficiency's sake.
      */
+    /**
+     * Sinaliza se este bloco é ou não de um tipo que precisa de marcação aleatória. Contado novamente por ExtendedBlockStorage para selecionar amplamente um pedaço da lista de atualização de pedaços aleatórios por uma questão de eficiência.
+     */
     protected boolean needsRandomTick;
 
     /** true if the Block contains a Tile Entity */
+    /** verdadeiro se o bloco contiver uma entidade de bloco */
     protected boolean isBlockContainer;
 
     /** minimum X for the block bounds (local coordinates) */
+    /** mínimo X para os limites do bloco (coordenadas locais) */
     protected double minX;
 
     /** minimum Y for the block bounds (local coordinates) */
+    /** mínimo Y para os limites do bloco (coordenadas locais) */
     protected double minY;
 
     /** minimum Z for the block bounds (local coordinates) */
+    /** Z mínimo para os limites do bloco (coordenadas locais) */
     protected double minZ;
 
     /** maximum X for the block bounds (local coordinates) */
+    /** máximo X para os limites do bloco (coordenadas locais) */
     protected double maxX;
 
     /** maximum Y for the block bounds (local coordinates) */
+    /** máximo Y para os limites do bloco (coordenadas locais) */
     protected double maxY;
 
     /** maximum Z for the block bounds (local coordinates) */
+    /** Z máximo para os limites do bloco (coordenadas locais) */
     protected double maxZ;
 
     /** Sound of stepping on the block */
+    /** Som de pisar no quarteirão */
     public StepSound stepSound;
     public float blockParticleGravity;
 
     /** Block material definition. */
+    /** Definição de material de bloco. */
     public final Material blockMaterial;
 
     /**
      * Determines how much velocity is maintained while moving on top of this block
+     */
+    /**
+     * Determina quanta velocidade é mantida enquanto se move no topo deste bloco
      */
     public float slipperiness;
     private String blockName;
@@ -447,6 +505,9 @@ public class Block {
      * change. The default behavior is
      * always notify every neightbor block when anything changes.
      */
+    /**
+     * Blocos com este atributo não notificarão todos os blocos próximos quando houver alteração de metadados. O comportamento padrão é sempre notificar cada bloco vizinho quando algo mudar.
+     */
     protected Block setRequiresSelfNotify() {
         requiresSelfNotify[this.blockID] = true;
         return this;
@@ -456,6 +517,9 @@ public class Block {
      * This method is called on a block after all other blocks gets already created.
      * You can use it to reference and
      * configure something on the block that needs the others ones.
+     */
+    /**
+     * Este método é chamado em um bloco depois que todos os outros blocos já foram criados. Você pode usá-lo para referenciar e configurar algo no bloco que precisa dos outros.
      */
     protected void initializeBlock() {
     }
@@ -469,6 +533,9 @@ public class Block {
      * Sets the footstep sound for the block. Returns the object for convenience in
      * constructing.
      */
+    /**
+     * Define o som dos passos do bloco. Retorna o objeto por conveniência na construção.
+     */
     protected Block setStepSound(StepSound par1StepSound) {
         this.stepSound = par1StepSound;
         return this;
@@ -477,6 +544,9 @@ public class Block {
     /**
      * Sets how much light is blocked going through this block. Returns the object
      * for convenience in constructing.
+     */
+    /**
+     * Define a quantidade de luz bloqueada ao passar por esse bloco. Retorna o objeto por conveniência na construção.
      */
     protected Block setLightOpacity(int par1) {
         lightOpacity[this.blockID] = par1;
@@ -488,6 +558,9 @@ public class Block {
      * internally to 0-15). Returns the object
      * for convenience in constructing.
      */
+    /**
+     * Define a quantidade de luz emitida por um bloco de 0,0f a 1,0f (converte internamente para 0-15). Retorna o objeto por conveniência na construção.
+     */
     protected Block setLightValue(float par1) {
         lightValue[this.blockID] = (int) (15.0F * par1);
         return this;
@@ -496,6 +569,9 @@ public class Block {
     /**
      * Sets the the blocks resistance to explosions. Returns the object for
      * convenience in constructing.
+     */
+    /**
+     * Define a resistência dos blocos a explosões. Retorna o objeto por conveniência na construção.
      */
     protected Block setResistance(float par1) {
         this.blockResistance = par1 * 3.0F;
@@ -511,6 +587,9 @@ public class Block {
      * If this block doesn't render as an ordinary block it will return False
      * (examples: signs, buttons, stairs, etc)
      */
+    /**
+     * Se este bloco não for renderizado como um bloco comum, ele retornará False (exemplos: placas, botões, escadas, etc)
+     */
     public boolean renderAsNormalBlock() {
         return true;
     }
@@ -522,12 +601,18 @@ public class Block {
     /**
      * The type of render function that is called for this block
      */
+    /**
+     * O tipo de função de renderização chamada para este bloco
+     */
     public int getRenderType() {
         return 0;
     }
 
     /**
      * Sets how many hits it takes to break a block.
+     */
+    /**
+     * Define quantos golpes são necessários para quebrar um bloco.
      */
     protected Block setHardness(float par1) {
         this.blockHardness = par1;
@@ -543,6 +628,9 @@ public class Block {
      * This method will make the hardness of the block equals to -1, and the block
      * is indestructible.
      */
+    /**
+     * Este método fará com que a dureza do bloco seja igual a -1 e o bloco seja indestrutível.
+     */
     protected Block setBlockUnbreakable() {
         this.setHardness(-1.0F);
         return this;
@@ -551,12 +639,18 @@ public class Block {
     /**
      * Returns the block hardness at a location. Args: world, x, y, z
      */
+    /**
+     * Retorna a dureza do bloco em um local. Args: mundo, x, y, z
+     */
     public float getBlockHardness(World par1World, int par2, int par3, int par4) {
         return this.blockHardness;
     }
 
     /**
      * Sets whether this block type will receive random update ticks
+     */
+    /**
+     * Define se este tipo de bloco receberá ticks de atualização aleatórios
      */
     protected Block setTickRandomly(boolean par1) {
         this.needsRandomTick = par1;
@@ -569,6 +663,9 @@ public class Block {
      * ExtendedBlockStorage in order to broadly cull a chunk from the random chunk
      * update list for efficiency's sake.
      */
+    /**
+     * Retorna se este bloco é ou não de um tipo que precisa de marcação aleatória. Chamado para fins de contagem de referências por ExtendedBlockStorage, a fim de selecionar amplamente um pedaço da lista de atualização de pedaços aleatórios por uma questão de eficiência.
+     */
     public boolean getTickRandomly() {
         return this.needsRandomTick;
     }
@@ -579,6 +676,9 @@ public class Block {
 
     /**
      * Sets the bounds of the block. minX, minY, minZ, maxX, maxY, maxZ
+     */
+    /**
+     * Define os limites do bloco. minX, minY, minY, maxX, maxY, maxX
      */
     protected final void setBlockBounds(float par1, float par2, float par3, float par4, float par5, float par6) {
         this.minX = (double) par1;
@@ -593,6 +693,9 @@ public class Block {
      * How bright to render this block based on the light its receiving. Args:
      * iBlockAccess, x, y, z
      */
+    /**
+     * Quão brilhante deve ser renderizado este bloco com base na luz que ele recebe. Argumentos: iBlockAccess, x, y, z
+     */
     public float getBlockBrightness(IBlockAccess par1IBlockAccess, int par2, int par3, int par4) {
         return par1IBlockAccess.getBrightness(par2, par3, par4,
                 lightValue[par1IBlockAccess.getBlockId(par2, par3, par4)]);
@@ -601,6 +704,9 @@ public class Block {
     /**
      * Goes straight to getLightBrightnessForSkyBlocks for Blocks, does some fancy
      * computing for Fluids
+     */
+    /**
+     * Vai direto para getLightBrightnessForSkyBlocks for Blocks, faz alguns cálculos sofisticados para Fluids
      */
     public int getMixedBrightnessForBlock(IBlockAccess par1IBlockAccess, int par2, int par3, int par4) {
         return par1IBlockAccess.getLightBrightnessForSkyBlocks(par2, par3, par4,
@@ -611,6 +717,9 @@ public class Block {
      * Returns true if the given side of this block type should be rendered, if the
      * adjacent block is at the given
      * coordinates. Args: blockAccess, x, y, z, side
+     */
+    /**
+     * Retorna verdadeiro se o lado fornecido deste tipo de bloco deve ser renderizado, se o bloco adjacente estiver nas coordenadas fornecidas. Args: blockAccess, x, y, z, lado
      */
     public boolean shouldSideBeRendered(IBlockAccess par1IBlockAccess, int par2, int par3, int par4, int par5) {
         return par5 == 0 && this.minY > 0.0D ? true
@@ -627,6 +736,9 @@ public class Block {
      * (if it's solid or not), if the
      * adjacent block is at the given coordinates. Args: blockAccess, x, y, z, side
      */
+    /**
+     * Retorna Retorna verdadeiro se o lado determinado deste tipo de bloco deve ser renderizado (se é sólido ou não), se o bloco adjacente está nas coordenadas fornecidas. Args: blockAccess, x, y, z, lado
+     */
     public boolean isBlockSolid(IBlockAccess par1IBlockAccess, int par2, int par3, int par4, int par5) {
         return par1IBlockAccess.getBlockMaterial(par2, par3, par4).isSolid();
     }
@@ -634,6 +746,9 @@ public class Block {
     /**
      * Retrieves the block texture to use based on the display side. Args:
      * iBlockAccess, x, y, z, side
+     */
+    /**
+     * Recupera a textura do bloco a ser usada com base no lado da exibição. Args: iBlockAccess, x, y, z, lado
      */
     public int getBlockTexture(IBlockAccess par1IBlockAccess, int par2, int par3, int par4, int par5) {
         return this.getBlockTextureFromSideAndMetadata(par5, par1IBlockAccess.getBlockMetadata(par2, par3, par4));
@@ -643,6 +758,9 @@ public class Block {
      * From the specified side and block metadata retrieves the blocks texture.
      * Args: side, metadata
      */
+    /**
+     * Do lado especificado e os metadados do bloco recuperam a textura do bloco. Args: lado, metadados
+     */
     public int getBlockTextureFromSideAndMetadata(int par1, int par2) {
         return this.getBlockTextureFromSide(par1);
     }
@@ -650,12 +768,18 @@ public class Block {
     /**
      * Returns the block texture based on the side being looked at. Args: side
      */
+    /**
+     * Retorna a textura do bloco com base no lado que está sendo observado. Args: lado
+     */
     public int getBlockTextureFromSide(int par1) {
         return this.blockIndexInTexture;
     }
 
     /**
      * Returns the bounding box of the wired rectangular prism to render.
+     */
+    /**
+     * Retorna a caixa delimitadora do prisma retangular conectado para renderizar.
      */
     public AxisAlignedBB getSelectedBoundingBoxFromPool(World par1World, int par2, int par3, int par4) {
         return AxisAlignedBB.getAABBPool().addOrModifyAABBInPool((double) par2 + this.minX, (double) par3 + this.minY,
@@ -666,6 +790,9 @@ public class Block {
     /**
      * if the specified block is in the given AABB, add its collision bounding box
      * to the given list
+     */
+    /**
+     * se o bloco especificado estiver no AABB fornecido, adicione sua caixa delimitadora de colisão à lista fornecida
      */
     public void addCollidingBlockToList(World par1World, int par2, int par3, int par4, AxisAlignedBB par5AxisAlignedBB,
             List par6List, Entity par7Entity) {
@@ -681,6 +808,9 @@ public class Block {
      * can change after the pool has been
      * cleared to be reused)
      */
+    /**
+     * Retorna uma caixa delimitadora do conjunto de caixas delimitadoras (isso significa que esta caixa pode mudar depois que o conjunto for limpo para ser reutilizado)
+     */
     public AxisAlignedBB getCollisionBoundingBoxFromPool(World par1World, int par2, int par3, int par4) {
         return AxisAlignedBB.getAABBPool().addOrModifyAABBInPool((double) par2 + this.minX, (double) par3 + this.minY,
                 (double) par4 + this.minZ, (double) par2 + this.maxX, (double) par3 + this.maxY,
@@ -693,6 +823,9 @@ public class Block {
      * adjacent blocks and also whether the player can attach torches, redstone
      * wire, etc to this block.
      */
+    /**
+     * Este bloco (a) é opaco e (b) um cubo completo de 1m? Isso determina se a face compartilhada de dois blocos adjacentes deve ou não ser renderizada e também se o jogador pode anexar tochas, fio redstone, etc. a este bloco.
+     */
     public boolean isOpaqueCube() {
         return true;
     }
@@ -701,12 +834,18 @@ public class Block {
      * Returns whether this block is collideable based on the arguments passed in
      * Args: blockMetaData, unknownFlag
      */
+    /**
+     * Retorna se este bloco pode ser colidido com base nos argumentos passados em Args: blockMetaData, desconhecidoFlag
+     */
     public boolean canCollideCheck(int par1, boolean par2) {
         return this.isCollidable();
     }
 
     /**
      * Returns if this block is collidable (only used by Fire). Args: x, y, z
+     */
+    /**
+     * Retorna se este bloco for colidível (usado apenas por Fire). Argumentos: x, y, z
      */
     public boolean isCollidable() {
         return true;
@@ -715,6 +854,9 @@ public class Block {
     /**
      * Ticks the block if it's been scheduled
      */
+    /**
+     * Marca o bloco se estiver agendado
+     */
     public void updateTick(World par1World, int par2, int par3, int par4, Random par5Random) {
     }
 
@@ -722,12 +864,18 @@ public class Block {
      * A randomly called display update to be able to add particles or other items
      * for display
      */
+    /**
+     * Uma atualização de exibição chamada aleatoriamente para poder adicionar partículas ou outros itens para exibição
+     */
     public void randomDisplayTick(World par1World, int par2, int par3, int par4, Random par5Random) {
     }
 
     /**
      * Called right before the block is destroyed by a player. Args: world, x, y, z,
      * metaData
+     */
+    /**
+     * Chamado logo antes do bloco ser destruído por um jogador. Args: mundo, x, y, z, metadados
      */
     public void onBlockDestroyedByPlayer(World par1World, int par2, int par3, int par4, int par5) {
     }
@@ -737,11 +885,17 @@ public class Block {
      * neighbor changed (coordinates passed are
      * their own) Args: x, y, z, neighbor blockID
      */
+    /**
+     * Permite ao bloco saber quando um de seus vizinhos muda. Não sabe qual vizinho mudou (as coordenadas passadas são próprias) Args: x, y, z, vizinho blockID
+     */
     public void onNeighborBlockChange(World par1World, int par2, int par3, int par4, int par5) {
     }
 
     /**
      * How many world ticks before ticking
+     */
+    /**
+     * Quantos tiques do mundo antes de tiquetaquear
      */
     public int tickRate() {
         return 10;
@@ -750,6 +904,9 @@ public class Block {
     /**
      * Called whenever the block is added into the world. Args: world, x, y, z
      */
+    /**
+     * Chamado sempre que o bloco é adicionado ao mundo. Args: mundo, x, y, z
+     */
     public void onBlockAdded(World par1World, int par2, int par3, int par4) {
     }
 
@@ -757,11 +914,17 @@ public class Block {
      * ejects contained items into the world, and notifies neighbours of an update,
      * as appropriate
      */
+    /**
+     * ejeta itens contidos no mundo e notifica os vizinhos sobre uma atualização, conforme apropriado
+     */
     public void breakBlock(World par1World, int par2, int par3, int par4, int par5, int par6) {
     }
 
     /**
      * Returns the quantity of items to drop on block destruction.
+     */
+    /**
+     * Retorna a quantidade de itens a serem descartados na destruição do bloco.
      */
     public int quantityDropped(Random par1Random) {
         return 1;
@@ -769,6 +932,9 @@ public class Block {
 
     /**
      * Returns the ID of the items to drop on destruction.
+     */
+    /**
+     * Retorna o ID dos itens a serem descartados na destruição.
      */
     public int idDropped(int par1, Random par2Random, int par3) {
         return this.blockID;
@@ -778,6 +944,9 @@ public class Block {
      * Gets the hardness of block at the given coordinates in the given world,
      * relative to the ability of the given
      * EntityPlayer.
+     */
+    /**
+     * Obtém a dureza do bloco nas coordenadas fornecidas no mundo determinado, em relação à capacidade do EntityPlayer fornecido.
      */
     public float getPlayerRelativeBlockHardness(EntityPlayer par1EntityPlayer, World par2World, int par3, int par4,
             int par5) {
@@ -790,12 +959,18 @@ public class Block {
     /**
      * Drops the specified block items
      */
+    /**
+     * Descarta os itens de bloco especificados
+     */
     public final void dropBlockAsItem(World par1World, int par2, int par3, int par4, int par5, int par6) {
         this.dropBlockAsItemWithChance(par1World, par2, par3, par4, par5, 1.0F, par6);
     }
 
     /**
      * Drops the block items with a specified chance of dropping the specified items
+     */
+    /**
+     * Descarta os itens do bloco com uma chance específica de descartar os itens especificados
      */
     public void dropBlockAsItemWithChance(World par1World, int par2, int par3, int par4, int par5, float par6,
             int par7) {
@@ -819,6 +994,9 @@ public class Block {
      * Spawns EntityItem in the world for the given ItemStack if the world is not
      * remote.
      */
+    /**
+     * Gera EntityItem no mundo para o ItemStack fornecido se o mundo não for remoto.
+     */
     protected void dropBlockAsItem_do(World par1World, int par2, int par3, int par4, ItemStack par5ItemStack) {
         if (!par1World.isRemote && par1World.getGameRules().getGameRuleBooleanValue("doTileDrops")) {
             float var6 = 0.7F;
@@ -835,6 +1013,9 @@ public class Block {
     /**
      * called by spawner, ore, redstoneOre blocks
      */
+    /**
+     * chamado por spawner, minério, redstone Blocos de minério
+     */
     protected void dropXpOnBlockBreak(World par1World, int par2, int par3, int par4, int par5) {
         if (!par1World.isRemote) {
             while (par5 > 0) {
@@ -849,12 +1030,18 @@ public class Block {
     /**
      * Determines the damage on the item the block drops. Used in cloth and wood.
      */
+    /**
+     * Determina o dano no item que o bloco deixa cair. Usado em tecido e madeira.
+     */
     public int damageDropped(int par1) {
         return 0;
     }
 
     /**
      * Returns how much this block can resist explosions from the passed in entity.
+     */
+    /**
+     * Retorna o quanto este bloco pode resistir a explosões da entidade passada.
      */
     public float getExplosionResistance(Entity par1Entity) {
         return this.blockResistance / 5.0F;
@@ -864,6 +1051,9 @@ public class Block {
      * Ray traces through the blocks collision from start vector to end vector
      * returning a ray trace hit. Args: world,
      * x, y, z, startVec, endVec
+     */
+    /**
+     * O raio traça através da colisão de blocos do vetor inicial ao vetor final, retornando um acerto do traço de raio. Args: mundo, x, y, z, startVec, endVec
      */
     public MovingObjectPosition collisionRayTrace(World par1World, int par2, int par3, int par4, Vec3 par5Vec3,
             Vec3 par6Vec3) {
@@ -964,6 +1154,9 @@ public class Block {
     /**
      * Checks if a vector is within the Y and Z bounds of the block.
      */
+    /**
+     * Verifica se um vetor está dentro dos limites Y e Z do bloco.
+     */
     private boolean isVecInsideYZBounds(Vec3 par1Vec3) {
         return par1Vec3 == null ? false
                 : par1Vec3.yCoord >= this.minY && par1Vec3.yCoord <= this.maxY && par1Vec3.zCoord >= this.minZ
@@ -972,6 +1165,9 @@ public class Block {
 
     /**
      * Checks if a vector is within the X and Z bounds of the block.
+     */
+    /**
+     * Verifica se um vetor está dentro dos limites X e Z do bloco.
      */
     private boolean isVecInsideXZBounds(Vec3 par1Vec3) {
         return par1Vec3 == null ? false
@@ -982,6 +1178,9 @@ public class Block {
     /**
      * Checks if a vector is within the X and Y bounds of the block.
      */
+    /**
+     * Verifica se um vetor está dentro dos limites X e Y do bloco.
+     */
     private boolean isVecInsideXYBounds(Vec3 par1Vec3) {
         return par1Vec3 == null ? false
                 : par1Vec3.xCoord >= this.minX && par1Vec3.xCoord <= this.maxX && par1Vec3.yCoord >= this.minY
@@ -991,12 +1190,18 @@ public class Block {
     /**
      * Called upon the block being destroyed by an explosion
      */
+    /**
+     * Invocou o bloco sendo destruído por uma explosão
+     */
     public void onBlockDestroyedByExplosion(World par1World, int par2, int par3, int par4) {
     }
 
     /**
      * Returns which pass should this block be rendered on. 0 for solids and 1 for
      * alpha
+     */
+    /**
+     * Retorna qual passagem deve este bloco ser renderizado. 0 para sólidos e 1 para alfa
      */
     public int getRenderBlockPass() {
         return 0;
@@ -1006,6 +1211,9 @@ public class Block {
      * checks to see if you can place this block can be placed on that side of a
      * block: BlockLever overrides
      */
+    /**
+     * verifica se você pode colocar este bloco pode ser colocado naquele lado de um bloco: BlockLever substitui
+     */
     public boolean canPlaceBlockOnSide(World par1World, int par2, int par3, int par4, int par5) {
         return this.canPlaceBlockAt(par1World, par2, par3, par4);
     }
@@ -1014,6 +1222,9 @@ public class Block {
      * Checks to see if its valid to put this block at the specified coordinates.
      * Args: world, x, y, z
      */
+    /**
+     * Verifica se é válido colocar este bloco nas coordenadas especificadas. Args: mundo, x, y, z
+     */
     public boolean canPlaceBlockAt(World par1World, int par2, int par3, int par4) {
         int var5 = par1World.getBlockId(par2, par3, par4);
         return var5 == 0 || blocksList[var5].blockMaterial.isReplaceable();
@@ -1021,6 +1232,9 @@ public class Block {
 
     /**
      * Called upon block activation (right click on the block.)
+     */
+    /**
+     * Chamado na ativação do bloco (clique com o botão direito no bloco).
      */
     public boolean onBlockActivated(World par1World, int par2, int par3, int par4, EntityPlayer par5EntityPlayer,
             int par6, float par7, float par8, float par9) {
@@ -1031,12 +1245,18 @@ public class Block {
      * Called whenever an entity is walking on top of this block. Args: world, x, y,
      * z, entity
      */
+    /**
+     * Chamado sempre que uma entidade está andando no topo deste bloco. Args: mundo, x, y, z, entidade
+     */
     public void onEntityWalking(World par1World, int par2, int par3, int par4, Entity par5Entity) {
     }
 
     /**
      * Called when a block is placed using its ItemBlock. Args: World, X, Y, Z,
      * side, hitX, hitY, hitZ, block metadata
+     */
+    /**
+     * Chamado quando um bloco é colocado usando seu ItemBlock. Args: World, X, Y, Z, side, hitX, hitY, hitZ, bloquear metadados
      */
     public int onBlockPlaced(World par1World, int par2, int par3, int par4, int par5, float par6, float par7,
             float par8, int par9) {
@@ -1046,6 +1266,9 @@ public class Block {
     /**
      * Called when the block is clicked by a player. Args: x, y, z, entityPlayer
      */
+    /**
+     * Chamado quando o bloco é clicado por um jogador. Args: x, y, z, entidadePlayer
+     */
     public void onBlockClicked(World par1World, int par2, int par3, int par4, EntityPlayer par5EntityPlayer) {
     }
 
@@ -1053,17 +1276,26 @@ public class Block {
      * Can add to the passed in vector for a movement vector to be applied to the
      * entity. Args: x, y, z, entity, vec3d
      */
+    /**
+     * Pode adicionar ao vetor passado para que um vetor de movimento seja aplicado à entidade. Args: x, y, z, entidade, vec3d
+     */
     public void velocityToAddToEntity(World par1World, int par2, int par3, int par4, Entity par5Entity, Vec3 par6Vec3) {
     }
 
     /**
      * Updates the blocks bounds based on its current state. Args: world, x, y, z
      */
+    /**
+     * Atualiza os limites dos blocos com base no seu estado atual. Args: mundo, x, y, z
+     */
     public void setBlockBoundsBasedOnState(IBlockAccess par1IBlockAccess, int par2, int par3, int par4) {
     }
 
     /**
      * returns the block bounderies minX value
+     */
+    /**
+     * retorna o valor minX dos limites do bloco
      */
     public final double getBlockBoundsMinX() {
         return this.minX;
@@ -1072,12 +1304,18 @@ public class Block {
     /**
      * returns the block bounderies maxX value
      */
+    /**
+     * retorna o valor maxX dos limites do bloco
+     */
     public final double getBlockBoundsMaxX() {
         return this.maxX;
     }
 
     /**
      * returns the block bounderies minY value
+     */
+    /**
+     * retorna o valor minY dos limites do bloco
      */
     public final double getBlockBoundsMinY() {
         return this.minY;
@@ -1086,6 +1324,9 @@ public class Block {
     /**
      * returns the block bounderies maxY value
      */
+    /**
+     * retorna o valor maxY dos limites do bloco
+     */
     public final double getBlockBoundsMaxY() {
         return this.maxY;
     }
@@ -1093,12 +1334,18 @@ public class Block {
     /**
      * returns the block bounderies minZ value
      */
+    /**
+     * retorna o valor minZ dos limites do bloco
+     */
     public final double getBlockBoundsMinZ() {
         return this.minZ;
     }
 
     /**
      * returns the block bounderies maxZ value
+     */
+    /**
+     * retorna o valor máximo dos limites do bloco
      */
     public final double getBlockBoundsMaxZ() {
         return this.maxZ;
@@ -1111,6 +1358,9 @@ public class Block {
     /**
      * Returns the color this block should be rendered. Used by leaves.
      */
+    /**
+     * Retorna a cor que este bloco deve ser renderizado. Usado por folhas.
+     */
     public int getRenderColor(int par1) {
         return 16777215;
     }
@@ -1119,6 +1369,9 @@ public class Block {
      * Returns a integer with hex for 0xrrggbb with this color multiplied against
      * the blocks color. Note only called
      * when first determining what to render.
+     */
+    /**
+     * Retorna um número inteiro hexadecimal para 0xrrggbb com esta cor multiplicada pela cor do bloco. Nota chamada apenas ao determinar pela primeira vez o que renderizar.
      */
     public int colorMultiplier(IBlockAccess par1IBlockAccess, int par2, int par3, int par4) {
         return 16777215;
@@ -1132,6 +1385,9 @@ public class Block {
      * Y, Z, side. Note that the side is reversed - eg it is 1 (up) when checking
      * the bottom of the block.
      */
+    /**
+     * Retorna verdadeiro se o bloco estiver emitindo energia redstone indireta/fraca no lado especificado. Se isBlockNormalCube retornar verdadeiro, as regras padrão de propagação redstone serão aplicadas e isso não será chamado. Args: Mundo, X, Y, Z, lado. Observe que o lado está invertido - por exemplo, é 1 (para cima) ao verificar a parte inferior do bloco.
+     */
     public boolean isProvidingWeakPower(IBlockAccess par1IBlockAccess, int par2, int par3, int par4, int par5) {
         return false;
     }
@@ -1140,6 +1396,9 @@ public class Block {
      * Can this block provide power. Only wire currently seems to have this change
      * based on its state.
      */
+    /**
+     * Este bloco pode fornecer energia. Atualmente, apenas o fio parece ter essa alteração com base em seu estado.
+     */
     public boolean canProvidePower() {
         return false;
     }
@@ -1147,6 +1406,9 @@ public class Block {
     /**
      * Triggered whenever an entity collides with this block (enters into the
      * block). Args: world, x, y, z, entity
+     */
+    /**
+     * Disparado sempre que uma entidade colide com este bloco (entra no bloco). Args: mundo, x, y, z, entidade
      */
     public void onEntityCollidedWithBlock(World par1World, int par2, int par3, int par4, Entity par5Entity) {
     }
@@ -1157,12 +1419,18 @@ public class Block {
      * side. Note that the side is reversed - eg it is 1 (up) when checking the
      * bottom of the block.
      */
+    /**
+     * Retorna verdadeiro se o bloco estiver emitindo energia redstone direta/forte no lado especificado. Args: Mundo, X, Y, Z, lado. Observe que o lado está invertido - por exemplo, é 1 (para cima) ao verificar a parte inferior do bloco.
+     */
     public boolean isProvidingStrongPower(IBlockAccess par1IBlockAccess, int par2, int par3, int par4, int par5) {
         return false;
     }
 
     /**
      * Sets the block's bounds for rendering it as an item
+     */
+    /**
+     * Define os limites do bloco para renderizá-lo como um item
      */
     public void setBlockBoundsForItemRender() {
     }
@@ -1171,6 +1439,9 @@ public class Block {
      * Called when the player destroys a block with an item that can harvest it. (i,
      * j, k) are the coordinates of the
      * block and l is the block's subtype/damage.
+     */
+    /**
+     * Chamado quando o jogador destrói um bloco com um item que pode colhê-lo. (i, j, k) são as coordenadas do bloco e l é o subtipo/dano do bloco.
      */
     public void harvestBlock(World par1World, EntityPlayer par2EntityPlayer, int par3, int par4, int par5, int par6) {
         par2EntityPlayer.addStat(StatList.mineBlockStatArray[this.blockID], 1);
@@ -1192,6 +1463,9 @@ public class Block {
      * Return true if a player with Silk Touch can harvest this block directly, and
      * not its normal drops.
      */
+    /**
+     * Retorne verdadeiro se um jogador com Silk Touch puder coletar este bloco diretamente, e não seus drops normais.
+     */
     protected boolean canSilkHarvest() {
         return this.renderAsNormalBlock() && !this.isBlockContainer;
     }
@@ -1201,6 +1475,9 @@ public class Block {
      * 'i' is the block's subtype/damage
      * and is ignored for blocks which do not support subtypes. Blocks which cannot
      * be harvested should return null.
+     */
+    /**
+     * Retorna uma pilha de itens contendo uma única instância do tipo de bloco atual. 'i' é o subtipo/dano do bloco e é ignorado para blocos que não suportam subtipos. Os blocos que não podem ser colhidos devem retornar nulos.
      */
     protected ItemStack createStackedBlock(int par1) {
         int var2 = 0;
@@ -1217,6 +1494,9 @@ public class Block {
      * Returns the usual quantity dropped by the block plus a bonus of 1 to 'i'
      * (inclusive).
      */
+    /**
+     * Retorna a quantidade usual descartada pelo bloco mais um bônus de 1 a 'i' (inclusive).
+     */
     public int quantityDroppedWithBonus(int par1, Random par2Random) {
         return this.quantityDropped(par2Random);
     }
@@ -1225,6 +1505,9 @@ public class Block {
      * Can this block stay at this position. Similar to canPlaceBlockAt except gets
      * checked often with plants.
      */
+    /**
+     * Este bloco pode ficar nesta posição? Semelhante ao canPlaceBlockAt, exceto que é verificado frequentemente com plantas.
+     */
     public boolean canBlockStay(World par1World, int par2, int par3, int par4) {
         return true;
     }
@@ -1232,17 +1515,26 @@ public class Block {
     /**
      * Called when the block is placed in the world.
      */
+    /**
+     * Chamado quando o bloco é colocado no mundo.
+     */
     public void onBlockPlacedBy(World par1World, int par2, int par3, int par4, EntityLiving par5EntityLiving) {
     }
 
     /**
      * Called after a block is placed
      */
+    /**
+     * Chamado após um bloco ser colocado
+     */
     public void onPostBlockPlaced(World par1World, int par2, int par3, int par4, int par5) {
     }
 
     /**
      * set name of block from language file
+     */
+    /**
+     * definir o nome do bloco do arquivo de idioma
      */
     public Block setBlockName(String par1Str) {
         this.blockName = "tile." + par1Str;
@@ -1253,6 +1545,9 @@ public class Block {
      * gets the localized version of the name of this block using
      * StatCollector.translateToLocal. Used for the statistic
      * page.
+     */
+    /**
+     * obtém a versão localizada do nome deste bloco usando StatCollector.translateToLocal. Usado para a página de estatísticas.
      */
     public String translateBlockName() {
         return StatCollector.translateToLocal(this.getBlockName() + ".name");
@@ -1268,12 +1563,18 @@ public class Block {
      * entity at this location. Args: world, x, y, z, blockID, EventID, event
      * parameter
      */
+    /**
+     * Chamado quando o bloco recebe um BlockEvent - consulte World.addBlockEvent. Por padrão, passa-o para a entidade de bloco neste local. Args: mundo, x, y, z, blockID, EventID, parâmetro de evento
+     */
     public void onBlockEventReceived(World par1World, int par2, int par3, int par4, int par5, int par6) {
     }
 
     /**
      * Return the state of blocks statistics flags - if the block is counted for
      * mined and placed.
+     */
+    /**
+     * Retorna o estado dos sinalizadores de estatísticas dos blocos - se o bloco for contado como extraído e colocado.
      */
     public boolean getEnableStats() {
         return this.enableStats;
@@ -1282,6 +1583,9 @@ public class Block {
     /**
      * Disable statistics for the block, the block will no count for mined or
      * placed.
+     */
+    /**
+     * Desative as estatísticas do bloco, o bloco não contará para minado ou colocado.
      */
     protected Block disableStats() {
         this.enableStats = false;
@@ -1293,12 +1597,18 @@ public class Block {
      * can move over, 2 = total immobility
      * and stop pistons
      */
+    /**
+     * Retorna as informações de mobilidade do bloco, 0 = livre, 1 = não pode empurrar, mas pode mover-se, 2 = imobilidade total e parar os pistões
+     */
     public int getMobilityFlag() {
         return this.blockMaterial.getMaterialMobility();
     }
 
     /**
      * Returns the default ambient occlusion value based on block opacity
+     */
+    /**
+     * Retorna o valor padrão de oclusão de ambiente com base na opacidade do bloco
      */
     public float getAmbientOcclusionLightValue(IBlockAccess par1IBlockAccess, int par2, int par3, int par4) {
         return par1IBlockAccess.isBlockNormalCube(par2, par3, par4) ? 0.2F : 1.0F;
@@ -1307,6 +1617,9 @@ public class Block {
     /**
      * Block's chance to react to an entity falling on it.
      */
+    /**
+     * A chance do bloco reagir a uma entidade caindo sobre ele.
+     */
     public void onFallenUpon(World par1World, int par2, int par3, int par4, Entity par5Entity, float par6) {
     }
 
@@ -1314,12 +1627,18 @@ public class Block {
      * only called by clickMiddleMouseButton , and passed to
      * inventory.setCurrentItem (along with isCreative)
      */
+    /**
+     * chamado apenas por clickMiddleMouseButton e passado para inventário.setCurrentItem (junto com isCreative)
+     */
     public int idPicked(World par1World, int par2, int par3, int par4) {
         return this.blockID;
     }
 
     /**
      * Get the block's damage value (for use with pick block).
+     */
+    /**
+     * Obtenha o valor do dano do bloco (para usar com pick block).
      */
     public int getDamageValue(World par1World, int par2, int par3, int par4) {
         return this.damageDropped(par1World.getBlockMetadata(par2, par3, par4));
@@ -1329,6 +1648,9 @@ public class Block {
      * returns a list of blocks with the same ID, but different meta (eg: wood
      * returns 4 blocks)
      */
+    /**
+     * retorna uma lista de blocos com o mesmo ID, mas meta diferente (por exemplo: madeira retorna 4 blocos)
+     */
     public void getSubBlocks(int par1, CreativeTabs par2CreativeTabs, List par3List) {
         par3List.add(new ItemStack(par1, 1, 0));
     }
@@ -1336,12 +1658,18 @@ public class Block {
     /**
      * Returns the CreativeTab to display the given block on.
      */
+    /**
+     * Retorna o CreativeTab para exibir o bloco fornecido.
+     */
     public CreativeTabs getCreativeTabToDisplayOn() {
         return this.displayOnCreativeTab;
     }
 
     /**
      * Sets the CreativeTab to display this block on.
+     */
+    /**
+     * Define o CreativeTab para exibir este bloco.
      */
     public Block setCreativeTab(CreativeTabs par1CreativeTabs) {
         this.displayOnCreativeTab = par1CreativeTabs;
@@ -1351,6 +1679,9 @@ public class Block {
     /**
      * Called when the block is attempted to be harvested
      */
+    /**
+     * Chamado quando o bloco tenta ser colhido
+     */
     public void onBlockHarvested(World par1World, int par2, int par3, int par4, int par5,
             EntityPlayer par6EntityPlayer) {
     }
@@ -1358,11 +1689,17 @@ public class Block {
     /**
      * Called when this block is set (with meta data).
      */
+    /**
+     * Chamado quando este bloco é definido (com metadados).
+     */
     public void onSetBlockIDWithMetaData(World par1World, int par2, int par3, int par4, int par5) {
     }
 
     /**
      * currently only used by BlockCauldron to incrament meta-data during rain
+     */
+    /**
+     * atualmente usado apenas pelo Black Cauldron para incrementar metadados durante a chuva
      */
     public void fillWithRain(World par1World, int par2, int par3, int par4) {
     }
@@ -1377,6 +1714,9 @@ public class Block {
 
     /**
      * Return whether this block can drop from an explosion.
+     */
+    /**
+     * Retorne se este bloco pode cair devido a uma explosão.
      */
     public boolean canDropFromExplosion(Explosion par1Explosion) {
         return true;

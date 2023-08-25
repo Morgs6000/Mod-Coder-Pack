@@ -1,4 +1,4 @@
-package net.minecraft.src;
+package net.minecraft.src.block;
 
 import java.util.List;
 

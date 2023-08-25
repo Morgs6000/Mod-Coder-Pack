@@ -3,7 +3,9 @@ package net.minecraft.src.item;
 import java.util.List;
 import java.util.Random;
 
+import net.minecraft.src.StringTranslate;
 import net.minecraft.src.block.Block;
+import net.minecraft.src.block.material.Material;
 import net.minecraft.src.creativetab.CreativeTabs;
 
 public class Item {
@@ -595,6 +597,9 @@ public class Item {
      * container item will be added to the
      * player's inventory instead of remaining in the crafting grid.
      */
+    /**
+     * Se isso retornar verdadeiro, após a criação de uma receita envolvendo este item, o item do contêiner será adicionado ao inventário do jogador em vez de permanecer na grade de criação.
+     */
     public boolean doesContainerItemLeaveCraftingGrid(ItemStack par1ItemStack) {
         return true;
     }
@@ -602,6 +607,9 @@ public class Item {
     /**
      * If this function returns true (or the item is damageable), the ItemStack's
      * NBT tag will be sent to the client.
+     */
+    /**
+     * Se esta função retornar verdadeiro (ou o item for danificável), a tag NBT do ItemStack será enviada ao cliente.
      */
     public boolean getShareTag() {
         return true;
@@ -613,6 +621,9 @@ public class Item {
 
     /**
      * True if this Item has a container item (a.k.a. crafting result)
+     */
+    /**
+     * Verdadeiro se este item tiver um item de contêiner (também conhecido como resultado de fabricação)
      */
     public boolean hasContainerItem() {
         return this.containerItem != null;
@@ -635,17 +646,26 @@ public class Item {
      * check if is on a player hand and
      * update it's contents.
      */
+    /**
+     * Chamado cada tick enquanto o item estiver no inventário do jogador. Usa por mapas para verificar se está na mão do jogador e atualizar seu conteúdo.
+     */
     public void onUpdate(ItemStack par1ItemStack, World par2World, Entity par3Entity, int par4, boolean par5) {
     }
 
     /**
      * Called when item is crafted/smelted. Used only by maps so far.
      */
+    /**
+     * Chamado quando o item é fabricado/fundido. Usado apenas por mapas até agora.
+     */
     public void onCreated(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer) {
     }
 
     /**
      * false for all Items except sub-classes of ItemMapBase
+     */
+    /**
+     * false para todos os itens, exceto subclasses de ItemMapBase
      */
     public boolean isMap() {
         return false;
@@ -655,12 +675,18 @@ public class Item {
      * returns the action that specifies what animation to play when the items is
      * being used
      */
+    /**
+     * retorna a ação que especifica qual animação será reproduzida quando os itens estiverem sendo usados
+     */
     public EnumAction getItemUseAction(ItemStack par1ItemStack) {
         return EnumAction.none;
     }
 
     /**
      * How long it takes to use or consume an item
+     */
+    /**
+     * Quanto tempo leva para usar ou consumir um item
      */
     public int getMaxItemUseDuration(ItemStack par1ItemStack) {
         return 0;
@@ -670,6 +696,9 @@ public class Item {
      * called when the player releases the use item button. Args: itemstack, world,
      * entityplayer, itemInUseCount
      */
+    /**
+     * chamado quando o jogador libera o botão de uso do item. Args: itemstack, mundo, entidadeplayer, itemInUseCount
+     */
     public void onPlayerStoppedUsing(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer,
             int par4) {
     }
@@ -677,6 +706,9 @@ public class Item {
     /**
      * Sets the string representing this item's effect on a potion when used as an
      * ingredient.
+     */
+    /**
+     * Define a string que representa o efeito deste item em uma poção quando usado como ingrediente.
      */
     protected Item setPotionEffect(String par1Str) {
         this.potionEffect = par1Str;
@@ -686,6 +718,9 @@ public class Item {
     /**
      * Returns a string representing what this item does to a potion.
      */
+    /**
+     * Retorna uma string representando o que este item faz com uma poção.
+     */
     public String getPotionEffect() {
         return this.potionEffect;
     }
@@ -694,12 +729,18 @@ public class Item {
      * Returns true if this item serves as a potion ingredient (its ingredient
      * information is not null).
      */
+    /**
+     * Retorna verdadeiro se este item servir como ingrediente de poção (sua informação de ingrediente não é nula).
+     */
     public boolean isPotionIngredient() {
         return this.potionEffect != null;
     }
 
     /**
      * allows items to add custom lines of information to the mouseover description
+     */
+    /**
+     * permite que os itens adicionem linhas personalizadas de informações à descrição ao passar o mouse
      */
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
     }
@@ -715,12 +756,18 @@ public class Item {
     /**
      * Return an item rarity from EnumRarity
      */
+    /**
+     * Retornar a raridade de um item de EnumRarity
+     */
     public EnumRarity getRarity(ItemStack par1ItemStack) {
         return par1ItemStack.isItemEnchanted() ? EnumRarity.rare : EnumRarity.common;
     }
 
     /**
      * Checks isDamagable and if it cannot be stacked
+     */
+    /**
+     * Verifica isDamagable e se não pode ser empilhado
      */
     public boolean isItemTool(ItemStack par1ItemStack) {
         return this.getItemStackLimit() == 1 && this.isDamageable();
@@ -753,6 +800,9 @@ public class Item {
      * Return the enchantability factor of the item, most of the time is based on
      * material.
      */
+    /**
+     * Devolve o fator de encantabilidade do item, na maioria das vezes é baseado no material.
+     */
     public int getItemEnchantability() {
         return 0;
     }
@@ -764,6 +814,9 @@ public class Item {
     /**
      * Gets an icon index based on an item's damage value and the given render pass
      */
+    /**
+     * Obtém um índice de ícone com base no valor de dano de um item e na passagem de renderização fornecida
+     */
     public int getIconFromDamageForRenderPass(int par1, int par2) {
         return this.getIconFromDamage(par1);
     }
@@ -772,6 +825,9 @@ public class Item {
      * returns a list of items with the same ID, but different meta (eg: dye returns
      * 16 items)
      */
+    /**
+     * retorna uma lista de itens com o mesmo ID, mas meta diferente (por exemplo: corante retorna 16 itens)
+     */
     public void getSubItems(int par1, CreativeTabs par2CreativeTabs, List par3List) {
         par3List.add(new ItemStack(par1, 1, 0));
     }
@@ -779,12 +835,18 @@ public class Item {
     /**
      * gets the CreativeTab this item is displayed on
      */
+    /**
+     * obtém a CreativeTab em que este item é exibido
+     */
     public CreativeTabs getCreativeTab() {
         return this.tabToDisplayOn;
     }
 
     /**
      * returns this;
+     */
+    /**
+     * retorna isso;
      */
     public Item setCreativeTab(CreativeTabs par1CreativeTabs) {
         this.tabToDisplayOn = par1CreativeTabs;
@@ -797,6 +859,9 @@ public class Item {
 
     /**
      * Return whether this item is repairable in an anvil.
+     */
+    /**
+     * Informe se este item pode ser reparado em uma bigorna.
      */
     public boolean getIsRepairable(ItemStack par1ItemStack, ItemStack par2ItemStack) {
         return false;

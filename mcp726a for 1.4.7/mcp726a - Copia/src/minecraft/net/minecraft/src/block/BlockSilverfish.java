@@ -1,37 +1,35 @@
-package net.minecraft.src;
+package net.minecraft.src.block;
 
 import java.util.List;
 import java.util.Random;
 
-public class BlockSilverfish extends Block
-{
+public class BlockSilverfish extends Block {
     /** Block names that can be a silverfish stone. */
-    public static final String[] silverfishStoneTypes = new String[] {"stone", "cobble", "brick"};
+    public static final String[] silverfishStoneTypes = new String[] { "stone", "cobble", "brick" };
 
-    public BlockSilverfish(int par1)
-    {
+    public BlockSilverfish(int par1) {
         super(par1, 1, Material.clay);
         this.setHardness(0.0F);
         this.setCreativeTab(CreativeTabs.tabDecorations);
     }
 
     /**
-     * From the specified side and block metadata retrieves the blocks texture. Args: side, metadata
+     * From the specified side and block metadata retrieves the blocks texture.
+     * Args: side, metadata
      */
-    public int getBlockTextureFromSideAndMetadata(int par1, int par2)
-    {
-        return par2 == 1 ? Block.cobblestone.blockIndexInTexture : (par2 == 2 ? Block.stoneBrick.blockIndexInTexture : Block.stone.blockIndexInTexture);
+    public int getBlockTextureFromSideAndMetadata(int par1, int par2) {
+        return par2 == 1 ? Block.cobblestone.blockIndexInTexture
+                : (par2 == 2 ? Block.stoneBrick.blockIndexInTexture : Block.stone.blockIndexInTexture);
     }
 
     /**
-     * Called right before the block is destroyed by a player.  Args: world, x, y, z, metaData
+     * Called right before the block is destroyed by a player. Args: world, x, y, z,
+     * metaData
      */
-    public void onBlockDestroyedByPlayer(World par1World, int par2, int par3, int par4, int par5)
-    {
-        if (!par1World.isRemote)
-        {
+    public void onBlockDestroyedByPlayer(World par1World, int par2, int par3, int par4, int par5) {
+        if (!par1World.isRemote) {
             EntitySilverfish var6 = new EntitySilverfish(par1World);
-            var6.setLocationAndAngles((double)par2 + 0.5D, (double)par3, (double)par4 + 0.5D, 0.0F, 0.0F);
+            var6.setLocationAndAngles((double) par2 + 0.5D, (double) par3, (double) par4 + 0.5D, 0.0F, 0.0F);
             par1World.spawnEntityInWorld(var6);
             var6.spawnExplosionParticle();
         }
@@ -42,43 +40,42 @@ public class BlockSilverfish extends Block
     /**
      * Returns the quantity of items to drop on block destruction.
      */
-    public int quantityDropped(Random par1Random)
-    {
+    public int quantityDropped(Random par1Random) {
         return 0;
     }
 
     /**
-     * Gets the blockID of the block this block is pretending to be according to this block's metadata.
+     * Gets the blockID of the block this block is pretending to be according to
+     * this block's metadata.
      */
-    public static boolean getPosingIdByMetadata(int par0)
-    {
+    public static boolean getPosingIdByMetadata(int par0) {
         return par0 == Block.stone.blockID || par0 == Block.cobblestone.blockID || par0 == Block.stoneBrick.blockID;
     }
 
     /**
-     * Returns the metadata to use when a Silverfish hides in the block. Sets the block to BlockSilverfish with this
-     * metadata. It changes the displayed texture client side to look like a normal block.
+     * Returns the metadata to use when a Silverfish hides in the block. Sets the
+     * block to BlockSilverfish with this
+     * metadata. It changes the displayed texture client side to look like a normal
+     * block.
      */
-    public static int getMetadataForBlockType(int par0)
-    {
+    public static int getMetadataForBlockType(int par0) {
         return par0 == Block.cobblestone.blockID ? 1 : (par0 == Block.stoneBrick.blockID ? 2 : 0);
     }
 
     /**
-     * Returns an item stack containing a single instance of the current block type. 'i' is the block's subtype/damage
-     * and is ignored for blocks which do not support subtypes. Blocks which cannot be harvested should return null.
+     * Returns an item stack containing a single instance of the current block type.
+     * 'i' is the block's subtype/damage
+     * and is ignored for blocks which do not support subtypes. Blocks which cannot
+     * be harvested should return null.
      */
-    protected ItemStack createStackedBlock(int par1)
-    {
+    protected ItemStack createStackedBlock(int par1) {
         Block var2 = Block.stone;
 
-        if (par1 == 1)
-        {
+        if (par1 == 1) {
             var2 = Block.cobblestone;
         }
 
-        if (par1 == 2)
-        {
+        if (par1 == 2) {
             var2 = Block.stoneBrick;
         }
 
@@ -88,18 +85,16 @@ public class BlockSilverfish extends Block
     /**
      * Get the block's damage value (for use with pick block).
      */
-    public int getDamageValue(World par1World, int par2, int par3, int par4)
-    {
+    public int getDamageValue(World par1World, int par2, int par3, int par4) {
         return par1World.getBlockMetadata(par2, par3, par4);
     }
 
     /**
-     * returns a list of blocks with the same ID, but different meta (eg: wood returns 4 blocks)
+     * returns a list of blocks with the same ID, but different meta (eg: wood
+     * returns 4 blocks)
      */
-    public void getSubBlocks(int par1, CreativeTabs par2CreativeTabs, List par3List)
-    {
-        for (int var4 = 0; var4 < 3; ++var4)
-        {
+    public void getSubBlocks(int par1, CreativeTabs par2CreativeTabs, List par3List) {
+        for (int var4 = 0; var4 < 3; ++var4) {
             par3List.add(new ItemStack(par1, 1, var4));
         }
     }

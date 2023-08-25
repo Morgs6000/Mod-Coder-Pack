@@ -1,35 +1,31 @@
-package net.minecraft.src;
+package net.minecraft.src.block;
 
 import java.util.List;
 import java.util.Random;
 
-public class BlockPistonExtension extends Block
-{
+public class BlockPistonExtension extends Block {
     /** The texture for the 'head' of the piston. Sticky or normal. */
     private int headTexture = -1;
 
-    public BlockPistonExtension(int par1, int par2)
-    {
+    public BlockPistonExtension(int par1, int par2) {
         super(par1, par2, Material.piston);
         this.setStepSound(soundStoneFootstep);
         this.setHardness(0.5F);
     }
 
-    public void setHeadTexture(int par1)
-    {
+    public void setHeadTexture(int par1) {
         this.headTexture = par1;
     }
 
-    public void clearHeadTexture()
-    {
+    public void clearHeadTexture() {
         this.headTexture = -1;
     }
 
     /**
-     * ejects contained items into the world, and notifies neighbours of an update, as appropriate
+     * ejects contained items into the world, and notifies neighbours of an update,
+     * as appropriate
      */
-    public void breakBlock(World par1World, int par2, int par3, int par4, int par5, int par6)
-    {
+    public void breakBlock(World par1World, int par2, int par3, int par4, int par5, int par6) {
         super.breakBlock(par1World, par2, par3, par4, par5, par6);
         int var7 = Facing.faceToSide[getDirectionMeta(par6)];
         par2 += Facing.offsetsXForSide[var7];
@@ -37,12 +33,10 @@ public class BlockPistonExtension extends Block
         par4 += Facing.offsetsZForSide[var7];
         int var8 = par1World.getBlockId(par2, par3, par4);
 
-        if (var8 == Block.pistonBase.blockID || var8 == Block.pistonStickyBase.blockID)
-        {
+        if (var8 == Block.pistonBase.blockID || var8 == Block.pistonStickyBase.blockID) {
             par6 = par1World.getBlockMetadata(par2, par3, par4);
 
-            if (BlockPistonBase.isExtended(par6))
-            {
+            if (BlockPistonBase.isExtended(par6)) {
                 Block.blocksList[var8].dropBlockAsItem(par1World, par2, par3, par4, par6, 0);
                 par1World.setBlockWithNotify(par2, par3, par4, 0);
             }
@@ -50,72 +44,74 @@ public class BlockPistonExtension extends Block
     }
 
     /**
-     * From the specified side and block metadata retrieves the blocks texture. Args: side, metadata
+     * From the specified side and block metadata retrieves the blocks texture.
+     * Args: side, metadata
      */
-    public int getBlockTextureFromSideAndMetadata(int par1, int par2)
-    {
+    public int getBlockTextureFromSideAndMetadata(int par1, int par2) {
         int var3 = getDirectionMeta(par2);
-        return par1 == var3 ? (this.headTexture >= 0 ? this.headTexture : ((par2 & 8) != 0 ? this.blockIndexInTexture - 1 : this.blockIndexInTexture)) : (var3 < 6 && par1 == Facing.faceToSide[var3] ? 107 : 108);
+        return par1 == var3
+                ? (this.headTexture >= 0 ? this.headTexture
+                        : ((par2 & 8) != 0 ? this.blockIndexInTexture - 1 : this.blockIndexInTexture))
+                : (var3 < 6 && par1 == Facing.faceToSide[var3] ? 107 : 108);
     }
 
     /**
      * The type of render function that is called for this block
      */
-    public int getRenderType()
-    {
+    public int getRenderType() {
         return 17;
     }
 
     /**
-     * Is this block (a) opaque and (b) a full 1m cube?  This determines whether or not to render the shared face of two
-     * adjacent blocks and also whether the player can attach torches, redstone wire, etc to this block.
+     * Is this block (a) opaque and (b) a full 1m cube? This determines whether or
+     * not to render the shared face of two
+     * adjacent blocks and also whether the player can attach torches, redstone
+     * wire, etc to this block.
      */
-    public boolean isOpaqueCube()
-    {
+    public boolean isOpaqueCube() {
         return false;
     }
 
     /**
-     * If this block doesn't render as an ordinary block it will return False (examples: signs, buttons, stairs, etc)
+     * If this block doesn't render as an ordinary block it will return False
+     * (examples: signs, buttons, stairs, etc)
      */
-    public boolean renderAsNormalBlock()
-    {
+    public boolean renderAsNormalBlock() {
         return false;
     }
 
     /**
-     * Checks to see if its valid to put this block at the specified coordinates. Args: world, x, y, z
+     * Checks to see if its valid to put this block at the specified coordinates.
+     * Args: world, x, y, z
      */
-    public boolean canPlaceBlockAt(World par1World, int par2, int par3, int par4)
-    {
+    public boolean canPlaceBlockAt(World par1World, int par2, int par3, int par4) {
         return false;
     }
 
     /**
-     * checks to see if you can place this block can be placed on that side of a block: BlockLever overrides
+     * checks to see if you can place this block can be placed on that side of a
+     * block: BlockLever overrides
      */
-    public boolean canPlaceBlockOnSide(World par1World, int par2, int par3, int par4, int par5)
-    {
+    public boolean canPlaceBlockOnSide(World par1World, int par2, int par3, int par4, int par5) {
         return false;
     }
 
     /**
      * Returns the quantity of items to drop on block destruction.
      */
-    public int quantityDropped(Random par1Random)
-    {
+    public int quantityDropped(Random par1Random) {
         return 0;
     }
 
     /**
-     * if the specified block is in the given AABB, add its collision bounding box to the given list
+     * if the specified block is in the given AABB, add its collision bounding box
+     * to the given list
      */
-    public void addCollidingBlockToList(World par1World, int par2, int par3, int par4, AxisAlignedBB par5AxisAlignedBB, List par6List, Entity par7Entity)
-    {
+    public void addCollidingBlockToList(World par1World, int par2, int par3, int par4, AxisAlignedBB par5AxisAlignedBB,
+            List par6List, Entity par7Entity) {
         int var8 = par1World.getBlockMetadata(par2, par3, par4);
 
-        switch (getDirectionMeta(var8))
-        {
+        switch (getDirectionMeta(var8)) {
             case 0:
                 this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 0.25F, 1.0F);
                 super.addCollidingBlockToList(par1World, par2, par3, par4, par5AxisAlignedBB, par6List, par7Entity);
@@ -164,12 +160,10 @@ public class BlockPistonExtension extends Block
     /**
      * Updates the blocks bounds based on its current state. Args: world, x, y, z
      */
-    public void setBlockBoundsBasedOnState(IBlockAccess par1IBlockAccess, int par2, int par3, int par4)
-    {
+    public void setBlockBoundsBasedOnState(IBlockAccess par1IBlockAccess, int par2, int par3, int par4) {
         int var5 = par1IBlockAccess.getBlockMetadata(par2, par3, par4);
 
-        switch (getDirectionMeta(var5))
-        {
+        switch (getDirectionMeta(var5)) {
             case 0:
                 this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 0.25F, 1.0F);
                 break;
@@ -196,34 +190,32 @@ public class BlockPistonExtension extends Block
     }
 
     /**
-     * Lets the block know when one of its neighbor changes. Doesn't know which neighbor changed (coordinates passed are
+     * Lets the block know when one of its neighbor changes. Doesn't know which
+     * neighbor changed (coordinates passed are
      * their own) Args: x, y, z, neighbor blockID
      */
-    public void onNeighborBlockChange(World par1World, int par2, int par3, int par4, int par5)
-    {
+    public void onNeighborBlockChange(World par1World, int par2, int par3, int par4, int par5) {
         int var6 = getDirectionMeta(par1World.getBlockMetadata(par2, par3, par4));
-        int var7 = par1World.getBlockId(par2 - Facing.offsetsXForSide[var6], par3 - Facing.offsetsYForSide[var6], par4 - Facing.offsetsZForSide[var6]);
+        int var7 = par1World.getBlockId(par2 - Facing.offsetsXForSide[var6], par3 - Facing.offsetsYForSide[var6],
+                par4 - Facing.offsetsZForSide[var6]);
 
-        if (var7 != Block.pistonBase.blockID && var7 != Block.pistonStickyBase.blockID)
-        {
+        if (var7 != Block.pistonBase.blockID && var7 != Block.pistonStickyBase.blockID) {
             par1World.setBlockWithNotify(par2, par3, par4, 0);
-        }
-        else
-        {
-            Block.blocksList[var7].onNeighborBlockChange(par1World, par2 - Facing.offsetsXForSide[var6], par3 - Facing.offsetsYForSide[var6], par4 - Facing.offsetsZForSide[var6], par5);
+        } else {
+            Block.blocksList[var7].onNeighborBlockChange(par1World, par2 - Facing.offsetsXForSide[var6],
+                    par3 - Facing.offsetsYForSide[var6], par4 - Facing.offsetsZForSide[var6], par5);
         }
     }
 
-    public static int getDirectionMeta(int par0)
-    {
+    public static int getDirectionMeta(int par0) {
         return par0 & 7;
     }
 
     /**
-     * only called by clickMiddleMouseButton , and passed to inventory.setCurrentItem (along with isCreative)
+     * only called by clickMiddleMouseButton , and passed to
+     * inventory.setCurrentItem (along with isCreative)
      */
-    public int idPicked(World par1World, int par2, int par3, int par4)
-    {
+    public int idPicked(World par1World, int par2, int par3, int par4) {
         return 0;
     }
 }

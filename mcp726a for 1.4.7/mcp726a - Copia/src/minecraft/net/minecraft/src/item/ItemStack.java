@@ -3,29 +3,41 @@ package net.minecraft.src.item;
 import java.util.ArrayList;
 import java.util.List;
 
+import net.minecraft.src.block.Block;
+
 public final class ItemStack {
     /** Size of the stack. */
+    /** Tamanho da pilha. */
     public int stackSize;
 
     /**
      * Number of animation frames to go when receiving an item (by walking into it,
      * for example).
      */
+    /**
+     * Número de quadros de animação a serem executados ao receber um item (ao entrar nele, por exemplo).
+     */
     public int animationsToGo;
 
     /** ID of the item. */
+    /** ID do item. */
     public int itemID;
 
     /**
      * A NBTTagMap containing data about an ItemStack. Can only be used for non
      * stackable items
      */
+    /**
+     * Um NBTTagMap contendo dados sobre um ItemStack. Só pode ser usado para itens não empilháveis
+     */
     public NBTTagCompound stackTagCompound;
 
     /** Damage dealt to the item or number of use. Raise when using items. */
+    /** Danos causados ao item ou número de uso. Aumente ao usar itens. */
     private int itemDamage;
 
     /** Item frame this stack is on, or null if not on an item frame. */
+    /** Quadro de item em que esta pilha está ou nulo se não estiver em um quadro de item. */
     private EntityItemFrame itemFrame;
 
     public ItemStack(Block par1Block) {
@@ -75,6 +87,9 @@ public final class ItemStack {
      * Remove the argument from the stack size. Return a new stack object with
      * argument size.
      */
+    /**
+     * Remova o argumento do tamanho da pilha. Retorna um novo objeto de pilha com tamanho de argumento.
+     */
     public ItemStack splitStack(int par1) {
         ItemStack var2 = new ItemStack(this.itemID, par1, this.itemDamage);
 
@@ -89,12 +104,18 @@ public final class ItemStack {
     /**
      * Returns the object corresponding to the stack.
      */
+    /**
+     * Retorna o objeto correspondente à pilha.
+     */
     public Item getItem() {
         return Item.itemsList[this.itemID];
     }
 
     /**
      * Returns the icon index of the current stack.
+     */
+    /**
+     * Retorna o índice de ícones da pilha atual.
      */
     public int getIconIndex() {
         return this.getItem().getIconIndex(this);
@@ -115,6 +136,9 @@ public final class ItemStack {
     /**
      * Returns the strength of the stack against a given block.
      */
+    /**
+     * Retorna a força da pilha em relação a um determinado bloco.
+     */
     public float getStrVsBlock(Block par1Block) {
         return this.getItem().getStrVsBlock(this, par1Block);
     }
@@ -123,6 +147,9 @@ public final class ItemStack {
      * Called whenever this item stack is equipped and right clicked. Returns the
      * new item stack to put in the position
      * where this item is. Args: world, player
+     */
+    /**
+     * Chamado sempre que esta pilha de itens é equipada e clicada com o botão direito. Retorna a nova pilha de itens para colocar na posição onde este item está. Args: mundo, jogador
      */
     public ItemStack useItemRightClick(World par1World, EntityPlayer par2EntityPlayer) {
         return this.getItem().onItemRightClick(this, par1World, par2EntityPlayer);
@@ -134,6 +161,9 @@ public final class ItemStack {
 
     /**
      * Write the stack fields to a NBT object. Return the new NBT object.
+     */
+    /**
+     * Escreva os campos da pilha em um objeto NBT. Retorne o novo objeto NBT.
      */
     public NBTTagCompound writeToNBT(NBTTagCompound par1NBTTagCompound) {
         par1NBTTagCompound.setShort("id", (short) this.itemID);
@@ -150,6 +180,9 @@ public final class ItemStack {
     /**
      * Read the stack fields from a NBT object.
      */
+    /**
+     * Leia os campos da pilha de um objeto NBT.
+     */
     public void readFromNBT(NBTTagCompound par1NBTTagCompound) {
         this.itemID = par1NBTTagCompound.getShort("id");
         this.stackSize = par1NBTTagCompound.getByte("Count");
@@ -163,6 +196,9 @@ public final class ItemStack {
     /**
      * Returns maximum size of the stack.
      */
+    /**
+     * Retorna o tamanho máximo da pilha.
+     */
     public int getMaxStackSize() {
         return this.getItem().getItemStackLimit();
     }
@@ -170,12 +206,18 @@ public final class ItemStack {
     /**
      * Returns true if the ItemStack can hold 2 or more units of the item.
      */
+    /**
+     * Retornará verdadeiro se o ItemStack puder conter 2 ou mais unidades do item.
+     */
     public boolean isStackable() {
         return this.getMaxStackSize() > 1 && (!this.isItemStackDamageable() || !this.isItemDamaged());
     }
 
     /**
      * true if this itemStack is damageable
+     */
+    /**
+     * verdadeiro se este itemStack for danificável
      */
     public boolean isItemStackDamageable() {
         return Item.itemsList[this.itemID].getMaxDamage() > 0;
@@ -188,12 +230,18 @@ public final class ItemStack {
     /**
      * returns true when a damageable item is damaged
      */
+    /**
+     * retorna verdadeiro quando um item danificável é danificado
+     */
     public boolean isItemDamaged() {
         return this.isItemStackDamageable() && this.itemDamage > 0;
     }
 
     /**
      * gets the damage of an itemstack, for displaying purposes
+     */
+    /**
+     * recebe o dano de uma pilha de itens, para fins de exibição
      */
     public int getItemDamageForDisplay() {
         return this.itemDamage;
@@ -202,12 +250,18 @@ public final class ItemStack {
     /**
      * gets the damage of an itemstack
      */
+    /**
+     * recebe o dano de uma pilha de itens
+     */
     public int getItemDamage() {
         return this.itemDamage;
     }
 
     /**
      * Sets the item damage of the ItemStack.
+     */
+    /**
+     * Define o dano do item do ItemStack.
      */
     public void setItemDamage(int par1) {
         this.itemDamage = par1;
@@ -216,12 +270,18 @@ public final class ItemStack {
     /**
      * Returns the max damage an item in the stack can take.
      */
+    /**
+     * Retorna o dano máximo que um item da pilha pode sofrer.
+     */
     public int getMaxDamage() {
         return Item.itemsList[this.itemID].getMaxDamage();
     }
 
     /**
      * Damages the item in the ItemStack
+     */
+    /**
+     * Danifica o item no ItemStack
      */
     public void damageItem(int par1, EntityLiving par2EntityLiving) {
         if (this.isItemStackDamageable()) {
@@ -268,6 +328,9 @@ public final class ItemStack {
     /**
      * Calls the corresponding fct in di
      */
+    /**
+     * Chama a fct correspondente em di
+     */
     public void hitEntity(EntityLiving par1EntityLiving, EntityPlayer par2EntityPlayer) {
         boolean var3 = Item.itemsList[this.itemID].hitEntity(this, par1EntityLiving, par2EntityPlayer);
 
@@ -289,12 +352,18 @@ public final class ItemStack {
     /**
      * Returns the damage against a given entity.
      */
+    /**
+     * Retorna o dano contra uma determinada entidade.
+     */
     public int getDamageVsEntity(Entity par1Entity) {
         return Item.itemsList[this.itemID].getDamageVsEntity(par1Entity);
     }
 
     /**
      * Checks if the itemStack object can harvest a specified block
+     */
+    /**
+     * Verifica se o objeto itemStack pode coletar um bloco especificado
      */
     public boolean canHarvestBlock(Block par1Block) {
         return Item.itemsList[this.itemID].canHarvestBlock(par1Block);
@@ -306,6 +375,9 @@ public final class ItemStack {
 
     /**
      * Returns a new stack with the same properties.
+     */
+    /**
+     * Retorna uma nova pilha com as mesmas propriedades.
      */
     public ItemStack copy() {
         ItemStack var1 = new ItemStack(this.itemID, this.stackSize, this.itemDamage);
@@ -333,6 +405,9 @@ public final class ItemStack {
      * compares ItemStack argument1 with ItemStack argument2; returns true if both
      * ItemStacks are equal
      */
+    /**
+     * compara ItemStack argumento1 com ItemStack argumento2; retorna verdadeiro se ambos os ItemStacks forem iguais
+     */
     public static boolean areItemStacksEqual(ItemStack par0ItemStack, ItemStack par1ItemStack) {
         return par0ItemStack == null && par1ItemStack == null ? true
                 : (par0ItemStack != null && par1ItemStack != null ? par0ItemStack.isItemStackEqual(par1ItemStack)
@@ -342,6 +417,9 @@ public final class ItemStack {
     /**
      * compares ItemStack argument to the instance ItemStack; returns true if both
      * ItemStacks are equal
+     */
+    /**
+     * compara o argumento ItemStack com a instância ItemStack; retorna verdadeiro se ambos os ItemStacks forem iguais
      */
     private boolean isItemStackEqual(ItemStack par1ItemStack) {
         return this.stackSize != par1ItemStack.stackSize ? false
@@ -357,6 +435,9 @@ public final class ItemStack {
      * Items contained in both ItemStacks are
      * equal
      */
+    /**
+     * compara o argumento ItemStack com a instância ItemStack; retorna verdadeiro se os itens contidos em ambos os ItemStacks forem iguais
+     */
     public boolean isItemEqual(ItemStack par1ItemStack) {
         return this.itemID == par1ItemStack.itemID && this.itemDamage == par1ItemStack.itemDamage;
     }
@@ -367,6 +448,9 @@ public final class ItemStack {
 
     /**
      * Creates a copy of a ItemStack, a null parameters will return a null.
+     */
+    /**
+     * Cria uma cópia de um ItemStack, um parâmetro nulo retornará um nulo.
      */
     public static ItemStack copyItemStack(ItemStack par0ItemStack) {
         return par0ItemStack == null ? null : par0ItemStack.copy();
@@ -380,6 +464,9 @@ public final class ItemStack {
      * Called each tick as long the ItemStack in on player inventory. Used to
      * progress the pickup animation and update
      * maps.
+     */
+    /**
+     * Chamado cada tick enquanto o ItemStack estiver no inventário do jogador. Usado para progredir na animação de coleta e atualizar mapas.
      */
     public void updateAnimation(World par1World, Entity par2Entity, int par3, boolean par4) {
         if (this.animationsToGo > 0) {
@@ -406,6 +493,9 @@ public final class ItemStack {
      * Called when the player releases the use item button. Args: world,
      * entityplayer, itemInUseCount
      */
+    /**
+     * Chamado quando o jogador libera o botão de uso do item. Args: mundo, entidadeplayer, itemInUseCount
+     */
     public void onPlayerStoppedUsing(World par1World, EntityPlayer par2EntityPlayer, int par3) {
         this.getItem().onPlayerStoppedUsing(this, par1World, par2EntityPlayer, par3);
     }
@@ -414,12 +504,18 @@ public final class ItemStack {
      * Returns true if the ItemStack has an NBTTagCompound. Currently used to store
      * enchantments.
      */
+    /**
+     * Retornará verdadeiro se o ItemStack tiver um NBTTagCompound. Atualmente usado para armazenar encantamentos.
+     */
     public boolean hasTagCompound() {
         return this.stackTagCompound != null;
     }
 
     /**
      * Returns the NBTTagCompound of the ItemStack.
+     */
+    /**
+     * Retorna o NBTTagCompound do ItemStack.
      */
     public NBTTagCompound getTagCompound() {
         return this.stackTagCompound;
@@ -433,12 +529,18 @@ public final class ItemStack {
      * Assigns a NBTTagCompound to the ItemStack, minecraft validates that only
      * non-stackable items can have it.
      */
+    /**
+     * Atribui um NBTTagCompound ao ItemStack, o minecraft valida que apenas itens não empilháveis podem tê-lo.
+     */
     public void setTagCompound(NBTTagCompound par1NBTTagCompound) {
         this.stackTagCompound = par1NBTTagCompound;
     }
 
     /**
      * returns the display name of the itemstack
+     */
+    /**
+     * retorna o nome de exibição da pilha de itens
      */
     public String getDisplayName() {
         String var1 = this.getItem().getItemDisplayName(this);
@@ -457,6 +559,9 @@ public final class ItemStack {
     /**
      * Sets the item's name (used by anvil to rename the items).
      */
+    /**
+     * Define o nome do item (usado pela bigorna para renomear os itens).
+     */
     public void setItemName(String par1Str) {
         if (this.stackTagCompound == null) {
             this.stackTagCompound = new NBTTagCompound();
@@ -472,6 +577,9 @@ public final class ItemStack {
     /**
      * Returns true if the itemstack has a display name
      */
+    /**
+     * Retorna verdadeiro se a pilha de itens tiver um nome de exibição
+     */
     public boolean hasDisplayName() {
         return this.stackTagCompound == null ? false
                 : (!this.stackTagCompound.hasKey("display") ? false
@@ -480,6 +588,9 @@ public final class ItemStack {
 
     /**
      * Return a list of strings containing information about the item
+     */
+    /**
+     * Retorna uma lista de strings contendo informações sobre o item
      */
     public List getTooltip(EntityPlayer par1EntityPlayer, boolean par2) {
         ArrayList var3 = new ArrayList();
@@ -567,12 +678,18 @@ public final class ItemStack {
     /**
      * True if it is a tool and has no enchantments to begin with
      */
+    /**
+     * Verdadeiro se for uma ferramenta e não tiver encantamentos para começar
+     */
     public boolean isItemEnchantable() {
         return !this.getItem().isItemTool(this) ? false : !this.isItemEnchanted();
     }
 
     /**
      * Adds an enchantment with a desired level on the ItemStack.
+     */
+    /**
+     * Adiciona um encantamento com um nível desejado no ItemStack.
      */
     public void addEnchantment(Enchantment par1Enchantment, int par2) {
         if (this.stackTagCompound == null) {
@@ -593,6 +710,9 @@ public final class ItemStack {
     /**
      * True if the item has enchantment data
      */
+    /**
+     * Verdadeiro se o item tiver dados de encantamento
+     */
     public boolean isItemEnchanted() {
         return this.stackTagCompound != null && this.stackTagCompound.hasKey("ench");
     }
@@ -612,12 +732,18 @@ public final class ItemStack {
     /**
      * Return whether this stack is on an item frame.
      */
+    /**
+     * Retorne se esta pilha está em um quadro de item.
+     */
     public boolean isOnItemFrame() {
         return this.itemFrame != null;
     }
 
     /**
      * Set the item frame this stack is on.
+     */
+    /**
+     * Defina o quadro do item em que esta pilha está.
      */
     public void setItemFrame(EntityItemFrame par1EntityItemFrame) {
         this.itemFrame = par1EntityItemFrame;
@@ -626,12 +752,18 @@ public final class ItemStack {
     /**
      * Return the item frame this stack is on. Returns null if not on an item frame.
      */
+    /**
+     * Retorne o quadro do item em que esta pilha está. Retorna nulo se não estiver em um quadro de item.
+     */
     public EntityItemFrame getItemFrame() {
         return this.itemFrame;
     }
 
     /**
      * Get this stack's repair cost, or 0 if no repair cost is defined.
+     */
+    /**
+     * Obtenha o custo de reparo desta pilha ou 0 se nenhum custo de reparo for definido.
      */
     public int getRepairCost() {
         return this.hasTagCompound() && this.stackTagCompound.hasKey("RepairCost")
@@ -641,6 +773,9 @@ public final class ItemStack {
 
     /**
      * Set this stack's repair cost.
+     */
+    /**
+     * Defina o custo de reparo desta pilha.
      */
     public void setRepairCost(int par1) {
         if (!this.hasTagCompound()) {
