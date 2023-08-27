@@ -1,0 +1,21 @@
+***************
+*** 89,97 ****
+          if(a == cr.a)
+              list = dy1.b(((dj) (null)), dg.b((float)i + f, j, (float)k + f, (float)(i + 1) - f, (double)j + 0.25D, (float)(k + 1) - f));
+          if(a == cr.b)
+-             list = dy1.a(is, dg.b((float)i + f, j, (float)k + f, (float)(i + 1) - f, (double)j + 0.25D, (float)(k + 1) - f));
+          if(a == cr.c)
+-             list = dy1.a(fc, dg.b((float)i + f, j, (float)k + f, (float)(i + 1) - f, (double)j + 0.25D, (float)(k + 1) - f));
+          if(list.size() > 0)
+              flag1 = true;
+          if(flag1 && !flag)
+--- 89,97 ----
+          if(a == cr.a)
+              list = dy1.b(((dj) (null)), dg.b((float)i + f, j, (float)k + f, (float)(i + 1) - f, (double)j + 0.25D, (float)(k + 1) - f));
+          if(a == cr.b)
++             list = dy1.a(is.class, dg.b((float)i + f, j, (float)k + f, (float)(i + 1) - f, (double)j + 0.25D, (float)(k + 1) - f));
+          if(a == cr.c)
++             list = dy1.a(fc.class, dg.b((float)i + f, j, (float)k + f, (float)(i + 1) - f, (double)j + 0.25D, (float)(k + 1) - f));
+          if(list.size() > 0)
+              flag1 = true;
+          if(flag1 && !flag)

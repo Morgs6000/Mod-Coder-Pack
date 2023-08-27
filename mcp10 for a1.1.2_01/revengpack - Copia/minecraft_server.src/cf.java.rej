@@ -1,0 +1,34 @@
+***************
+*** 41,47 ****
+          f = byte1;
+      }
+  
+-     public void a(java.io.DataInputStream datainputstream)
+      {
+          a = datainputstream.readInt();
+          b = datainputstream.readInt();
+--- 41,47 ----
+          f = byte1;
+      }
+  
++     public void a(java.io.DataInputStream datainputstream) throws IOException
+      {
+          a = datainputstream.readInt();
+          b = datainputstream.readInt();
+***************
+*** 51,57 ****
+          f = (byte)datainputstream.read();
+      }
+  
+-     public void a(java.io.DataOutputStream dataoutputstream)
+      {
+          dataoutputstream.writeInt(a);
+          dataoutputstream.writeInt(b);
+--- 51,57 ----
+          f = (byte)datainputstream.read();
+      }
+  
++     public void a(java.io.DataOutputStream dataoutputstream) throws IOException
+      {
+          dataoutputstream.writeInt(a);
+          dataoutputstream.writeInt(b);

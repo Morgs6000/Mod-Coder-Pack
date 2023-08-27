@@ -1,0 +1,27 @@
+***************
+*** 29,40 ****
+          ej1.a(this);
+      }
+  
+-     public void a(java.io.DataInputStream datainputstream)
+      {
+          g = datainputstream.read() != 0;
+      }
+  
+-     public void a(java.io.DataOutputStream dataoutputstream)
+      {
+          dataoutputstream.write(g ? 1 : 0);
+      }
+--- 29,40 ----
+          ej1.a(this);
+      }
+  
++     public void a(java.io.DataInputStream datainputstream) throws IOException
+      {
+          g = datainputstream.read() != 0;
+      }
+  
++     public void a(java.io.DataOutputStream dataoutputstream) throws IOException
+      {
+          dataoutputstream.write(g ? 1 : 0);
+      }

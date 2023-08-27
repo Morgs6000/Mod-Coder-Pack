@@ -1,0 +1,145 @@
+***************
+*** 22,80 ****
+      {
+      }
+  
+-     public static s a(java.io.InputStream inputstream)
+      {
+          java.io.DataInputStream datainputstream = new DataInputStream(((java.io.InputStream) (new GZIPInputStream(inputstream))));
+          s s1 = aj.a(((java.io.DataInput) (datainputstream)));
+-         datainputstream.close();
+          return s1;
+-         java.lang.Exception exception;
+-         exception;
+          datainputstream.close();
+-         throw exception;
+      }
+  
+-     public static void a(s s1, java.io.OutputStream outputstream)
+      {
+          java.io.DataOutputStream dataoutputstream = new DataOutputStream(((java.io.OutputStream) (new GZIPOutputStream(outputstream))));
+          aj.a(s1, ((java.io.DataOutput) (dataoutputstream)));
+          dataoutputstream.close();
+-         break MISSING_BLOCK_LABEL_35;
+-         java.lang.Exception exception;
+-         exception;
+-         dataoutputstream.close();
+-         throw exception;
+      }
+  
+-     public static s a(byte abyte0[])
+      {
+          java.io.DataInputStream datainputstream = new DataInputStream(((java.io.InputStream) (new GZIPInputStream(((java.io.InputStream) (new ByteArrayInputStream(abyte0)))))));
+          s s1 = aj.a(((java.io.DataInput) (datainputstream)));
+          datainputstream.close();
+          return s1;
+-         java.lang.Exception exception;
+-         exception;
+          datainputstream.close();
+-         throw exception;
+      }
+  
+-     public static byte[] a(s s1)
+      {
+          java.io.ByteArrayOutputStream bytearrayoutputstream;
+          java.io.DataOutputStream dataoutputstream;
+          bytearrayoutputstream = new ByteArrayOutputStream();
+          dataoutputstream = new DataOutputStream(((java.io.OutputStream) (new GZIPOutputStream(((java.io.OutputStream) (bytearrayoutputstream))))));
+          aj.a(s1, ((java.io.DataOutput) (dataoutputstream)));
+          dataoutputstream.close();
+-         break MISSING_BLOCK_LABEL_43;
+-         java.lang.Exception exception;
+-         exception;
+-         dataoutputstream.close();
+-         throw exception;
+          return bytearrayoutputstream.toByteArray();
+      }
+  
+-     public static s a(java.io.DataInput datainput)
+      {
+          gg gg1 = gg.b(datainput);
+          if(gg1 instanceof s)
+--- 22,87 ----
+      {
+      }
+  
++     public static s a(java.io.InputStream inputstream) throws IOException
+      {
+          java.io.DataInputStream datainputstream = new DataInputStream(((java.io.InputStream) (new GZIPInputStream(inputstream))));
++         try
++         {
+          s s1 = aj.a(((java.io.DataInput) (datainputstream)));
+          return s1;
++         }
++         finally
++         {
+          datainputstream.close();
++         }
+      }
+  
++     public static void a(s s1, java.io.OutputStream outputstream) throws IOException
+      {
+          java.io.DataOutputStream dataoutputstream = new DataOutputStream(((java.io.OutputStream) (new GZIPOutputStream(outputstream))));
++         try
++         {
+          aj.a(s1, ((java.io.DataOutput) (dataoutputstream)));
++         }
++         finally
++         {
+          dataoutputstream.close();
++         }
+      }
+  
++     public static s a(byte abyte0[]) throws IOException
+      {
+          java.io.DataInputStream datainputstream = new DataInputStream(((java.io.InputStream) (new GZIPInputStream(((java.io.InputStream) (new ByteArrayInputStream(abyte0)))))));
++         try
++         {
+          s s1 = aj.a(((java.io.DataInput) (datainputstream)));
+          datainputstream.close();
+          return s1;
++         }
++         finally
++         {
+          datainputstream.close();
++         }
+      }
+  
++     public static byte[] a(s s1) throws IOException
+      {
+          java.io.ByteArrayOutputStream bytearrayoutputstream;
+          java.io.DataOutputStream dataoutputstream;
+          bytearrayoutputstream = new ByteArrayOutputStream();
+          dataoutputstream = new DataOutputStream(((java.io.OutputStream) (new GZIPOutputStream(((java.io.OutputStream) (bytearrayoutputstream))))));
++         try
++         {
+          aj.a(s1, ((java.io.DataOutput) (dataoutputstream)));
++         }
++         finally
++         {
+          dataoutputstream.close();
++         }
+          return bytearrayoutputstream.toByteArray();
+      }
+  
++     public static s a(java.io.DataInput datainput) throws IOException
+      {
+          gg gg1 = gg.b(datainput);
+          if(gg1 instanceof s)
+***************
+*** 83,89 ****
+              throw new IOException("Root tag must be a named compound tag");
+      }
+  
+-     public static void a(s s1, java.io.DataOutput dataoutput)
+      {
+          gg.a(((gg) (s1)), dataoutput);
+      }
+--- 90,96 ----
+              throw new IOException("Root tag must be a named compound tag");
+      }
+  
++     public static void a(s s1, java.io.DataOutput dataoutput) throws IOException
+      {
+          gg.a(((gg) (s1)), dataoutput);
+      }

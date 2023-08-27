@@ -1,0 +1,21 @@
+***************
+*** 16,24 ****
+  
+      dd(ew ew1, z z1)
+      {
+          b = ew1;
+          a = z1;
+-         super();
+      }
+  
+      public void run()
+--- 16,24 ----
+  
+      dd(ew ew1, z z1)
+      {
++         super();
+          b = ew1;
+          a = z1;
+      }
+  
+      public void run()

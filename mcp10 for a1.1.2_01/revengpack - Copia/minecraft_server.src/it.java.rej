@@ -1,0 +1,19 @@
+***************
+*** 14,21 ****
+  
+      it(hx hx1)
+      {
+-         a = hx1;
+          super();
+      }
+  
+      public void actionPerformed(java.awt.event.ActionEvent actionevent)
+--- 14,21 ----
+  
+      it(hx hx1)
+      {
+          super();
++         a = hx1;
+      }
+  
+      public void actionPerformed(java.awt.event.ActionEvent actionevent)

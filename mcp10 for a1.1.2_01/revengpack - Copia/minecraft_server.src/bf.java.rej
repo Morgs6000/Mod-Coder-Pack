@@ -1,0 +1,27 @@
+***************
+*** 21,32 ****
+          a = i;
+      }
+  
+-     void a(java.io.DataOutput dataoutput)
+      {
+          dataoutput.writeInt(a);
+      }
+  
+-     void a(java.io.DataInput datainput)
+      {
+          a = datainput.readInt();
+      }
+--- 21,32 ----
+          a = i;
+      }
+  
++     void a(java.io.DataOutput dataoutput) throws IOException
+      {
+          dataoutput.writeInt(a);
+      }
+  
++     void a(java.io.DataInput datainput) throws IOException
+      {
+          a = datainput.readInt();
+      }

@@ -1,0 +1,17 @@
+***************
+*** 22,28 ****
+      private z h;
+      private java.lang.String i;
+  
+-     public ew(net.minecraft.server.MinecraftServer minecraftserver, java.net.Socket socket, java.lang.String s)
+      {
+          c = false;
+          f = 0;
+--- 22,28 ----
+      private z h;
+      private java.lang.String i;
+  
++     public ew(net.minecraft.server.MinecraftServer minecraftserver, java.net.Socket socket, java.lang.String s) throws IOException
+      {
+          c = false;
+          f = 0;

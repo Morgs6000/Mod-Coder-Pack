@@ -1,0 +1,31 @@
+***************
+*** 15,28 ****
+          i = true;
+      }
+  
+-     public void a(java.io.DataInputStream datainputstream)
+      {
+          e = datainputstream.readFloat();
+          f = datainputstream.readFloat();
+          super.a(datainputstream);
+      }
+  
+-     public void a(java.io.DataOutputStream dataoutputstream)
+      {
+          dataoutputstream.writeFloat(e);
+          dataoutputstream.writeFloat(f);
+--- 15,28 ----
+          i = true;
+      }
+  
++     public void a(java.io.DataInputStream datainputstream) throws IOException
+      {
+          e = datainputstream.readFloat();
+          f = datainputstream.readFloat();
+          super.a(datainputstream);
+      }
+  
++     public void a(java.io.DataOutputStream dataoutputstream) throws IOException
+      {
+          dataoutputstream.writeFloat(e);
+          dataoutputstream.writeFloat(f);

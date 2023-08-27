@@ -1,0 +1,55 @@
+***************
+*** 17,25 ****
+          a = null;
+      }
+  
+-     abstract void a(java.io.DataOutput dataoutput);
+  
+-     abstract void a(java.io.DataInput datainput);
+  
+      public abstract byte a();
+  
+--- 17,25 ----
+          a = null;
+      }
+  
++     abstract void a(java.io.DataOutput dataoutput) throws IOException;
+  
++     abstract void a(java.io.DataInput datainput) throws IOException;
+  
+      public abstract byte a();
+  
+***************
+*** 37,43 ****
+          return this;
+      }
+  
+-     public static gg b(java.io.DataInput datainput)
+      {
+          byte byte0 = datainput.readByte();
+          if(byte0 == 0)
+--- 37,43 ----
+          return this;
+      }
+  
++     public static gg b(java.io.DataInput datainput) throws IOException
+      {
+          byte byte0 = datainput.readByte();
+          if(byte0 == 0)
+***************
+*** 52,58 ****
+          }
+      }
+  
+-     public static void a(gg gg1, java.io.DataOutput dataoutput)
+      {
+          dataoutput.writeByte(((int) (gg1.a())));
+          if(gg1.a() == 0)
+--- 52,58 ----
+          }
+      }
+  
++     public static void a(gg gg1, java.io.DataOutput dataoutput) throws IOException
+      {
+          dataoutput.writeByte(((int) (gg1.a())));
+          if(gg1.a() == 0)

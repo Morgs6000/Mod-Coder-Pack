@@ -1,0 +1,19 @@
+***************
+*** 12,19 ****
+  
+      hu(ee ee1, int i, java.lang.Class class1, java.lang.Class aclass[])
+      {
+-         a = ee1;
+          super(i, class1, aclass);
+      }
+  
+      protected gs a(dy dy1, int i, int j)
+--- 12,19 ----
+  
+      hu(ee ee1, int i, java.lang.Class class1, java.lang.Class aclass[])
+      {
+          super(i, class1, aclass);
++         a = ee1;
+      }
+  
+      protected gs a(dy dy1, int i, int j)

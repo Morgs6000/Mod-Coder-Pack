@@ -1,0 +1,19 @@
+***************
+*** 12,19 ****
+  
+      public bp(net.minecraft.server.MinecraftServer minecraftserver)
+      {
+-         a = minecraftserver;
+          super();
+          setDaemon(true);
+          start();
+      }
+--- 12,19 ----
+  
+      public bp(net.minecraft.server.MinecraftServer minecraftserver)
+      {
+          super();
++         a = minecraftserver;
+          setDaemon(true);
+          start();
+      }

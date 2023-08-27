@@ -1,0 +1,29 @@
+***************
+*** 8,20 ****
+  {
+  
+      private hq a;
+-     private if b;
+      private hf c;
+      private a d[];
+  
+      public ep(hq hq1)
+      {
+-         b = new if();
+          c = new hf();
+          d = new a[32];
+          a = hq1;
+--- 8,20 ----
+  {
+  
+      private hq a;
++     private iffix b;
+      private hf c;
+      private a d[];
+  
+      public ep(hq hq1)
+      {
++         b = new iffix();
+          c = new hf();
+          d = new a[32];
+          a = hq1;

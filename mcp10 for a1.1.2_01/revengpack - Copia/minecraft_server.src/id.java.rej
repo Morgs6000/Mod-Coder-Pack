@@ -1,0 +1,34 @@
+***************
+*** 310,316 ****
+                  b(((hp) (new ba("\247cYou can't /iron again so soon!"))));
+              } else
+              {
+-                 net.minecraft.server.MinecraftServer.b.put(((java.lang.Object) (e.aq)), ((java.lang.Object) (java.lang.Integer.valueOf(6000))));
+                  a.info((new StringBuilder()).append(e.aq).append(" ironed!").toString());
+                  for(int i1 = 0; i1 < 4; i1++)
+                      e.a(new gp(ez.m, 1));
+--- 310,316 ----
+                  b(((hp) (new ba("\247cYou can't /iron again so soon!"))));
+              } else
+              {
++             	net.minecraft.server.MinecraftServer.b.put(((java.lang.Object) (e.aq)), ((java.lang.Object) (java.lang.Integer.valueOf(6000))));
+                  a.info((new StringBuilder()).append(e.aq).append(" ironed!").toString());
+                  for(int i1 = 0; i1 < 4; i1++)
+                      e.a(new gp(ez.m, 1));
+***************
+*** 325,331 ****
+                  b(((hp) (new ba("\247cYou can't /wood again so soon!"))));
+              } else
+              {
+-                 net.minecraft.server.MinecraftServer.b.put(((java.lang.Object) (e.aq)), ((java.lang.Object) (java.lang.Integer.valueOf(6000))));
+                  a.info((new StringBuilder()).append(e.aq).append(" wooded!").toString());
+                  for(int j1 = 0; j1 < 4; j1++)
+                      e.a(new gp(ff.z, 1));
+--- 325,331 ----
+                  b(((hp) (new ba("\247cYou can't /wood again so soon!"))));
+              } else
+              {
++             	net.minecraft.server.MinecraftServer.b.put(((java.lang.Object) (e.aq)), ((java.lang.Object) (java.lang.Integer.valueOf(6000))));
+                  a.info((new StringBuilder()).append(e.aq).append(" wooded!").toString());
+                  for(int j1 = 0; j1 < 4; j1++)
+                      e.a(new gp(ff.z, 1));

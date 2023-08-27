@@ -1,0 +1,19 @@
+***************
+*** 12,19 ****
+  
+      public bm(java.lang.String s, net.minecraft.server.MinecraftServer minecraftserver)
+      {
+-         a = minecraftserver;
+          super(s);
+      }
+  
+      public void run()
+--- 12,19 ----
+  
+      public bm(java.lang.String s, net.minecraft.server.MinecraftServer minecraftserver)
+      {
+          super(s);
++         a = minecraftserver;
+      }
+  
+      public void run()

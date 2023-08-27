@@ -1,0 +1,19 @@
+***************
+*** 11,18 ****
+  
+      hl(bb bb1)
+      {
+-         a = bb1;
+          super();
+      }
+  
+      public void run()
+--- 11,18 ----
+  
+      hl(bb bb1)
+      {
+          super();
++         a = bb1;
+      }
+  
+      public void run()

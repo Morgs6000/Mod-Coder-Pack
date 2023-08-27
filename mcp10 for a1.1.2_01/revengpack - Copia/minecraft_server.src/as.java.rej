@@ -1,0 +1,21 @@
+***************
+*** 88,96 ****
+  
+      static 
+      {
+-         as.a(df, "Furnace");
+-         as.a(hb, "Chest");
+-         as.a(ig, "Sign");
+-         as.a(bs, "MobSpawner");
+      }
+  }
+--- 88,96 ----
+  
+      static 
+      {
++         as.a(df.class, "Furnace");
++         as.a(hb.class, "Chest");
++         as.a(ig.class, "Sign");
++         as.a(bs.class, "MobSpawner");
+      }
+  }

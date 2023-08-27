@@ -1,0 +1,27 @@
+***************
+*** 21,32 ****
+          a = word0;
+      }
+  
+-     void a(java.io.DataOutput dataoutput)
+      {
+          dataoutput.writeShort(((int) (a)));
+      }
+  
+-     void a(java.io.DataInput datainput)
+      {
+          a = datainput.readShort();
+      }
+--- 21,32 ----
+          a = word0;
+      }
+  
++     void a(java.io.DataOutput dataoutput) throws IOException
+      {
+          dataoutput.writeShort(((int) (a)));
+      }
+  
++     void a(java.io.DataInput datainput) throws IOException
+      {
+          a = datainput.readShort();
+      }

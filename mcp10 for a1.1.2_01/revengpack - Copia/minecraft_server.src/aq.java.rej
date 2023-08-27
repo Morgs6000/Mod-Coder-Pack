@@ -1,0 +1,21 @@
+***************
+*** 10,18 ****
+  
+      public abstract im a(dy dy, int i, int j);
+  
+-     public abstract void a(dy dy, im im);
+  
+-     public abstract void b(dy dy, im im);
+  
+      public abstract void a();
+  
+--- 10,18 ----
+  
+      public abstract im a(dy dy, int i, int j);
+  
++     public abstract void a(dy dy, im im) throws IOException;
+  
++     public abstract void b(dy dy, im im) throws IOException;
+  
+      public abstract void a();
+  

@@ -1,0 +1,34 @@
+***************
+*** 29,35 ****
+          h = true;
+      }
+  
+-     public void a(java.io.DataInputStream datainputstream)
+      {
+          a = datainputstream.readDouble();
+          b = datainputstream.readDouble();
+--- 29,35 ----
+          h = true;
+      }
+  
++     public void a(java.io.DataInputStream datainputstream) throws IOException
+      {
+          a = datainputstream.readDouble();
+          b = datainputstream.readDouble();
+***************
+*** 40,46 ****
+          super.a(datainputstream);
+      }
+  
+-     public void a(java.io.DataOutputStream dataoutputstream)
+      {
+          dataoutputstream.writeDouble(a);
+          dataoutputstream.writeDouble(b);
+--- 40,46 ----
+          super.a(datainputstream);
+      }
+  
++     public void a(java.io.DataOutputStream dataoutputstream) throws IOException
+      {
+          dataoutputstream.writeDouble(a);
+          dataoutputstream.writeDouble(b);

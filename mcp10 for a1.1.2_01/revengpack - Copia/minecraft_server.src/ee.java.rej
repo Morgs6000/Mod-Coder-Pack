@@ -1,0 +1,25 @@
+***************
+*** 21,31 ****
+      {
+          super(file, s);
+          z = false;
+-         C = ((bl) (new hu(this, 200, dz, new java.lang.Class[] {
+-             fm, ek, eu, bk, fh
+          })));
+-         D = new bl(15, at, new java.lang.Class[] {
+-             cj, gu, ay, hi
+          });
+          B = flag;
+      }
+--- 21,31 ----
+      {
+          super(file, s);
+          z = false;
++         C = ((bl) (new hu(this, 200, dz.class, new java.lang.Class[] {
++             fm.class, ek.class, eu.class, bk.class, fh.class
+          })));
++         D = new bl(15, at.class, new java.lang.Class[] {
++             cj.class, gu.class, ay.class, hi.class
+          });
+          B = flag;
+      }

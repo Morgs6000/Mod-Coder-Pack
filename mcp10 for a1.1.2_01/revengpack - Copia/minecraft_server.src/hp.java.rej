@@ -1,0 +1,129 @@
+***************
+*** 60,66 ****
+          return ((java.lang.Integer)b.get(((java.lang.Object) (((java.lang.Object)this).getClass())))).intValue();
+      }
+  
+-     public static hp b(java.io.DataInputStream datainputstream)
+      {
+          int i = datainputstream.read();
+          if(i == -1)
+--- 60,66 ----
+          return ((java.lang.Integer)b.get(((java.lang.Object) (((java.lang.Object)this).getClass())))).intValue();
+      }
+  
++     public static hp b(java.io.DataInputStream datainputstream) throws IOException
+      {
+          int i = datainputstream.read();
+          if(i == -1)
+***************
+*** 76,90 ****
+          }
+      }
+  
+-     public static void a(hp hp1, java.io.DataOutputStream dataoutputstream)
+      {
+          dataoutputstream.write(hp1.b());
+          hp1.a(dataoutputstream);
+      }
+  
+-     public abstract void a(java.io.DataInputStream datainputstream);
+  
+-     public abstract void a(java.io.DataOutputStream dataoutputstream);
+  
+      public abstract void a(ej ej);
+  
+--- 76,90 ----
+          }
+      }
+  
++     public static void a(hp hp1, java.io.DataOutputStream dataoutputstream) throws IOException
+      {
+          dataoutputstream.write(hp1.b());
+          hp1.a(dataoutputstream);
+      }
+  
++     public abstract void a(java.io.DataInputStream datainputstream) throws IOException;
+  
++     public abstract void a(java.io.DataOutputStream dataoutputstream) throws IOException;
+  
+      public abstract void a(ej ej);
+  
+***************
+*** 92,129 ****
+  
+      static 
+      {
+-         hp.a(0, iz);
+-         hp.a(1, z);
+-         hp.a(2, e);
+-         hp.a(3, ba);
+-         hp.a(4, fl);
+-         hp.a(5, r);
+-         hp.a(6, cb);
+-         hp.a(10, gf);
+-         hp.a(11, aa);
+-         hp.a(12, fx);
+-         hp.a(13, dq);
+-         hp.a(14, hd);
+-         hp.a(15, fe);
+-         hp.a(16, fv);
+-         hp.a(17, en);
+-         hp.a(18, o);
+-         hp.a(20, c);
+-         hp.a(21, k);
+-         hp.a(22, ce);
+-         hp.a(23, dl);
+-         hp.a(24, gv);
+-         hp.a(29, ct);
+-         hp.a(30, ex);
+-         hp.a(31, dr);
+-         hp.a(32, cx);
+-         hp.a(33, bg);
+-         hp.a(34, cf);
+-         hp.a(50, da);
+-         hp.a(51, cz);
+-         hp.a(52, hh);
+-         hp.a(53, et);
+-         hp.a(59, ib);
+-         hp.a(255, io);
+      }
+  }
+--- 92,129 ----
+  
+      static 
+      {
++         hp.a(0, iz.class);
++         hp.a(1, z.class);
++         hp.a(2, e.class);
++         hp.a(3, ba.class);
++         hp.a(4, fl.class);
++         hp.a(5, r.class);
++         hp.a(6, cb.class);
++         hp.a(10, gf.class);
++         hp.a(11, aa.class);
++         hp.a(12, fx.class);
++         hp.a(13, dq.class);
++         hp.a(14, hd.class);
++         hp.a(15, fe.class);
++         hp.a(16, fv.class);
++         hp.a(17, en.class);
++         hp.a(18, o.class);
++         hp.a(20, c.class);
++         hp.a(21, k.class);
++         hp.a(22, ce.class);
++         hp.a(23, dl.class);
++         hp.a(24, gv.class);
++         hp.a(29, ct.class);
++         hp.a(30, ex.class);
++         hp.a(31, dr.class);
++         hp.a(32, cx.class);
++         hp.a(33, bg.class);
++         hp.a(34, cf.class);
++         hp.a(50, da.class);
++         hp.a(51, cz.class);
++         hp.a(52, hh.class);
++         hp.a(53, et.class);
++         hp.a(59, ib.class);
++         hp.a(255, io.class);
+      }
+  }

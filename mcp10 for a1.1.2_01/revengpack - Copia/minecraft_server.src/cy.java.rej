@@ -1,0 +1,54 @@
+***************
+*** 4,39 ****
+  // Source File Name:   SourceFile
+  
+  
+- public final class cy extends java.lang.Enum
+  {
+  
+-     public static final cy a;
+-     public static final cy b;
+-     public final int c;
+-     private static final cy d[];
+  
+-     public static cy[] values()
+-     {
+-         return (cy[])((cy []) (d)).clone();
+-     }
+- 
+-     public static cy valueOf(java.lang.String s)
+-     {
+-         return (cy)java.lang.Enum.valueOf(cy, s);
+-     }
+- 
+-     private cy(java.lang.String s, int i, int j)
+-     {
+-         super(s, i);
+-         c = j;
+-     }
+- 
+-     static 
+-     {
+-         a = new cy("Sky", 0, 15);
+-         b = new cy("Block", 1, 0);
+-         d = (new cy[] {
+-             a, b
+-         });
+-     }
+  }
+--- 4,18 ----
+  // Source File Name:   SourceFile
+  
+  
++ public enum cy
+  {
++ 	a(15), // sky
++ 	b(0); // block
+  
++ 	public final int c;
+  
++ 	private cy(int arg3)
++ 	{
++ 		this.c = arg3;
++ 	}
+  }

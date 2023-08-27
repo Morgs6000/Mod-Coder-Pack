@@ -1,0 +1,29 @@
+***************
+*** 4,16 ****
+  // Source File Name:   SourceFile
+  
+  
+- public class if
+  {
+  
+      private a a[];
+      private int b;
+  
+-     public if()
+      {
+          a = new a[1024];
+          b = 0;
+--- 4,16 ----
+  // Source File Name:   SourceFile
+  
+  
++ public class iffix
+  {
+  
+      private a a[];
+      private int b;
+  
++     public iffix()
+      {
+          a = new a[1024];
+          b = 0;

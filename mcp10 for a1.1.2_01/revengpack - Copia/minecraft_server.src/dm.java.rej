@@ -1,0 +1,34 @@
+***************
+*** 20,26 ****
+          a = ((java.util.List) (new ArrayList()));
+      }
+  
+-     void a(java.io.DataOutput dataoutput)
+      {
+          if(a.size() > 0)
+              b = ((gg)a.get(0)).a();
+--- 20,26 ----
+          a = ((java.util.List) (new ArrayList()));
+      }
+  
++     void a(java.io.DataOutput dataoutput) throws IOException
+      {
+          if(a.size() > 0)
+              b = ((gg)a.get(0)).a();
+***************
+*** 33,39 ****
+  
+      }
+  
+-     void a(java.io.DataInput datainput)
+      {
+          b = datainput.readByte();
+          int i = datainput.readInt();
+--- 33,39 ----
+  
+      }
+  
++     void a(java.io.DataInput datainput) throws IOException
+      {
+          b = datainput.readByte();
+          int i = datainput.readInt();
